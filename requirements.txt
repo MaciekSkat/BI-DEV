@@ -1,0 +1,19 @@
+# Podstawowa analityka i transformacja (ETL)
+pandas
+numpy
+
+# Pobieranie danych z sieci (API)
+requests
+
+# Big Data i Chmura (Nasz projekt Faza 4)
+pyspark
+
+# Nowoczesny stack inżyniera danych (dbt)
+dbt-core
+
+# Łączenie Pythona z bazami SQL Server / Azure
+pyodbc
+SQLAlchemy
+
+# Bezpieczne trzymanie haseł (niezbędne przy bazach!)
+python-dotenv
