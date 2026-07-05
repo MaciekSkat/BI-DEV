@@ -1,0 +1,66 @@
+import pandas as pd
+import numpy as np
+import glob 
+import os 
+import re 
+
+folder_path=r"C:\Users\skatm\OneDrive - Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu\Dane\Nowy folder"
+all_filles= glob.glob(os.path.join(folder_path,"*.xlsx"))
+dane_master=[]
+miesiace_dict = {
+    '1': 'styczeń', '2': 'luty', '3': 'marzec', '4': 'kwiecień',
+    '5': 'maj', '6': 'czerwiec', '7': 'lipiec', '8': 'sierpień',
+    '9': 'wrzesień', '10': 'październik', '11': 'listopad', '12': 'grudzień'
+}
+kraje_en_dict = {
+    'OGÓŁEM': 'Total',
+    'Turyści krajowi': 'Domestic',
+    'Turyści zagraniczni': 'Foreign tourists',
+    'w tym:': 'of which:'
+}
+
+for plik in all_filles:
+    rok_match= re.search(r'\d{4}', os.path.basename(plik))
+    rok = int(rok_match.group()) if rok_match else None
+    
+    # Zwróć uwagę na skiprows - ustawione tak, aby zaczytać wiersz 'OGÓŁEM'
+    # Zależnie od struktury plików, być może trzeba będzie to zmienić na 5 lub 6
+    
+    # --- A. TURYŚCI ---
+    df_t = pd.read_excel(plik, sheet_name=0, skiprows=6) 
+    df_t_czyste = df_t.iloc[:, [0] + list(range(2, 25, 2))]
+    df_t_czyste.columns = ['Kraj', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+    df_t_melt = df_t_czyste.melt(id_vars=['Kraj'], var_name='Nr_Miesiaca', value_name='Turysci')
+    
+    # --- B. NOCLEGI ---
+    df_n = pd.read_excel(plik, sheet_name=1, skiprows=6)
+    df_n_czyste = df_n.iloc[:, [0] + list(range(2, 25, 2))]
+    df_n_czyste.columns = ['Kraj', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+    df_n_melt = df_n_czyste.melt(id_vars=['Kraj'], var_name='Nr_Miesiaca', value_name='Noclegi')
+    
+    # --- C. ŁĄCZENIE ---
+    df_polaczone = pd.merge(df_t_melt, df_n_melt, on=['Kraj', 'Nr_Miesiaca'], how='inner')
+    df_polaczone['Rok'] = rok
+    
+    dane_master.append(df_polaczone)
+
+# 3. Złączenie w jedną tabelę
+df_final = pd.concat(dane_master, ignore_index=True)
+
+# 4. Magia kolumn pomocniczych (Odtwarzamy wygląd ze screena)
+
+# Dodajemy kolumnę 'Typ' - jeśli nazwa jest na liście, to 'agregat', inaczej 'kraj'
+agregaty_lista = ['OGÓŁEM', 'Turyści krajowi', 'Turyści zagraniczni', 'w tym:']
+df_final['Typ'] = np.where(df_final['Kraj'].isin(agregaty_lista), 'agregat', 'kraj')
+
+# Dodajemy polskie nazwy miesięcy
+df_final['Miesiąc'] = df_final['Nr_Miesiaca'].map(miesiace_dict)
+
+# Dodajemy angielskie nazwy dla agregatów (zwykłe kraje zostawiamy bez zmian dla uproszczenia)
+df_final['Kraj (EN)'] = df_final['Kraj'].map(kraje_en_dict).fillna(df_final['Kraj'])
+
+# Konwersja nr miesiąca do formatu liczbowego (dla sortowania)
+df_final['Nr_Miesiaca'] = df_final['Nr_Miesiaca'].astype(int)
+
+# Układamy kolumny dokładnie w takiej kolejności, jak u koleżanki
+df_final = df_final[['Rok', 'Nr_Miesiaca', 'Miesiąc', 'Kraj', 'Kraj (EN)', 'Typ', 'Turysci', 'Noclegi']]
