@@ -2771,3 +2771,831 @@ Rooms for guests",XII,42273.0,5677.0,2017,36596.0
 Agrotourism lodgings",XII,7009.0,379.0,2017,6630.0
 "Pozostałe niesklasyfikowane 
 Other not classified",XII,49767.0,5547.0,2017,44220.0
+OGÓŁEM,I,2232273.0,408895.0,2025,1823378.0
+Obiekty hotelowe,I,2064358.0,0.0,2025,2064358.0
+Hotele,I,1773002.0,378825.0,2025,1394177.0
+Motele,I,11890.0,1263.0,2025,10627.0
+Pensjonaty,I,37839.0,3953.0,2025,33886.0
+Inne obiekty hotelowe,I,241627.0,38117.0,2025,203510.0
+Pozostałe obiekty noclegowe,I,462954.0,53104.0,2025,409850.0
+Domy wycieczkowe,I,1897.0,198.0,2025,1699.0
+Schroniska,I,12687.0,256.0,2025,12431.0
+Schroniska młodzieżowe,I,2772.0,465.0,2025,2307.0
+Szkolne schroniska młodzieżowe,I,11544.0,814.0,2025,10730.0
+Ośrodki wczasowe,I,70251.0,4300.0,2025,65951.0
+Ośrodki kolonijne,I,2159.0,12.0,2025,2147.0
+Ośrodki szkoleniowo-wypoczynkowe,I,47545.0,2488.0,2025,45057.0
+Domy pracy twórczej,I,1932.0,79.0,2025,1853.0
+Zespoły domków turystycznych,I,14848.0,284.0,2025,14564.0
+Kempingi,I,1113.0,81.0,2025,1032.0
+Pola biwakowe,I,295.0,154.0,2025,141.0
+Hostele,I,55362.0,19472.0,2025,35890.0
+Zakłady uzdrowiskowe,I,64918.0,1107.0,2025,63811.0
+Pokoje gościnne,I,125401.0,17722.0,2025,107679.0
+Kwatery agroturystyczne,I,6007.0,403.0,2025,5604.0
+Pozostałe niesklasyfikowane,I,44223.0,5269.0,2025,38954.0
+OGÓŁEM,II,2378165.0,451087.0,2025,1927078.0
+Obiekty hotelowe,II,2184537.0,0.0,2025,2184537.0
+Hotele,II,1877560.0,381894.0,2025,1495666.0
+Motele,II,12054.0,1495.0,2025,10559.0
+Pensjonaty,II,39977.0,4196.0,2025,35781.0
+Inne obiekty hotelowe,II,254946.0,40469.0,2025,214477.0
+Pozostałe obiekty noclegowe,II,492036.0,57036.0,2025,435000.0
+Domy wycieczkowe,II,2948.0,156.0,2025,2792.0
+Schroniska,II,13664.0,255.0,2025,13409.0
+Schroniska młodzieżowe,II,3782.0,554.0,2025,3228.0
+Szkolne schroniska młodzieżowe,II,12293.0,716.0,2025,11577.0
+Ośrodki wczasowe,II,91754.0,5852.0,2025,85902.0
+Ośrodki kolonijne,II,2468.0,9.0,2025,2459.0
+Ośrodki szkoleniowo-wypoczynkowe,II,52905.0,2659.0,2025,50246.0
+Domy pracy twórczej,II,1750.0,64.0,2025,1686.0
+Zespoły domków turystycznych,II,14186.0,754.0,2025,13432.0
+Kempingi,II,1129.0,37.0,2025,1092.0
+Pola biwakowe,II,132.0,74.0,2025,58.0
+Hostele,II,47795.0,18363.0,2025,29432.0
+Zakłady uzdrowiskowe,II,56853.0,1041.0,2025,55812.0
+Pokoje gościnne,II,132878.0,20182.0,2025,112696.0
+Kwatery agroturystyczne,II,6591.0,312.0,2025,6279.0
+Pozostałe niesklasyfikowane,II,50908.0,6008.0,2025,44900.0
+OGÓŁEM,III,2463094.0,554870.0,2025,1908224.0
+Obiekty hotelowe,III,2323155.0,0.0,2025,2323155.0
+Hotele,III,2028549.0,469823.0,2025,1558726.0
+Motele,III,11631.0,1764.0,2025,9867.0
+Pensjonaty,III,30620.0,4221.0,2025,26399.0
+Inne obiekty hotelowe,III,252355.0,43453.0,2025,208902.0
+Pozostałe obiekty noclegowe,III,460375.0,62750.0,2025,397625.0
+Domy wycieczkowe,III,1995.0,172.0,2025,1823.0
+Schroniska,III,10947.0,162.0,2025,10785.0
+Schroniska młodzieżowe,III,4339.0,649.0,2025,3690.0
+Szkolne schroniska młodzieżowe,III,11884.0,933.0,2025,10951.0
+Ośrodki wczasowe,III,71576.0,5490.0,2025,66086.0
+Ośrodki kolonijne,III,1937.0,51.0,2025,1886.0
+Ośrodki szkoleniowo-wypoczynkowe,III,48084.0,2505.0,2025,45579.0
+Domy pracy twórczej,III,2054.0,16.0,2025,2038.0
+Zespoły domków turystycznych,III,12215.0,930.0,2025,11285.0
+Kempingi,III,1407.0,131.0,2025,1276.0
+Pola biwakowe,III,307.0,215.0,2025,92.0
+Hostele,III,63126.0,20094.0,2025,43032.0
+Zakłady uzdrowiskowe,III,65647.0,1588.0,2025,64059.0
+Pokoje gościnne,III,104409.0,22530.0,2025,81879.0
+Kwatery agroturystyczne,III,5709.0,272.0,2025,5437.0
+Pozostałe niesklasyfikowane,III,54739.0,7012.0,2025,47727.0
+OGÓŁEM,IV,2667184.0,541239.0,2025,2125945.0
+Obiekty hotelowe,IV,2379385.0,0.0,2025,2379385.0
+Hotele,IV,2051547.0,533397.0,2025,1518150.0
+Motele,IV,14028.0,2128.0,2025,11900.0
+Pensjonaty,IV,32261.0,4126.0,2025,28135.0
+Inne obiekty hotelowe,IV,281549.0,59258.0,2025,222291.0
+Pozostałe obiekty noclegowe,IV,545686.0,76618.0,2025,469068.0
+Domy wycieczkowe,IV,2447.0,71.0,2025,2376.0
+Schroniska,IV,12030.0,314.0,2025,11716.0
+Schroniska młodzieżowe,IV,5070.0,440.0,2025,4630.0
+Szkolne schroniska młodzieżowe,IV,13230.0,1074.0,2025,12156.0
+Ośrodki wczasowe,IV,113107.0,6875.0,2025,106232.0
+Ośrodki kolonijne,IV,2380.0,38.0,2025,2342.0
+Ośrodki szkoleniowo-wypoczynkowe,IV,58068.0,2968.0,2025,55100.0
+Domy pracy twórczej,IV,2640.0,5.0,2025,2635.0
+Zespoły domków turystycznych,IV,17995.0,1525.0,2025,16470.0
+Kempingi,IV,4898.0,1757.0,2025,3141.0
+Pola biwakowe,IV,598.0,279.0,2025,319.0
+Hostele,IV,61907.0,23635.0,2025,38272.0
+Zakłady uzdrowiskowe,IV,65906.0,1255.0,2025,64651.0
+Pokoje gościnne,IV,122537.0,27259.0,2025,95278.0
+Kwatery agroturystyczne,IV,7792.0,406.0,2025,7386.0
+Pozostałe niesklasyfikowane,IV,55081.0,8717.0,2025,46364.0
+OGÓŁEM,V,3441695.0,645367.0,2025,2796328.0
+Obiekty hotelowe,V,2944059.0,0.0,2025,2944059.0
+Hotele,V,2503708.0,594444.0,2025,1909264.0
+Motele,V,15570.0,2352.0,2025,13218.0
+Pensjonaty,V,54042.0,6043.0,2025,47999.0
+Inne obiekty hotelowe,V,370739.0,59999.0,2025,310740.0
+Pozostałe obiekty noclegowe,V,847257.0,87214.0,2025,760043.0
+Domy wycieczkowe,V,5345.0,105.0,2025,5240.0
+Schroniska,V,18448.0,420.0,2025,18028.0
+Schroniska młodzieżowe,V,9435.0,680.0,2025,8755.0
+Szkolne schroniska młodzieżowe,V,22955.0,1217.0,2025,21738.0
+Ośrodki wczasowe,V,198374.0,7731.0,2025,190643.0
+Ośrodki kolonijne,V,10049.0,17.0,2025,10032.0
+Ośrodki szkoleniowo-wypoczynkowe,V,100831.0,4304.0,2025,96527.0
+Domy pracy twórczej,V,4498.0,33.0,2025,4465.0
+Zespoły domków turystycznych,V,41878.0,2035.0,2025,39843.0
+Kempingi,V,18835.0,6575.0,2025,12260.0
+Pola biwakowe,V,3720.0,936.0,2025,2784.0
+Hostele,V,81113.0,22386.0,2025,58727.0
+Zakłady uzdrowiskowe,V,65842.0,2042.0,2025,63800.0
+Pokoje gościnne,V,167758.0,28005.0,2025,139753.0
+Kwatery agroturystyczne,V,15198.0,662.0,2025,14536.0
+Pozostałe niesklasyfikowane,V,82978.0,10066.0,2025,72912.0
+OGÓŁEM,VI,3763557.0,702926.0,2025,3060631.0
+Obiekty hotelowe,VI,3086090.0,0.0,2025,3086090.0
+Hotele,VI,2598913.0,619014.0,2025,1979899.0
+Motele,VI,18257.0,2867.0,2025,15390.0
+Pensjonaty,VI,62559.0,6866.0,2025,55693.0
+Inne obiekty hotelowe,VI,406361.0,67099.0,2025,339262.0
+Pozostałe obiekty noclegowe,VI,1129274.0,117677.0,2025,1011597.0
+Domy wycieczkowe,VI,7116.0,591.0,2025,6525.0
+Schroniska,VI,20531.0,456.0,2025,20075.0
+Schroniska młodzieżowe,VI,9648.0,714.0,2025,8934.0
+Szkolne schroniska młodzieżowe,VI,25454.0,1488.0,2025,23966.0
+Ośrodki wczasowe,VI,274561.0,8784.0,2025,265777.0
+Ośrodki kolonijne,VI,14938.0,23.0,2025,14915.0
+Ośrodki szkoleniowo-wypoczynkowe,VI,121080.0,3800.0,2025,117280.0
+Domy pracy twórczej,VI,5929.0,65.0,2025,5864.0
+Zespoły domków turystycznych,VI,73364.0,4188.0,2025,69176.0
+Kempingi,VI,47960.0,15641.0,2025,32319.0
+Pola biwakowe,VI,17487.0,1241.0,2025,16246.0
+Hostele,VI,113496.0,36263.0,2025,77233.0
+Zakłady uzdrowiskowe,VI,80669.0,1697.0,2025,78972.0
+Pokoje gościnne,VI,206958.0,31860.0,2025,175098.0
+Kwatery agroturystyczne,VI,19353.0,668.0,2025,18685.0
+Pozostałe niesklasyfikowane,VI,90730.0,10198.0,2025,80532.0
+OGÓŁEM,VII,4359821.0,909824.0,2025,3449997.0
+Obiekty hotelowe,VII,3158363.0,0.0,2025,3158363.0
+Hotele,VII,2642742.0,721441.0,2025,1921301.0
+Motele,VII,21210.0,3883.0,2025,17327.0
+Pensjonaty,VII,68781.0,8453.0,2025,60328.0
+Inne obiekty hotelowe,VII,425630.0,82981.0,2025,342649.0
+Pozostałe obiekty noclegowe,VII,1481197.0,176322.0,2025,1304875.0
+Domy wycieczkowe,VII,5744.0,290.0,2025,5454.0
+Schroniska,VII,19525.0,744.0,2025,18781.0
+Schroniska młodzieżowe,VII,7542.0,886.0,2025,6656.0
+Szkolne schroniska młodzieżowe,VII,24158.0,1623.0,2025,22535.0
+Ośrodki wczasowe,VII,373290.0,17130.0,2025,356160.0
+Ośrodki kolonijne,VII,27104.0,348.0,2025,26756.0
+Ośrodki szkoleniowo-wypoczynkowe,VII,131661.0,5892.0,2025,125769.0
+Domy pracy twórczej,VII,5708.0,137.0,2025,5571.0
+Zespoły domków turystycznych,VII,126072.0,10064.0,2025,116008.0
+Kempingi,VII,85816.0,23162.0,2025,62654.0
+Pola biwakowe,VII,38184.0,4127.0,2025,34057.0
+Hostele,VII,114234.0,44896.0,2025,69338.0
+Zakłady uzdrowiskowe,VII,73336.0,2309.0,2025,71027.0
+Pokoje gościnne,VII,295028.0,42823.0,2025,252205.0
+Kwatery agroturystyczne,VII,27677.0,1442.0,2025,26235.0
+Pozostałe niesklasyfikowane,VII,126118.0,20449.0,2025,105669.0
+OGÓŁEM,VIII,4751769.0,967153.0,2025,3784616.0
+Obiekty hotelowe,VIII,3514153.0,0.0,2025,3514153.0
+Hotele,VIII,2922335.0,770573.0,2025,2151762.0
+Motele,VIII,22228.0,3603.0,2025,18625.0
+Pensjonaty,VIII,78541.0,9514.0,2025,69027.0
+Inne obiekty hotelowe,VIII,491049.0,92870.0,2025,398179.0
+Pozostałe obiekty noclegowe,VIII,1629849.0,184994.0,2025,1444855.0
+Domy wycieczkowe,VIII,6047.0,299.0,2025,5748.0
+Schroniska,VIII,24681.0,817.0,2025,23864.0
+Schroniska młodzieżowe,VIII,7254.0,970.0,2025,6284.0
+Szkolne schroniska młodzieżowe,VIII,26584.0,1434.0,2025,25150.0
+Ośrodki wczasowe,VIII,406167.0,15725.0,2025,390442.0
+Ośrodki kolonijne,VIII,23840.0,322.0,2025,23518.0
+Ośrodki szkoleniowo-wypoczynkowe,VIII,144477.0,6573.0,2025,137904.0
+Domy pracy twórczej,VIII,6516.0,135.0,2025,6381.0
+Zespoły domków turystycznych,VIII,137965.0,10728.0,2025,127237.0
+Kempingi,VIII,93832.0,27151.0,2025,66681.0
+Pola biwakowe,VIII,43314.0,3404.0,2025,39910.0
+Hostele,VIII,123209.0,46216.0,2025,76993.0
+Zakłady uzdrowiskowe,VIII,82297.0,2487.0,2025,79810.0
+Pokoje gościnne,VIII,331332.0,45132.0,2025,286200.0
+Kwatery agroturystyczne,VIII,30264.0,1465.0,2025,28799.0
+Pozostałe niesklasyfikowane,VIII,142070.0,22136.0,2025,119934.0
+OGÓŁEM,IX,3586660.0,726186.0,2025,2860474.0
+Obiekty hotelowe,IX,3063737.0,0.0,2025,3063737.0
+Hotele,IX,2607848.0,623384.0,2025,1984464.0
+Motele,IX,17715.0,2509.0,2025,15206.0
+Pensjonaty,IX,55426.0,6701.0,2025,48725.0
+Inne obiekty hotelowe,IX,382748.0,61351.0,2025,321397.0
+Pozostałe obiekty noclegowe,IX,926584.0,105989.0,2025,820595.0
+Domy wycieczkowe,IX,5702.0,211.0,2025,5491.0
+Schroniska,IX,20970.0,558.0,2025,20412.0
+Schroniska młodzieżowe,IX,6935.0,771.0,2025,6164.0
+Szkolne schroniska młodzieżowe,IX,17298.0,1195.0,2025,16103.0
+Ośrodki wczasowe,IX,205575.0,8366.0,2025,197209.0
+Ośrodki kolonijne,IX,7393.0,30.0,2025,7363.0
+Ośrodki szkoleniowo-wypoczynkowe,IX,102743.0,3605.0,2025,99138.0
+Domy pracy twórczej,IX,4761.0,75.0,2025,4686.0
+Zespoły domków turystycznych,IX,53816.0,4335.0,2025,49481.0
+Kempingi,IX,24046.0,9176.0,2025,14870.0
+Pola biwakowe,IX,5255.0,1137.0,2025,4118.0
+Hostele,IX,102104.0,32007.0,2025,70097.0
+Zakłady uzdrowiskowe,IX,69362.0,1760.0,2025,67602.0
+Pokoje gościnne,IX,193325.0,28990.0,2025,164335.0
+Kwatery agroturystyczne,IX,14589.0,734.0,2025,13855.0
+Pozostałe niesklasyfikowane,IX,92710.0,13039.0,2025,79671.0
+OGÓŁEM,X,3454001.0,732208.0,2025,2721793.0
+Obiekty hotelowe,X,3009349.0,0.0,2025,3009349.0
+Hotele,X,2607810.0,622280.0,2025,1985530.0
+Motele,X,16976.0,2724.0,2025,14252.0
+Pensjonaty,X,43482.0,4838.0,2025,38644.0
+Inne obiekty hotelowe,X,341081.0,74092.0,2025,266989.0
+Pozostałe obiekty noclegowe,X,664933.0,98978.0,2025,565955.0
+Domy wycieczkowe,X,4256.0,264.0,2025,3992.0
+Schroniska,X,16571.0,600.0,2025,15971.0
+Schroniska młodzieżowe,X,6003.0,1034.0,2025,4969.0
+Szkolne schroniska młodzieżowe,X,16275.0,1089.0,2025,15186.0
+Ośrodki wczasowe,X,111308.0,7581.0,2025,103727.0
+Ośrodki kolonijne,X,2554.0,48.0,2025,2506.0
+Ośrodki szkoleniowo-wypoczynkowe,X,70552.0,3861.0,2025,66691.0
+Domy pracy twórczej,X,3120.0,85.0,2025,3035.0
+Zespoły domków turystycznych,X,23103.0,2256.0,2025,20847.0
+Kempingi,X,4297.0,874.0,2025,3423.0
+Pola biwakowe,X,706.0,348.0,2025,358.0
+Hostele,X,101570.0,32941.0,2025,68629.0
+Zakłady uzdrowiskowe,X,68141.0,1469.0,2025,66672.0
+Pokoje gościnne,X,159235.0,33990.0,2025,125245.0
+Kwatery agroturystyczne,X,9745.0,595.0,2025,9150.0
+Pozostałe niesklasyfikowane,X,67497.0,11943.0,2025,55554.0
+OGÓŁEM,XI,2931372.0,574481.0,2025,2356891.0
+Obiekty hotelowe,XI,2659039.0,0.0,2025,2659039.0
+Hotele,XI,2325748.0,504881.0,2025,1820867.0
+Motele,XI,15679.0,2438.0,2025,13241.0
+Pensjonaty,XI,36176.0,4338.0,2025,31838.0
+Inne obiekty hotelowe,XI,281436.0,49829.0,2025,231607.0
+Pozostałe obiekty noclegowe,XI,554014.0,74407.0,2025,479607.0
+Domy wycieczkowe,XI,2665.0,216.0,2025,2449.0
+Schroniska,XI,11704.0,318.0,2025,11386.0
+Schroniska młodzieżowe,XI,4355.0,565.0,2025,3790.0
+Szkolne schroniska młodzieżowe,XI,12677.0,1050.0,2025,11627.0
+Ośrodki wczasowe,XI,83852.0,6287.0,2025,77565.0
+Ośrodki kolonijne,XI,1293.0,27.0,2025,1266.0
+Ośrodki szkoleniowo-wypoczynkowe,XI,56879.0,2574.0,2025,54305.0
+Domy pracy twórczej,XI,2041.0,28.0,2025,2013.0
+Zespoły domków turystycznych,XI,15255.0,1049.0,2025,14206.0
+Kempingi,XI,2517.0,205.0,2025,2312.0
+Pola biwakowe,XI,106.0,46.0,2025,60.0
+Hostele,XI,100416.0,32254.0,2025,68162.0
+Zakłady uzdrowiskowe,XI,56132.0,869.0,2025,55263.0
+Pokoje gościnne,XI,141972.0,21550.0,2025,120422.0
+Kwatery agroturystyczne,XI,6845.0,278.0,2025,6567.0
+Pozostałe niesklasyfikowane,XI,55305.0,7091.0,2025,48214.0
+OGÓŁEM,XII,2812809.0,661282.0,2025,2151527.0
+Obiekty hotelowe,XII,2600850.0,0.0,2025,2600850.0
+Hotele,XII,2265776.0,614517.0,2025,1651259.0
+Motele,XII,12499.0,1850.0,2025,10649.0
+Pensjonaty,XII,39354.0,6407.0,2025,32947.0
+Inne obiekty hotelowe,XII,283221.0,65996.0,2025,217225.0
+Pozostałe obiekty noclegowe,XII,557095.0,93959.0,2025,463136.0
+Domy wycieczkowe,XII,1895.0,147.0,2025,1748.0
+Schroniska,XII,13138.0,210.0,2025,12928.0
+Schroniska młodzieżowe,XII,4320.0,620.0,2025,3700.0
+Szkolne schroniska młodzieżowe,XII,11488.0,1032.0,2025,10456.0
+Ośrodki wczasowe,XII,70279.0,6213.0,2025,64066.0
+Ośrodki kolonijne,XII,908.0,11.0,2025,897.0
+Ośrodki szkoleniowo-wypoczynkowe,XII,48280.0,3525.0,2025,44755.0
+Domy pracy twórczej,XII,1899.0,24.0,2025,1875.0
+Zespoły domków turystycznych,XII,16904.0,1409.0,2025,15495.0
+Kempingi,XII,2116.0,256.0,2025,1860.0
+Pola biwakowe,XII,302.0,163.0,2025,139.0
+Hostele,XII,112507.0,33026.0,2025,79481.0
+Zakłady uzdrowiskowe,XII,45888.0,1086.0,2025,44802.0
+Pokoje gościnne,XII,166351.0,36636.0,2025,129715.0
+Kwatery agroturystyczne,XII,6486.0,347.0,2025,6139.0
+Pozostałe niesklasyfikowane,XII,54334.0,9254.0,2025,45080.0
+OGÓŁEM    2023     ,I,2213510.0,410619.0,2024,1802891.0
+TOTAL       2024,I,2232273.0,408895.0,2024,1823378.0
+"Obiekty hotelowe 
+Hotels and similar establishments",I,1857520.0,371224.0,2024,1486296.0
+"Hotele
+Hotels",I,1628390.0,339209.0,2024,1289181.0
+"Motele
+Motels",I,13146.0,1373.0,2024,11773.0
+"Pensjonaty
+Boarding houses",I,37556.0,3400.0,2024,34156.0
+"Inne obiekty hotelowe
+Other hotel establishments",I,178428.0,27242.0,2024,151186.0
+"Pozostałe obiekty noclegowe
+Other establishments ",I,374753.0,37671.0,2024,337082.0
+"Domy wycieczkowe
+Excursion hostels",I,3261.0,111.0,2024,3150.0
+"Schroniska
+Shelters",I,11905.0,173.0,2024,11732.0
+"Schroniska młodzieżowe
+Youth shelters",I,3450.0,757.0,2024,2693.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",I,10642.0,1047.0,2024,9595.0
+"Ośrodki wczasowe
+Holiday centres",I,72385.0,3823.0,2024,68562.0
+"Ośrodki kolonijne
+Holiday youth centres",I,2236.0,17.0,2024,2219.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",I,42897.0,2124.0,2024,40773.0
+"Domy pracy twórczej
+Creative arts centres",I,1728.0,24.0,2024,1704.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",I,13658.0,281.0,2024,13377.0
+"Kempingi
+Camping sites",I,1036.0,93.0,2024,943.0
+"Pola biwakowe
+Tent camp sites",I,182.0,102.0,2024,80.0
+"Hostele
+Hostels",I,45245.0,16327.0,2024,28918.0
+"Zakłady uzdrowiskowe
+Health establishments",I,64334.0,1154.0,2024,63180.0
+"Pokoje gościnne
+Rooms for guests",I,62908.0,6878.0,2024,56030.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",I,5103.0,330.0,2024,4773.0
+"Pozostałe niesklasyfikowane
+Other not classified",I,33783.0,4430.0,2024,29353.0
+OGÓŁEM    2023     ,II,2303247.0,430182.0,2024,1873065.0
+TOTAL       2024,II,2378165.0,451087.0,2024,1927078.0
+"Obiekty hotelowe 
+Hotels and similar establishments",II,1998143.0,410349.0,2024,1587794.0
+"Hotele
+Hotels",II,1753741.0,373152.0,2024,1380589.0
+"Motele
+Motels",II,13529.0,1756.0,2024,11773.0
+"Pensjonaty
+Boarding houses",II,38533.0,3955.0,2024,34578.0
+"Inne obiekty hotelowe
+Other hotel establishments",II,192340.0,31486.0,2024,160854.0
+"Pozostałe obiekty noclegowe
+Other establishments ",II,380022.0,40738.0,2024,339284.0
+"Domy wycieczkowe
+Excursion hostels",II,3226.0,165.0,2024,3061.0
+"Schroniska
+Shelters",II,12616.0,296.0,2024,12320.0
+"Schroniska młodzieżowe
+Youth shelters",II,3603.0,655.0,2024,2948.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",II,11279.0,765.0,2024,10514.0
+"Ośrodki wczasowe
+Holiday centres",II,80544.0,5808.0,2024,74736.0
+"Ośrodki kolonijne
+Holiday youth centres",II,2528.0,16.0,2024,2512.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",II,44933.0,2368.0,2024,42565.0
+"Domy pracy twórczej
+Creative arts centres",II,1635.0,39.0,2024,1596.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",II,11613.0,233.0,2024,11380.0
+"Kempingi
+Camping sites",II,979.0,119.0,2024,860.0
+"Pola biwakowe
+Tent camp sites",II,141.0,94.0,2024,47.0
+"Hostele
+Hostels",II,47094.0,15025.0,2024,32069.0
+"Zakłady uzdrowiskowe
+Health establishments",II,50740.0,1420.0,2024,49320.0
+"Pokoje gościnne
+Rooms for guests",II,64315.0,7242.0,2024,57073.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",II,7225.0,1221.0,2024,6004.0
+"Pozostałe niesklasyfikowane
+Other not classified",II,37551.0,5272.0,2024,32279.0
+OGÓŁEM    2023     ,III,2506116.0,505997.0,2024,2000119.0
+TOTAL       2024,III,2463094.0,554870.0,2024,1908224.0
+"Obiekty hotelowe 
+Hotels and similar establishments",III,2098060.0,506336.0,2024,1591724.0
+"Hotele
+Hotels",III,1854955.0,459008.0,2024,1395947.0
+"Motele
+Motels",III,14719.0,2008.0,2024,12711.0
+"Pensjonaty
+Boarding houses",III,32824.0,3897.0,2024,28927.0
+"Inne obiekty hotelowe
+Other hotel establishments",III,195562.0,41423.0,2024,154139.0
+"Pozostałe obiekty noclegowe
+Other establishments ",III,365034.0,48534.0,2024,316500.0
+"Domy wycieczkowe
+Excursion hostels",III,1834.0,167.0,2024,1667.0
+"Schroniska
+Shelters",III,11470.0,402.0,2024,11068.0
+"Schroniska młodzieżowe
+Youth shelters",III,3335.0,756.0,2024,2579.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",III,9569.0,1006.0,2024,8563.0
+"Ośrodki wczasowe
+Holiday centres",III,67649.0,7334.0,2024,60315.0
+"Ośrodki kolonijne
+Holiday youth centres",III,2123.0,50.0,2024,2073.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",III,41125.0,3108.0,2024,38017.0
+"Domy pracy twórczej
+Creative arts centres",III,1830.0,17.0,2024,1813.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",III,11922.0,308.0,2024,11614.0
+"Kempingi
+Camping sites",III,1841.0,359.0,2024,1482.0
+"Pola biwakowe
+Tent camp sites",III,665.0,364.0,2024,301.0
+"Hostele
+Hostels",III,50935.0,17130.0,2024,33805.0
+"Zakłady uzdrowiskowe
+Health establishments",III,68650.0,2189.0,2024,66461.0
+"Pokoje gościnne
+Rooms for guests",III,49017.0,8346.0,2024,40671.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",III,6320.0,517.0,2024,5803.0
+"Pozostałe niesklasyfikowane
+Other not classified",III,36749.0,6481.0,2024,30268.0
+OGÓŁEM    2023     ,IV,2680332.0,566844.0,2024,2113488.0
+TOTAL       2024,IV,2667184.0,541239.0,2024,2125945.0
+"Obiekty hotelowe 
+Hotels and similar establishments",IV,2231700.0,497214.0,2024,1734486.0
+"Hotele
+Hotels",IV,1964480.0,455622.0,2024,1508858.0
+"Motele
+Motels",IV,15644.0,1887.0,2024,13757.0
+"Pensjonaty
+Boarding houses",IV,34902.0,3648.0,2024,31254.0
+"Inne obiekty hotelowe
+Other hotel establishments",IV,216674.0,36057.0,2024,180617.0
+"Pozostałe obiekty noclegowe
+Other establishments ",IV,435484.0,44025.0,2024,391459.0
+"Domy wycieczkowe
+Excursion hostels",IV,2744.0,107.0,2024,2637.0
+"Schroniska
+Shelters",IV,11947.0,304.0,2024,11643.0
+"Schroniska młodzieżowe
+Youth shelters",IV,6459.0,818.0,2024,5641.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",IV,14355.0,1022.0,2024,13333.0
+"Ośrodki wczasowe
+Holiday centres",IV,95734.0,5653.0,2024,90081.0
+"Ośrodki kolonijne
+Holiday youth centres",IV,4220.0,37.0,2024,4183.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",IV,51539.0,2311.0,2024,49228.0
+"Domy pracy twórczej
+Creative arts centres",IV,2392.0,36.0,2024,2356.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",IV,16201.0,389.0,2024,15812.0
+"Kempingi
+Camping sites",IV,3702.0,864.0,2024,2838.0
+"Pola biwakowe
+Tent camp sites",IV,765.0,296.0,2024,469.0
+"Hostele
+Hostels",IV,57811.0,17281.0,2024,40530.0
+"Zakłady uzdrowiskowe
+Health establishments",IV,62688.0,1696.0,2024,60992.0
+"Pokoje gościnne
+Rooms for guests",IV,54189.0,7030.0,2024,47159.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",IV,8070.0,739.0,2024,7331.0
+"Pozostałe niesklasyfikowane
+Other not classified",IV,42668.0,5442.0,2024,37226.0
+OGÓŁEM    2023     ,V,3098519.0,602013.0,2024,2496506.0
+TOTAL       2024,V,3441695.0,645367.0,2024,2796328.0
+"Obiekty hotelowe 
+Hotels and similar establishments",V,2687020.0,577741.0,2024,2109279.0
+"Hotele
+Hotels",V,2309746.0,521123.0,2024,1788623.0
+"Motele
+Motels",V,17179.0,1753.0,2024,15426.0
+"Pensjonaty
+Boarding houses",V,54688.0,6133.0,2024,48555.0
+"Inne obiekty hotelowe
+Other hotel establishments",V,305407.0,48732.0,2024,256675.0
+"Pozostałe obiekty noclegowe
+Other establishments ",V,754675.0,67626.0,2024,687049.0
+"Domy wycieczkowe
+Excursion hostels",V,6697.0,192.0,2024,6505.0
+"Schroniska
+Shelters",V,17843.0,454.0,2024,17389.0
+"Schroniska młodzieżowe
+Youth shelters",V,9122.0,834.0,2024,8288.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",V,21894.0,1286.0,2024,20608.0
+"Ośrodki wczasowe
+Holiday centres",V,200299.0,9723.0,2024,190576.0
+"Ośrodki kolonijne
+Holiday youth centres",V,10434.0,20.0,2024,10414.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",V,100213.0,4425.0,2024,95788.0
+"Domy pracy twórczej
+Creative arts centres",V,4026.0,35.0,2024,3991.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",V,42147.0,1174.0,2024,40973.0
+"Kempingi
+Camping sites",V,26286.0,7694.0,2024,18592.0
+"Pola biwakowe
+Tent camp sites",V,5427.0,1176.0,2024,4251.0
+"Hostele
+Hostels",V,65833.0,16677.0,2024,49156.0
+"Zakłady uzdrowiskowe
+Health establishments",V,74675.0,2283.0,2024,72392.0
+"Pokoje gościnne
+Rooms for guests",V,93075.0,13426.0,2024,79649.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",V,16945.0,1519.0,2024,15426.0
+"Pozostałe niesklasyfikowane
+Other not classified",V,59759.0,6708.0,2024,53051.0
+OGÓŁEM    2023     ,VI,3581790.0,637053.0,2024,2944737.0
+TOTAL       2024,VI,3763557.0,702926.0,2024,3060631.0
+"Obiekty hotelowe 
+Hotels and similar establishments",VI,2825818.0,620999.0,2024,2204819.0
+"Hotele
+Hotels",VI,2421394.0,559932.0,2024,1861462.0
+"Motele
+Motels",VI,18713.0,2627.0,2024,16086.0
+"Pensjonaty
+Boarding houses",VI,60278.0,6557.0,2024,53721.0
+"Inne obiekty hotelowe
+Other hotel establishments",VI,325433.0,51883.0,2024,273550.0
+"Pozostałe obiekty noclegowe
+Other establishments ",VI,937739.0,81927.0,2024,855812.0
+"Domy wycieczkowe
+Excursion hostels",VI,7361.0,491.0,2024,6870.0
+"Schroniska
+Shelters",VI,18159.0,473.0,2024,17686.0
+"Schroniska młodzieżowe
+Youth shelters",VI,8997.0,997.0,2024,8000.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",VI,23447.0,1517.0,2024,21930.0
+"Ośrodki wczasowe
+Holiday centres",VI,254213.0,9038.0,2024,245175.0
+"Ośrodki kolonijne
+Holiday youth centres",VI,17251.0,38.0,2024,17213.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",VI,118389.0,3383.0,2024,115006.0
+"Domy pracy twórczej
+Creative arts centres",VI,5036.0,63.0,2024,4973.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",VI,71025.0,2192.0,2024,68833.0
+"Kempingi
+Camping sites",VI,48635.0,14657.0,2024,33978.0
+"Pola biwakowe
+Tent camp sites",VI,12445.0,2418.0,2024,10027.0
+"Hostele
+Hostels",VI,68146.0,19234.0,2024,48912.0
+"Zakłady uzdrowiskowe
+Health establishments",VI,79026.0,2194.0,2024,76832.0
+"Pokoje gościnne
+Rooms for guests",VI,118369.0,15703.0,2024,102666.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",VI,18964.0,1091.0,2024,17873.0
+"Pozostałe niesklasyfikowane
+Other not classified",VI,68276.0,8438.0,2024,59838.0
+OGÓŁEM    2023     ,VII,4108779.0,820648.0,2024,3288131.0
+TOTAL       2024,VII,4359821.0,909824.0,2024,3449997.0
+"Obiekty hotelowe 
+Hotels and similar establishments",VII,3006178.0,767117.0,2024,2239061.0
+"Hotele
+Hotels",VII,2515258.0,680224.0,2024,1835034.0
+"Motele
+Motels",VII,18900.0,2788.0,2024,16112.0
+"Pensjonaty
+Boarding houses",VII,76624.0,9091.0,2024,67533.0
+"Inne obiekty hotelowe
+Other hotel establishments",VII,395396.0,75014.0,2024,320382.0
+"Pozostałe obiekty noclegowe
+Other establishments ",VII,1353643.0,142707.0,2024,1210936.0
+"Domy wycieczkowe
+Excursion hostels",VII,5965.0,311.0,2024,5654.0
+"Schroniska
+Shelters",VII,22297.0,937.0,2024,21360.0
+"Schroniska młodzieżowe
+Youth shelters",VII,7083.0,825.0,2024,6258.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",VII,24456.0,1692.0,2024,22764.0
+"Ośrodki wczasowe
+Holiday centres",VII,360490.0,15156.0,2024,345334.0
+"Ośrodki kolonijne
+Holiday youth centres",VII,27737.0,410.0,2024,27327.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",VII,132915.0,5785.0,2024,127130.0
+"Domy pracy twórczej
+Creative arts centres",VII,5098.0,113.0,2024,4985.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",VII,119490.0,5257.0,2024,114233.0
+"Kempingi
+Camping sites",VII,89559.0,25494.0,2024,64065.0
+"Pola biwakowe
+Tent camp sites",VII,48264.0,4678.0,2024,43586.0
+"Hostele
+Hostels",VII,78334.0,31583.0,2024,46751.0
+"Zakłady uzdrowiskowe
+Health establishments",VII,86225.0,2763.0,2024,83462.0
+"Pokoje gościnne
+Rooms for guests",VII,224877.0,30504.0,2024,194373.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",VII,25278.0,1500.0,2024,23778.0
+"Pozostałe niesklasyfikowane
+Other not classified",VII,95575.0,15699.0,2024,79876.0
+OGÓŁEM    2023     ,VIII,4196047.0,791719.0,2024,3404328.0
+TOTAL       2024,VIII,4751769.0,967153.0,2024,3784616.0
+"Obiekty hotelowe 
+Hotels and similar establishments",VIII,3308437.0,811111.0,2024,2497326.0
+"Hotele
+Hotels",VIII,2759174.0,716080.0,2024,2043094.0
+"Motele
+Motels",VIII,20486.0,2772.0,2024,17714.0
+"Pensjonaty
+Boarding houses",VIII,82154.0,10235.0,2024,71919.0
+"Inne obiekty hotelowe
+Other hotel establishments",VIII,446623.0,82024.0,2024,364599.0
+"Pozostałe obiekty noclegowe
+Other establishments ",VIII,1443332.0,156042.0,2024,1287290.0
+"Domy wycieczkowe
+Excursion hostels",VIII,6385.0,347.0,2024,6038.0
+"Schroniska
+Shelters",VIII,22722.0,745.0,2024,21977.0
+"Schroniska młodzieżowe
+Youth shelters",VIII,7224.0,988.0,2024,6236.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",VIII,24676.0,1823.0,2024,22853.0
+"Ośrodki wczasowe
+Holiday centres",VIII,362945.0,16284.0,2024,346661.0
+"Ośrodki kolonijne
+Holiday youth centres",VIII,20633.0,327.0,2024,20306.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",VIII,143807.0,6009.0,2024,137798.0
+"Domy pracy twórczej
+Creative arts centres",VIII,6014.0,210.0,2024,5804.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",VIII,128975.0,6487.0,2024,122488.0
+"Kempingi
+Camping sites",VIII,110102.0,29886.0,2024,80216.0
+"Pola biwakowe
+Tent camp sites",VIII,45032.0,4752.0,2024,40280.0
+"Hostele
+Hostels",VIII,86708.0,32832.0,2024,53876.0
+"Zakłady uzdrowiskowe
+Health establishments",VIII,78925.0,3305.0,2024,75620.0
+"Pokoje gościnne
+Rooms for guests",VIII,261544.0,34199.0,2024,227345.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",VIII,28052.0,1562.0,2024,26490.0
+"Pozostałe niesklasyfikowane
+Other not classified",VIII,109588.0,16286.0,2024,93302.0
+OGÓŁEM    2023     ,IX,3568440.0,648914.0,2024,2919526.0
+TOTAL       2024,IX,3586660.0,726186.0,2024,2860474.0
+"Obiekty hotelowe 
+Hotels and similar establishments",IX,2792604.0,637172.0,2024,2155432.0
+"Hotele
+Hotels",IX,2397039.0,570310.0,2024,1826729.0
+"Motele
+Motels",IX,17408.0,2058.0,2024,15350.0
+"Pensjonaty
+Boarding houses",IX,54720.0,5489.0,2024,49231.0
+"Inne obiekty hotelowe
+Other hotel establishments",IX,323437.0,59315.0,2024,264122.0
+"Pozostałe obiekty noclegowe
+Other establishments ",IX,794056.0,89014.0,2024,705042.0
+"Domy wycieczkowe
+Excursion hostels",IX,4285.0,189.0,2024,4096.0
+"Schroniska
+Shelters",IX,17201.0,384.0,2024,16817.0
+"Schroniska młodzieżowe
+Youth shelters",IX,7299.0,885.0,2024,6414.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",IX,16415.0,1166.0,2024,15249.0
+"Ośrodki wczasowe
+Holiday centres",IX,190571.0,10611.0,2024,179960.0
+"Ośrodki kolonijne
+Holiday youth centres",IX,7787.0,29.0,2024,7758.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",IX,93686.0,3431.0,2024,90255.0
+"Domy pracy twórczej
+Creative arts centres",IX,3875.0,123.0,2024,3752.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",IX,40430.0,1640.0,2024,38790.0
+"Kempingi
+Camping sites",IX,22320.0,8002.0,2024,14318.0
+"Pola biwakowe
+Tent camp sites",IX,5681.0,1235.0,2024,4446.0
+"Hostele
+Hostels",IX,73818.0,24585.0,2024,49233.0
+"Zakłady uzdrowiskowe
+Health establishments",IX,79101.0,2734.0,2024,76367.0
+"Pokoje gościnne
+Rooms for guests",IX,149229.0,23778.0,2024,125451.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",IX,13388.0,711.0,2024,12677.0
+"Pozostałe niesklasyfikowane
+Other not classified",IX,68970.0,9511.0,2024,59459.0
+OGÓŁEM    2023     ,X,2983069.0,613235.0,2024,2369834.0
+TOTAL       2024,X,3454001.0,732208.0,2024,2721793.0
+"Obiekty hotelowe 
+Hotels and similar establishments",X,2844344.0,647276.0,2024,2197068.0
+"Hotele
+Hotels",X,2465904.0,573456.0,2024,1892448.0
+"Motele
+Motels",X,16692.0,2356.0,2024,14336.0
+"Pensjonaty
+Boarding houses",X,44346.0,5339.0,2024,39007.0
+"Inne obiekty hotelowe
+Other hotel establishments",X,317402.0,66125.0,2024,251277.0
+"Pozostałe obiekty noclegowe
+Other establishments ",X,609657.0,84932.0,2024,524725.0
+"Domy wycieczkowe
+Excursion hostels",X,4045.0,250.0,2024,3795.0
+"Schroniska
+Shelters",X,15528.0,442.0,2024,15086.0
+"Schroniska młodzieżowe
+Youth shelters",X,6825.0,941.0,2024,5884.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",X,18025.0,1071.0,2024,16954.0
+"Ośrodki wczasowe
+Holiday centres",X,109836.0,9226.0,2024,100610.0
+"Ośrodki kolonijne
+Holiday youth centres",X,3382.0,36.0,2024,3346.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",X,74165.0,3416.0,2024,70749.0
+"Domy pracy twórczej
+Creative arts centres",X,3147.0,31.0,2024,3116.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",X,20294.0,688.0,2024,19606.0
+"Kempingi
+Camping sites",X,4543.0,993.0,2024,3550.0
+"Pola biwakowe
+Tent camp sites",X,1015.0,426.0,2024,589.0
+"Hostele
+Hostels",X,78256.0,25614.0,2024,52642.0
+"Zakłady uzdrowiskowe
+Health establishments",X,74679.0,2035.0,2024,72644.0
+"Pokoje gościnne
+Rooms for guests",X,131966.0,29234.0,2024,102732.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",X,9478.0,462.0,2024,9016.0
+"Pozostałe niesklasyfikowane
+Other not classified",X,54473.0,10067.0,2024,44406.0
+OGÓŁEM    2023     ,XI,2526391.0,499018.0,2024,2027373.0
+TOTAL       2024,XI,2931372.0,574481.0,2024,2356891.0
+"Obiekty hotelowe 
+Hotels and similar establishments",XI,2465059.0,512983.0,2024,1952076.0
+"Hotele
+Hotels",XI,2168053.0,465446.0,2024,1702607.0
+"Motele
+Motels",XI,14273.0,1931.0,2024,12342.0
+"Pensjonaty
+Boarding houses",XI,32847.0,3768.0,2024,29079.0
+"Inne obiekty hotelowe
+Other hotel establishments",XI,249886.0,41838.0,2024,208048.0
+"Pozostałe obiekty noclegowe
+Other establishments ",XI,466313.0,61498.0,2024,404815.0
+"Domy wycieczkowe
+Excursion hostels",XI,3225.0,274.0,2024,2951.0
+"Schroniska
+Shelters",XI,10935.0,196.0,2024,10739.0
+"Schroniska młodzieżowe
+Youth shelters",XI,4414.0,924.0,2024,3490.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",XI,12119.0,991.0,2024,11128.0
+"Ośrodki wczasowe
+Holiday centres",XI,70177.0,6088.0,2024,64089.0
+"Ośrodki kolonijne
+Holiday youth centres",XI,1736.0,24.0,2024,1712.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",XI,52682.0,1969.0,2024,50713.0
+"Domy pracy twórczej
+Creative arts centres",XI,1850.0,26.0,2024,1824.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",XI,14853.0,1028.0,2024,13825.0
+"Kempingi
+Camping sites",XI,2183.0,219.0,2024,1964.0
+"Pola biwakowe
+Tent camp sites",XI,248.0,145.0,2024,103.0
+"Hostele
+Hostels",XI,61542.0,23057.0,2024,38485.0
+"Zakłady uzdrowiskowe
+Health establishments",XI,66859.0,1186.0,2024,65673.0
+"Pokoje gościnne
+Rooms for guests",XI,110074.0,19062.0,2024,91012.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",XI,6216.0,430.0,2024,5786.0
+"Pozostałe niesklasyfikowane
+Other not classified",XI,47200.0,5879.0,2024,41321.0
+OGÓŁEM    2023     ,XII,2472961.0,548313.0,2024,1924648.0
+TOTAL       2024,XII,2812809.0,661282.0,2024,2151527.0
+"Obiekty hotelowe 
+Hotels and similar establishments",XII,2366204.0,589998.0,2024,1776206.0
+"Hotele
+Hotels",XII,2073625.0,530889.0,2024,1542736.0
+"Motele
+Motels",XII,12462.0,1813.0,2024,10649.0
+"Pensjonaty
+Boarding houses",XII,33214.0,4742.0,2024,28472.0
+"Inne obiekty hotelowe
+Other hotel establishments",XII,246903.0,52554.0,2024,194349.0
+"Pozostałe obiekty noclegowe
+Other establishments ",XII,446605.0,71284.0,2024,375321.0
+"Domy wycieczkowe
+Excursion hostels",XII,1514.0,275.0,2024,1239.0
+"Schroniska
+Shelters",XII,11303.0,194.0,2024,11109.0
+"Schroniska młodzieżowe
+Youth shelters",XII,3413.0,656.0,2024,2757.0
+"Szkolne schroniska młodzieżowe
+School youth shelters",XII,11124.0,992.0,2024,10132.0
+"Ośrodki wczasowe
+Holiday centres",XII,63635.0,5222.0,2024,58413.0
+"Ośrodki kolonijne
+Holiday youth centres",XII,813.0,22.0,2024,791.0
+"Ośrodki szkoleniowo-wypoczynkowe
+Training-recreational centres",XII,45082.0,2938.0,2024,42144.0
+"Domy pracy twórczej
+Creative arts centres",XII,2031.0,24.0,2024,2007.0
+"Zespoły domków turystycznych
+Complexes of tourist cottages",XII,18354.0,1291.0,2024,17063.0
+"Kempingi
+Camping sites",XII,1567.0,177.0,2024,1390.0
+"Pola biwakowe
+Tent camp sites",XII,365.0,172.0,2024,193.0
+"Hostele
+Hostels",XII,69701.0,25050.0,2024,44651.0
+"Zakłady uzdrowiskowe
+Health establishments",XII,48040.0,1342.0,2024,46698.0
+"Pokoje gościnne
+Rooms for guests",XII,123813.0,25782.0,2024,98031.0
+"Kwatery agroturystyczne
+Agrotourism lodgings",XII,5475.0,427.0,2024,5048.0
+"Pozostałe niesklasyfikowane
+Other not classified",XII,40375.0,6720.0,2024,33655.0
