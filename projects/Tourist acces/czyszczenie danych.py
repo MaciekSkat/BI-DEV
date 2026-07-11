@@ -75,7 +75,7 @@ def wczytaj_i_wyczysc(file_path, sheet_name, value_name):
 
 # --- GŁÓWNA PĘTLA ---
 for file in os.listdir(folder_path):
-    if file.endswith(".xlsx") or file.endswith(".xls"):
+    if file.lower().endswith(".xlsx") or file.lower().endswith(".xls"):
         file_path = os.path.join(folder_path, file)
         
         rok = ''.join(filter(str.isdigit, file)) 
