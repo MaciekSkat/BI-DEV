@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # 1. USTAWIENIA - TUTAJ WPISZ SWOJE DANE
-folder_path = r'C:\Users\skatm\OneDrive - Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu\Dane\Obiekty' # Podaj ścieżkę do folderu
+folder_path = r'/workspaces/BI-DEV/projects/Tourist acces/Obiekty' # Podaj ścieżkę do folderu
 sheet_ogolem = "II.1"      # np. "Tabl. II.1" - sprawdź dokładnie w Excelu
 sheet_zagraniczni = "II.2" # np. "Tabl. II.2"
 wiersze_do_pominiecia = 6 # Liczba wierszy z tytułami do odcięcia z góry (zależnie od pliku)
