@@ -1,0 +1,48 @@
+table 'Wybór wskaźnika'
+	lineageTag: 2be0015e-951c-4798-9e13-8bca6cac0225
+
+	column 'Wybór wskaźnika'
+		lineageTag: 36d67c24-0ebf-40ac-9aca-6630c9cb93dd
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Kolejność Wybór wskaźnika'
+
+		relatedColumnDetails
+			groupByColumn: 'Pola: Wybór wskaźnika'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pola: Wybór wskaźnika'
+		isHidden
+		lineageTag: 798d4f85-9f26-469f-8ecf-618ac903ec83
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Kolejność Wybór wskaźnika'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kolejność Wybór wskaźnika'
+		isHidden
+		formatString: 0
+		lineageTag: a5f7f334-d759-4355-b48d-9b534e26e4dc
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Wybór wskaźnika' = calculated
+		mode: import
+		source =
+				{
+				    ("Noclegi", NAMEOF('_Miary'[Suma Noclegów]), 0),
+				    ("Turyści", NAMEOF('_Miary'[Suma Turystów]), 1)
+				}
+
+	annotation PBI_Id = c49271b98f0549a5be06c02750396bb8
+

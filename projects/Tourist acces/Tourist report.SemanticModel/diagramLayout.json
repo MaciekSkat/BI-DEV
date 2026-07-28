@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 610.38305001469371,
+            "y": 19.5
+          },
+          "nodeIndex": "Dim_Geo",
+          "nodeLineageTag": "7e1dcb86-c836-4cd1-ad4d-aad28c1cc24c",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1725.5004140000003,
+            "y": 23.413756
+          },
+          "nodeIndex": "Dim_Kraje",
+          "nodeLineageTag": "50ce9f5a-197e-40d4-a1c4-923709f96f80",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 312.20156119318517,
+            "y": 520.5
+          },
+          "nodeIndex": "Turyści per Woj/pow",
+          "nodeLineageTag": "41d51b91-35e6-4292-9b7c-dce31965b568",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 312.38305001469371,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Date",
+          "nodeLineageTag": "dab4b07b-fb1c-458f-bf5e-31e2cb2f3247",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 437.25
+          },
+          "nodeIndex": "df_final",
+          "nodeLineageTag": "cea07ec0-bdaa-402c-89ef-4e210cbc0d4d",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 894.38305001469371,
+            "y": 347.625
+          },
+          "nodeIndex": "_Miary",
+          "nodeLineageTag": "e9d56087-61af-46ef-9286-fabbc79e45c8",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1178.3830500146937,
+            "y": 335.625
+          },
+          "nodeIndex": "Przełącznik analizy",
+          "nodeLineageTag": "5757162b-4eba-46d7-bc3a-7fbdb426fdd0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1462.3830500146937,
+            "y": 320.25
+          },
+          "nodeIndex": "Wybór wskaźnika",
+          "nodeLineageTag": "2be0015e-951c-4798-9e13-8bca6cac0225",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2017.4318830146935,
+            "y": 94.692973
+          },
+          "nodeIndex": "Top N",
+          "nodeLineageTag": "9cb1b87c-1050-4649-bd4b-cd54d14f8ee3",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 930.24366901469352,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Kraje_Master",
+          "nodeLineageTag": "5a805e41-30ed-4766-ba53-a0a979e32710",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 719.42791001469323,
+            "y": 530.897906
+          },
+          "nodeIndex": "Obiekty",
+          "nodeLineageTag": "25d04082-06d7-4e36-b38a-adcd511f83c2",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Wszystkie tabele",
+      "zoomValue": 56.447393005377734,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Wszystkie tabele",
+  "defaultDiagram": "Wszystkie tabele"
+}

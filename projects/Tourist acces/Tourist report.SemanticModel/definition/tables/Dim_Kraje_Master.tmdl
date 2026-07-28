@@ -1,0 +1,24 @@
+table Dim_Kraje_Master
+	lineageTag: 5a805e41-30ed-4766-ba53-a0a979e32710
+
+	column Kraj
+		lineageTag: b2c99fab-558f-4680-bcca-25368144c172
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: df_final[Kraj]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Kraje_Master = calculated
+		mode: import
+		source =
+				
+				DISTINCT(
+				    UNION(
+				        DISTINCT('df_final'[Kraj]),
+				        DISTINCT('Turyści per Woj/pow'[Kraje])
+				    )
+				)
+
+	annotation PBI_Id = 405ddea0f0f54cdc860efa56254e9da2
+

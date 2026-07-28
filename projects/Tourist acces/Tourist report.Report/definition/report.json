@@ -1,0 +1,109 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Fluent2-CY26SU05",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "Fluent2-CY26SU05",
+          "path": "BaseThemes/Fluent2-CY26SU05.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "test_mapy7118219724786119.json",
+          "path": "test_mapy7118219724786119.json",
+          "type": "ShapeMap"
+        },
+        {
+          "name": "test_pow04661682783668164.json",
+          "path": "test_pow04661682783668164.json",
+          "type": "ShapeMap"
+        },
+        {
+          "name": "tlo_green012178440661842038.png",
+          "path": "tlo_green012178440661842038.png",
+          "type": "Image"
+        },
+        {
+          "name": "tlo_green08377065581943799.png",
+          "path": "tlo_green08377065581943799.png",
+          "type": "Image"
+        },
+        {
+          "name": "tlo_green3954141897674899.png",
+          "path": "tlo_green3954141897674899.png",
+          "type": "Image"
+        },
+        {
+          "name": "tlo_green5432010435311753.png",
+          "path": "tlo_green5432010435311753.png",
+          "type": "Image"
+        },
+        {
+          "name": "tlo_green8959163168126891.png",
+          "path": "tlo_green8959163168126891.png",
+          "type": "Image"
+        },
+        {
+          "name": "Ziemia-Klodzka-Albin-Marciniak5205110000703999.jpg",
+          "path": "Ziemia-Klodzka-Albin-Marciniak5205110000703999.jpg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "8c1260175b38caaf5ae3",
+  "displayName": "Turyści w Polsce",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1980,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b13f2a22a7cbc12a7698",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Kraje_Master"
+              }
+            },
+            "Property": "Kraj"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "Dim_Kraje_Master",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "Kraj"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'OGÓŁEM'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'tlo_green.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "tlo_green8959163168126891.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "fce29f21c00d7270ef9b",
+      "target": "da5b353da2d7ebc61618",
+      "type": "NoFilter"
+    },
+    {
+      "source": "fce29f21c00d7270ef9b",
+      "target": "51ecfcdd2abbc8ec5071",
+      "type": "NoFilter"
+    },
+    {
+      "source": "de9d2d4875a9acb077af",
+      "target": "fce29f21c00d7270ef9b",
+      "type": "NoFilter"
+    },
+    {
+      "source": "de9d2d4875a9acb077af",
+      "target": "f940c91d02230ef7d634",
+      "type": "NoFilter"
+    }
+  ]
+}

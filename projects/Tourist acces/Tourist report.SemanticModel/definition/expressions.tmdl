@@ -1,0 +1,37 @@
+expression Parametr1 = #"Przykładowy plik" meta [IsParameterQuery=true, BinaryIdentifier=#"Przykładowy plik", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: d14b9614-c8f5-4788-92fe-fef553391694
+	queryGroup: 'Przekształć plik z: Obiekty\Zapytania pomocnicze'
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Binary
+
+expression 'Przykładowy plik' =
+		let
+		  Źródło = Folder.Files("C:\Users\skatm\OneDrive - Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu\Dane\Obiekty"),
+		    Nawigacja1 = Źródło{0}[Content]
+		in
+		  Nawigacja1
+	lineageTag: 9450e86f-d0f6-499a-af4c-9dba0abfabfa
+	queryGroup: 'Przekształć plik z: Obiekty\Zapytania pomocnicze'
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Binary
+
+expression 'Przekształć plik' =
+		let
+		    Źródło = (Parametr1) => let
+		        Źródło = Excel.Workbook(Parametr1, null, true),
+		        II.1_Sheet = Źródło{[Item="II.1",Kind="Sheet"]}[Data]
+		    in
+		        II.1_Sheet
+		in
+		    Źródło
+	lineageTag: 576e2687-3082-4323-a42e-81071739e892
+	queryGroup: 'Przekształć plik z: Obiekty\Zapytania pomocnicze'
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Function
+

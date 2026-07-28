@@ -1,0 +1,6453 @@
+cultureInfo pl-PL
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "turyści_per_woj_pow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści per woj/pow": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "turyści per woj": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "turyści per woj pow": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pow": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.kod": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Kod"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "kod": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.nazwa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Nazwa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nazwa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.turyści_zagraniczni_noclegi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Turyści zagraniczni/Noclegi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści zagraniczni/noclegi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "turyści zagraniczni noclegi": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.kraje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Kraje"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "kraje": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.wartosc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Wartosc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "wartosc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.jednostka_miary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Jednostka miary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jednostka miary": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.poziom_geograficzny": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Poziom_Geograficzny"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poziom geograficzny": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Poziom_Geograficzny": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.data_fact": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Data_Facts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data fact": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Data_Facts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "fact": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "data statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "data element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "data information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_geo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Geo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim geo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Geo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "geo": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "dim_geo.kod": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Geo",
+			          "ConceptualProperty": "Kod"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kod": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_geo.nazwa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Geo",
+			          "ConceptualProperty": "Nazwa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nazwa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Województwo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_geo.poziom_geograficzny": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Geo",
+			          "ConceptualProperty": "Poziom_Geograficzny"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poziom geograficzny": {}
+			        },
+			        {
+			          "Poziom_Geograficzny": {
+			            "Type": "Noun",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Powiat": {
+			            "LastModified": "2026-07-15T14:39:13.033Z"
+			          }
+			        },
+			        {
+			          "Województwo": {
+			            "LastModified": "2026-07-15T14:39:16.837Z"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kraje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Kraje"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim kraje": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Kraje": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kraje.kraje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Kraje",
+			          "ConceptualProperty": "Kraje"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kraje": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim date": {}
+			        },
+			        {
+			          "Dim_Date": {
+			            "Type": "Noun",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Data": {
+			            "LastModified": "2026-07-15T14:38:45.983Z"
+			          }
+			        },
+			        {
+			          "dim moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "dim period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "dim_date.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {}
+			        },
+			        {
+			          "Data": {
+			            "LastModified": "2026-07-15T14:38:51.049Z"
+			          }
+			        },
+			        {
+			          "Zakres": {
+			            "LastModified": "2026-07-15T14:38:55.708Z"
+			          }
+			        },
+			        {
+			          "Zakre": {
+			            "Type": "Noun",
+			            "Source": {
+			              "Type": "User"
+			            }
+			          }
+			        },
+			        {
+			          "Miesiąc": {
+			            "LastModified": "2026-07-15T14:38:58.952Z"
+			          }
+			        },
+			        {
+			          "Rok": {
+			            "LastModified": "2026-07-15T14:39:02.338Z"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_date.rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date",
+			          "ConceptualProperty": "Rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_date.nr_miesiąca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date",
+			          "ConceptualProperty": "Nr Miesiąca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nr miesiąca": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_date.miesiąc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date",
+			          "ConceptualProperty": "Miesiąc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miesiąc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_date.kwartał": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date",
+			          "ConceptualProperty": "Kwartał"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kwartał": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_date.pora_roku": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Date",
+			          "ConceptualProperty": "Pora roku"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pora roku": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "df final": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "df_final": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "final": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "concluding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "closing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ultimate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "finishing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "absolute": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "df decider": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.nr_miesiaca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Nr_Miesiaca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nr miesiaca": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nr_Miesiaca": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.miesiąc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Miesiąc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miesiąc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.kraj": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Kraj"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "kraj": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.kraj_EN": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Kraj (EN)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kraj (EN)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "kraj": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.typ": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Typ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "typ": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.turysci": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Turysci"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turysci": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.noclegi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Noclegi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noclegi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "df_final.date_fact": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "df_final",
+			          "ConceptualProperty": "Date_facts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date fact": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Date_facts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "fact": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "moment fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "date statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "date element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "date information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "date statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity__miary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_miary": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.suma_turystów": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Suma Turystów"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "suma turystów": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Turyści": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.suma_noclegów": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Suma Noclegów"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "suma noclegów": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Noclegi": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__suma_turystów_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_Suma Turystów FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_suma turystów FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__suma_noclegów_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_Suma Noclegów FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_suma noclegów FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "przełącznik_analizy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Przełącznik analizy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "przełącznik analizy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "przełącznik_analizy.okre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Przełącznik analizy",
+			          "ConceptualProperty": "Okres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "okre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "przełącznik_analizy.ordinal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Przełącznik analizy",
+			          "ConceptualProperty": "Ordinal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ordinal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "wybór_wskaźnika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Wybór wskaźnika"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "wybór wskaźnika": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "wybór_wskaźnika.wybór_wskaźnika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Wybór wskaźnika",
+			          "ConceptualProperty": "Wybór wskaźnika"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "wybór wskaźnika": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wybór wskaźnika name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Turyści/Noclegi": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "wybór_wskaźnika.pola_wybór_wskaźnika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Wybór wskaźnika",
+			          "ConceptualProperty": "Pola: Wybór wskaźnika"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "pola: wybór wskaźnika": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "wybór_wskaźnika.kolejność_wybór_wskaźnika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Wybór wskaźnika",
+			          "ConceptualProperty": "Kolejność Wybór wskaźnika"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "kolejność wybór wskaźnika": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.ilość_turystów": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Ilość turystów"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ilość turystów": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Liczba turystów zagranicznych": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Liczba turystów": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.entity__ilość_turystów_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "_Ilość turystów FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_ilość turystów FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.filtr_top_n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Filtr Top N"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filtr top n": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "filtr best n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "filtr first n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "filtr leading n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "filtr maximum n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "filtr peak n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "filtr upper n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.O_Turyści_zagraniczni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Obiekty_Turyści Zagraniczni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "O_Turyści zagraniczni": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Turyści Zagraniczni": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__filtr_top_n_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_Filtr Top N FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_filtr top n FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_filtr best n formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_filtr first n formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_filtr leading n formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_filtr maximum n formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_filtr peak n formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_filtr upper n formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__O_Turyści_zagraniczni_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_O_Turyści Zagraniczni FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_O_Turyści zagraniczni FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "top_n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Top N"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top n": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "n": {
+			            "State": "Generated",
+			            "Weight": 0.8439
+			          }
+			        },
+			        {
+			          "best n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "first n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "leading n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "maximum n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "peak n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "upper n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "top_n.top_n": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Top N",
+			          "ConceptualProperty": "Top N"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top n": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "best n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "first n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "leading n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "maximum n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "peak n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "upper n": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "top_n.top_n__wartość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Top N",
+			          "ConceptualProperty": "Top N — wartość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top n — wartość": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "best n — wartość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "first n — wartość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "leading n — wartość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "maximum n — wartość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "peak n — wartość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "upper n — wartość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "top_n.entity__top_n__wartość_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Top N",
+			          "ConceptualProperty": "_Top N — wartość FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_top n — wartość FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kraje_master": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Kraje_Master"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim kraje master": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Kraje_Master": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim kraje controller": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim kraje ruler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim kraje leader": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim kraje owner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dim kraje chief": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim kraje boss": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "dim kraje teacher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "dim kraje guru": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "dim kraje instructor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "dim kraje trainer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "dim_kraje_master.kraj": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Kraje_Master",
+			          "ConceptualProperty": "Kraj"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kraj": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "obiekty": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.rodzaj_obiektu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Rodzaj_obiektu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rodzaj obiektu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rodzaj_obiektu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.miesiac": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Miesiac"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miesiac": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.turyści_ogółem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Turyści_Ogółem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści ogółem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Turyści_Ogółem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.turyści_zagraniczni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Turyści_Zagraniczni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści zagraniczni": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Turyści_Zagraniczni": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.turyści_krajowi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Turyści_Krajowi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści krajowi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Turyści_Krajowi": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.rok": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Rok"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.miesiące": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Miesiące"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "miesiące": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "obiekty.turyści_ogółem1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Turyści ogółem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści ogółem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Liczba turystów ogółem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.turyści_krajowi1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Turyści krajowi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turyści krajowi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.entity__turyści_ogółem_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "_Turyści ogółem FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_turyści ogółem FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.entity__turyści_krajowi_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "_Turyści krajowi FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_turyści krajowi FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.filtr_top_n_woje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "Filtr Top N Woje"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filtr top n woje": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "filtr best n woje": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "filtr first n woje": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "filtr leading n woje": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "filtr maximum n woje": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "filtr peak n woje": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "filtr upper n woje": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow.entity__filtr_top_n_woje_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Turyści per Woj/pow",
+			          "ConceptualProperty": "_Filtr Top N Woje FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_filtr top n woje FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yoy pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.yo_Y": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yo Y": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "YoY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY__FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY % FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY % FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_yoy percentage formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "_yoy pct formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_obiekty_ogół": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY Obiekty ogół"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY obiekty ogół": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY__obiekty_ogół": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY % obiekty ogół"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY % obiekty ogół": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage obiekty ogół": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "yoy pct obiekty ogół": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY__obiekty_krajowi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY % obiekty krajowi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY % obiekty krajowi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage obiekty krajowi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "yoy pct obiekty krajowi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY__obiekty_zagraniczni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY % obiekty zagraniczni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY % obiekty zagraniczni": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage obiekty zagraniczni": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "yoy pct obiekty zagraniczni": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_obiekty_krajowi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY Obiekty krajowi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY obiekty krajowi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_obiekty_zagraniczni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY Obiekty zagraniczni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY obiekty zagraniczni": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_ilość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY ilość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY ilość": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY__ilość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY % ilość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY % ilość": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage ilość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "yoy pct ilość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_obiekty_ogół_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY Obiekty ogół FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY obiekty ogół FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY__obiekty_ogół_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY % obiekty ogół FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY % obiekty ogół FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY__obiekty_krajowi_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY % obiekty krajowi FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY % obiekty krajowi FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY__obiekty_zagraniczni_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY % obiekty zagraniczni FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY % obiekty zagraniczni FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_obiekty_krajowi_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY Obiekty krajowi FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY obiekty krajowi FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_obiekty_zagraniczni_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY Obiekty zagraniczni FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY obiekty zagraniczni FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_ilość_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY ilość FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY ilość FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY__ilość_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY % ilość FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY % ilość FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_yoy percentage ilość formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "_yoy pct ilość formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.kolorowanie_gradientem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Kolorowanie Gradientem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kolorowanie gradientem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.entity__kolorowanie_gradientem_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "_Kolorowanie Gradientem FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_kolorowanie gradientem FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.tytuł_wykresu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Tytuł_Wykresu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tytuł wykresu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tytuł_Wykresu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_Zabezpieczone_region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY_Zabezpieczone Region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY_Zabezpieczone region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy_zabezpieczone continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Rok do Rok": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.rok_do_rok_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "Rok do Rok %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rok do rok %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rok do rok percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "rok do rok pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__Tytuł_Wykresu_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_Tytuł_Wykresu FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_Tytuł_Wykresu FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_Zabezpieczone_region_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY_Zabezpieczone Region FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY_Zabezpieczone region FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone location formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone province formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone area formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone district formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone section formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone zone formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_yoy_zabezpieczone continent formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__rok_do_rok__FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_Rok do Rok % FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_rok do rok % FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_Zabezpieczone_zagraniczni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY_Zabezpieczone Zagraniczni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY_Zabezpieczone zagraniczni": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_Zabezpieczone_krajowi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY_Zabezpieczone krajowi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY_Zabezpieczone krajowi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_Zabezpieczone_ogółem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY_Zabezpieczone Ogółem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY_Zabezpieczone ogółem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_zabezpieczone_ogółem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY%_Zabezpieczone Ogółem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY%_zabezpieczone ogółem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage _zabezpieczone ogółem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "yoy pct _zabezpieczone ogółem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_zabezpieczone_krajowi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY%_Zabezpieczone krajowi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY%_zabezpieczone krajowi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage _zabezpieczone krajowi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "yoy pct _zabezpieczone krajowi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_zabezpieczone_zagraniczni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY%_Zabezpieczone zagraniczni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY%_zabezpieczone zagraniczni": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage _zabezpieczone zagraniczni": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "yoy pct _zabezpieczone zagraniczni": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_zabezpieczone_ilość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY%_Zabezpieczone ilość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY%_zabezpieczone ilość": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy percentage _zabezpieczone ilość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "yoy pct _zabezpieczone ilość": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.YoY_Zabezpieczone_ilość": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "YoY_Zabezpieczone ilość"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY_Zabezpieczone ilość": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_Zabezpieczone_zagraniczni_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY_Zabezpieczone Zagraniczni FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY_Zabezpieczone zagraniczni FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_Zabezpieczone_krajowi_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY_Zabezpieczone krajowi FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY_Zabezpieczone krajowi FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_Zabezpieczone_ogółem_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY_Zabezpieczone Ogółem FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY_Zabezpieczone ogółem FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_zabezpieczone_ogółem_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY%_Zabezpieczone Ogółem FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY%_zabezpieczone ogółem FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_zabezpieczone_krajowi_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY%_Zabezpieczone krajowi FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY%_zabezpieczone krajowi FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_zabezpieczone_zagraniczni_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY%_Zabezpieczone zagraniczni FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY%_zabezpieczone zagraniczni FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_zabezpieczone_ilość_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY%_Zabezpieczone ilość FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY%_zabezpieczone ilość FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__miary.entity__YoY_Zabezpieczone_ilość_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Miary",
+			          "ConceptualProperty": "_YoY_Zabezpieczone ilość FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_YoY_Zabezpieczone ilość FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "obiekty.pozostałe_obiekty_noclegowe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Obiekty",
+			          "ConceptualProperty": "Pozostałe obiekty noclegowe"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pozostałe obiekty noclegowe": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dim_date_has_entity__miary_YoY_Zabezpieczone_ogółem": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_ogółem": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_ogółem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_ogółem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_Zabezpieczone_ogółem"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_Zabezpieczone_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_krajowi": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_Zabezpieczone_krajowi"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_Zabezpieczone_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_krajowi": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_Zabezpieczone_krajowi"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_Zabezpieczone_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_Zabezpieczone_zagraniczni"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_Zabezpieczone_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_Zabezpieczone_zagraniczni"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_rok_do_rok_": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.rok_do_rok_": {
+			          "Target": {
+			            "Entity": "entity__miary.rok_do_rok_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.rok_do_rok_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_rok_do_rok_"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_rok_do_rok_": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.rok_do_rok_": {
+			          "Target": {
+			            "Entity": "entity__miary.rok_do_rok_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.rok_do_rok_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_rok_do_rok_"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_YoY_Zabezpieczone_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_region": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_YoY_Zabezpieczone_region"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_Zabezpieczone_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_region": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_Zabezpieczone_region"
+			        }
+			      ]
+			    },
+			    "top_n_has_entity__miary_tytuł_wykresu": {
+			      "Binding": {
+			        "ConceptualEntity": "Top N"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "top_n": {
+			          "Target": {
+			            "Entity": "top_n"
+			          }
+			        },
+			        "entity__miary.tytuł_wykresu": {
+			          "Target": {
+			            "Entity": "entity__miary.tytuł_wykresu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "top_n"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.tytuł_wykresu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "top_Ns_have_tytuł_wykresu"
+			        }
+			      ]
+			    },
+			    "obiekty_has_kolorowanie_gradientem": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.kolorowanie_gradientem": {
+			          "Target": {
+			            "Entity": "obiekty.kolorowanie_gradientem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.kolorowanie_gradientem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_kolorowanie_gradientem"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_YoY__ilość": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.YoY__ilość": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY__ilość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY__ilość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_YoY__ilość"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_YoY_ilość": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.YoY_ilość": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_ilość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_ilość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_YoY_ilość"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_obiekty_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_obiekty_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_obiekty_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_obiekty_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_obiekty_zagraniczni"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_obiekty_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_obiekty_krajowi": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_obiekty_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_obiekty_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_obiekty_krajowi"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY__obiekty_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY__obiekty_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY__obiekty_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY__obiekty_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY__obiekty_zagraniczni"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY__obiekty_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY__obiekty_krajowi": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY__obiekty_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY__obiekty_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY__obiekty_krajowi"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY__obiekty_ogół": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY__obiekty_ogół": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY__obiekty_ogół"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY__obiekty_ogół"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY__obiekty_ogół"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_obiekty_ogół": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_obiekty_ogół": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_obiekty_ogół"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_obiekty_ogół"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_obiekty_ogół"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_yo_Y": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.yo_Y": {
+			          "Target": {
+			            "Entity": "entity__miary.yo_Y"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.yo_Y"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_yo_Y"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_YoY_": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.YoY_": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_YoY_"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_filtr_top_n_woje": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.filtr_top_n_woje": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.filtr_top_n_woje"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.filtr_top_n_woje"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_filtr_top_n_woje"
+			        }
+			      ]
+			    },
+			    "obiekty_has_turyści_krajowi1": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.turyści_krajowi1": {
+			          "Target": {
+			            "Entity": "obiekty.turyści_krajowi1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.turyści_krajowi1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_turyści_krajowi"
+			        }
+			      ]
+			    },
+			    "obiekty_has_turyści_ogółem1": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.turyści_ogółem1": {
+			          "Target": {
+			            "Entity": "obiekty.turyści_ogółem1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.turyści_ogółem1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_turyści_ogółem"
+			        }
+			      ]
+			    },
+			    "obiekty_has_miesiące": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.miesiące": {
+			          "Target": {
+			            "Entity": "obiekty.miesiące"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.miesiące"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_miesiąces"
+			        }
+			      ]
+			    },
+			    "obiekty_has_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.rok": {
+			          "Target": {
+			            "Entity": "obiekty.rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_roks"
+			        }
+			      ]
+			    },
+			    "obiekty_has_turyści_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.turyści_krajowi": {
+			          "Target": {
+			            "Entity": "obiekty.turyści_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.turyści_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_turyści_krajowis"
+			        }
+			      ]
+			    },
+			    "obiekty_has_turyści_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.turyści_zagraniczni": {
+			          "Target": {
+			            "Entity": "obiekty.turyści_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.turyści_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_turyści_zagranicznis"
+			        }
+			      ]
+			    },
+			    "obiekty_has_turyści_ogółem": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.turyści_ogółem": {
+			          "Target": {
+			            "Entity": "obiekty.turyści_ogółem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.turyści_ogółem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_turyści_ogółems"
+			        }
+			      ]
+			    },
+			    "obiekty_has_miesiac": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.miesiac": {
+			          "Target": {
+			            "Entity": "obiekty.miesiac"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.miesiac"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_miesiacs"
+			        }
+			      ]
+			    },
+			    "obiekty_has_rodzaj_obiektu": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.rodzaj_obiektu": {
+			          "Target": {
+			            "Entity": "obiekty.rodzaj_obiektu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.rodzaj_obiektu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_rodzaj_obiektus"
+			        }
+			      ]
+			    },
+			    "dim_kraje_master_has_kraj": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Kraje_Master"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kraje_master": {
+			          "Target": {
+			            "Entity": "dim_kraje_master"
+			          }
+			        },
+			        "dim_kraje_master.kraj": {
+			          "Target": {
+			            "Entity": "dim_kraje_master.kraj"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kraje_master"
+			            },
+			            "Object": {
+			              "Role": "dim_kraje_master.kraj"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kraje_masters_have_krajs"
+			        }
+			      ]
+			    },
+			    "top_n_has_top_n__wartość": {
+			      "Binding": {
+			        "ConceptualEntity": "Top N"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "top_n": {
+			          "Target": {
+			            "Entity": "top_n"
+			          }
+			        },
+			        "top_n.top_n__wartość": {
+			          "Target": {
+			            "Entity": "top_n.top_n__wartość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "top_n"
+			            },
+			            "Object": {
+			              "Role": "top_n.top_n__wartość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "top_Ns_have_top_n__wartość"
+			        }
+			      ]
+			    },
+			    "top_n_has_top_n": {
+			      "Binding": {
+			        "ConceptualEntity": "Top N"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "top_n": {
+			          "Target": {
+			            "Entity": "top_n"
+			          }
+			        },
+			        "top_n.top_n": {
+			          "Target": {
+			            "Entity": "top_n.top_n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "top_n"
+			            },
+			            "Object": {
+			              "Role": "top_n.top_n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "top_Ns_have_top_Ns"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_O_Turyści_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.O_Turyści_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.O_Turyści_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.O_Turyści_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_O_Turyści_zagraniczni"
+			        }
+			      ]
+			    },
+			    "entity__miary_has_filtr_top_n": {
+			      "Binding": {
+			        "ConceptualEntity": "_Miary"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__miary": {
+			          "Target": {
+			            "Entity": "entity__miary"
+			          }
+			        },
+			        "entity__miary.filtr_top_n": {
+			          "Target": {
+			            "Entity": "entity__miary.filtr_top_n"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__miary"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.filtr_top_n"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_miaries_have_filtr_top_n"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_ilość_turystów": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.ilość_turystów": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.ilość_turystów"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.ilość_turystów"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_ilość_turystów"
+			        }
+			      ]
+			    },
+			    "wybór_wskaźnika_has_wybór_wskaźnika": {
+			      "Binding": {
+			        "ConceptualEntity": "Wybór wskaźnika"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "wybór_wskaźnika": {
+			          "Target": {
+			            "Entity": "wybór_wskaźnika"
+			          }
+			        },
+			        "wybór_wskaźnika.wybór_wskaźnika": {
+			          "Target": {
+			            "Entity": "wybór_wskaźnika.wybór_wskaźnika"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "wybór_wskaźnika"
+			            },
+			            "Object": {
+			              "Role": "wybór_wskaźnika.wybór_wskaźnika"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "wybór_wskaźnikas_have_wybór_wskaźnikas"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "wybór_wskaźnika"
+			            },
+			            "Name": {
+			              "Role": "wybór_wskaźnika.wybór_wskaźnika"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "wybór_wskaźnikas_are_names_IDs_of_wybór_wskaźnikas"
+			        }
+			      ]
+			    },
+			    "przełącznik_analizy_has_okre": {
+			      "Binding": {
+			        "ConceptualEntity": "Przełącznik analizy"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "przełącznik_analizy": {
+			          "Target": {
+			            "Entity": "przełącznik_analizy"
+			          }
+			        },
+			        "przełącznik_analizy.okre": {
+			          "Target": {
+			            "Entity": "przełącznik_analizy.okre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "przełącznik_analizy"
+			            },
+			            "Object": {
+			              "Role": "przełącznik_analizy.okre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "przełącznik_analizys_have_okres"
+			        }
+			      ]
+			    },
+			    "df_final_has_entity__miary_suma_noclegów": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "entity__miary.suma_noclegów": {
+			          "Target": {
+			            "Entity": "entity__miary.suma_noclegów"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.suma_noclegów"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_suma_noclegów"
+			        }
+			      ]
+			    },
+			    "df_final_has_entity__miary_suma_turystów": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "entity__miary.suma_turystów": {
+			          "Target": {
+			            "Entity": "entity__miary.suma_turystów"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.suma_turystów"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_suma_turystów"
+			        }
+			      ]
+			    },
+			    "df_final_has_date_fact": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.date_fact": {
+			          "Target": {
+			            "Entity": "df_final.date_fact"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.date_fact"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_date_facts"
+			        }
+			      ]
+			    },
+			    "df_final_has_noclegi": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.noclegi": {
+			          "Target": {
+			            "Entity": "df_final.noclegi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.noclegi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_noclegis"
+			        }
+			      ]
+			    },
+			    "df_final_has_turysci": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.turysci": {
+			          "Target": {
+			            "Entity": "df_final.turysci"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.turysci"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_turyscis"
+			        }
+			      ]
+			    },
+			    "df_final_has_typ": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.typ": {
+			          "Target": {
+			            "Entity": "df_final.typ"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.typ"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_typs"
+			        }
+			      ]
+			    },
+			    "df_final_has_kraj_EN": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.kraj_EN": {
+			          "Target": {
+			            "Entity": "df_final.kraj_EN"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.kraj_EN"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_kraj_EN"
+			        }
+			      ]
+			    },
+			    "df_final_has_miesiąc": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.miesiąc": {
+			          "Target": {
+			            "Entity": "df_final.miesiąc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.miesiąc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_miesiącs"
+			        }
+			      ]
+			    },
+			    "df_final_has_nr_miesiaca": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.nr_miesiaca": {
+			          "Target": {
+			            "Entity": "df_final.nr_miesiaca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.nr_miesiaca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_nr_miesiacas"
+			        }
+			      ]
+			    },
+			    "df_final_has_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "df_final.rok": {
+			          "Target": {
+			            "Entity": "df_final.rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "df_final.rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_roks"
+			        }
+			      ]
+			    },
+			    "dim_date_has_pora_roku": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "dim_date.pora_roku": {
+			          "Target": {
+			            "Entity": "dim_date.pora_roku"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "dim_date.pora_roku"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_pora_rokus"
+			        }
+			      ]
+			    },
+			    "dim_date_has_kwartał": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "dim_date.kwartał": {
+			          "Target": {
+			            "Entity": "dim_date.kwartał"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "dim_date.kwartał"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_kwartał"
+			        }
+			      ]
+			    },
+			    "dim_date_has_miesiąc": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "dim_date.miesiąc": {
+			          "Target": {
+			            "Entity": "dim_date.miesiąc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "dim_date.miesiąc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_miesiącs"
+			        }
+			      ]
+			    },
+			    "dim_date_has_nr_miesiąca": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "dim_date.nr_miesiąca": {
+			          "Target": {
+			            "Entity": "dim_date.nr_miesiąca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "dim_date.nr_miesiąca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_nr_miesiącas"
+			        }
+			      ]
+			    },
+			    "dim_date_has_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "dim_date.rok": {
+			          "Target": {
+			            "Entity": "dim_date.rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "dim_date.rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_roks"
+			        }
+			      ]
+			    },
+			    "dim_date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "dim_date.date": {
+			          "Target": {
+			            "Entity": "dim_date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "dim_date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_dates"
+			        }
+			      ]
+			    },
+			    "dim_kraje_has_kraje": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Kraje"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_kraje": {
+			          "Target": {
+			            "Entity": "dim_kraje"
+			          }
+			        },
+			        "dim_kraje.kraje": {
+			          "Target": {
+			            "Entity": "dim_kraje.kraje"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kraje"
+			            },
+			            "Object": {
+			              "Role": "dim_kraje.kraje"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_krajes_have_krajes"
+			        }
+			      ]
+			    },
+			    "dim_geo_has_poziom_geograficzny": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Geo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_geo": {
+			          "Target": {
+			            "Entity": "dim_geo"
+			          }
+			        },
+			        "dim_geo.poziom_geograficzny": {
+			          "Target": {
+			            "Entity": "dim_geo.poziom_geograficzny"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_geo"
+			            },
+			            "Object": {
+			              "Role": "dim_geo.poziom_geograficzny"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_geos_have_poziom_geograficznies"
+			        }
+			      ]
+			    },
+			    "dim_geo_has_nazwa": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Geo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_geo": {
+			          "Target": {
+			            "Entity": "dim_geo"
+			          }
+			        },
+			        "dim_geo.nazwa": {
+			          "Target": {
+			            "Entity": "dim_geo.nazwa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_geo"
+			            },
+			            "Object": {
+			              "Role": "dim_geo.nazwa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_geos_have_nazwas"
+			        }
+			      ]
+			    },
+			    "dim_geo_has_kod": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Geo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_geo": {
+			          "Target": {
+			            "Entity": "dim_geo"
+			          }
+			        },
+			        "dim_geo.kod": {
+			          "Target": {
+			            "Entity": "dim_geo.kod"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_geo"
+			            },
+			            "Object": {
+			              "Role": "dim_geo.kod"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_geos_have_kods"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_data_fact": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.data_fact": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.data_fact"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.data_fact"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_data_facts"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_poziom_geograficzny": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.poziom_geograficzny": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.poziom_geograficzny"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.poziom_geograficzny"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_poziom_geograficznies"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_jednostka_miary": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.jednostka_miary": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.jednostka_miary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.jednostka_miary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_jednostka_miaries"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_wartosc": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.wartosc": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.wartosc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.wartosc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_wartoscs"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_rok": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.rok": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.rok"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.rok"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_roks"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_turyści_zagraniczni_noclegi": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.turyści_zagraniczni_noclegi": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.turyści_zagraniczni_noclegi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.turyści_zagraniczni_noclegi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_turyści_zagraniczni_noclegis"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_nazwa": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "turyści_per_woj_pow.nazwa": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow.nazwa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow.nazwa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_nazwas"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_Zabezpieczone_ogółem": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_ogółem": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_ogółem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_ogółem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_Zabezpieczone_ogółem"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_zabezpieczone_ogółem": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_ogółem": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_ogółem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_ogółem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_zabezpieczone_ogółem"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_zabezpieczone_ogółem": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_ogółem": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_ogółem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_ogółem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_zabezpieczone_ogółem"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_zabezpieczone_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_krajowi": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_zabezpieczone_krajowi"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_zabezpieczone_krajowi": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_krajowi": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_krajowi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_krajowi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_zabezpieczone_krajowi"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_zabezpieczone_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_zabezpieczone_zagraniczni"
+			        }
+			      ]
+			    },
+			    "obiekty_has_entity__miary_YoY_zabezpieczone_zagraniczni": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_zagraniczni": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_zagraniczni"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_zagraniczni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_YoY_zabezpieczone_zagraniczni"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_zabezpieczone_ilość": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_ilość": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_ilość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_ilość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_zabezpieczone_ilość"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_YoY_zabezpieczone_ilość": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.YoY_zabezpieczone_ilość": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_zabezpieczone_ilość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_zabezpieczone_ilość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_YoY_zabezpieczone_ilość"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__miary_YoY_Zabezpieczone_ilość": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_ilość": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_ilość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_ilość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_YoY_Zabezpieczone_ilość"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_entity__miary_YoY_Zabezpieczone_ilość": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "entity__miary.YoY_Zabezpieczone_ilość": {
+			          "Target": {
+			            "Entity": "entity__miary.YoY_Zabezpieczone_ilość"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "entity__miary.YoY_Zabezpieczone_ilość"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_YoY_Zabezpieczone_ilość"
+			        }
+			      ]
+			    },
+			    "obiekty_has_pozostałe_obiekty_noclegowe": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "obiekty.pozostałe_obiekty_noclegowe": {
+			          "Target": {
+			            "Entity": "obiekty.pozostałe_obiekty_noclegowe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "obiekty.pozostałe_obiekty_noclegowe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_pozostałe_obiekty_noclegowes"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_dim_geo": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "dim_geo": {
+			          "Target": {
+			            "Entity": "dim_geo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "dim_geo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_dim_geos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_geo"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_geos_have_turyści_per_woj_pow"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_dim_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          },
+			          "Nouns": [
+			            {
+			              "data fact": {
+			                "State": "Generated"
+			              }
+			            },
+			            {
+			              "fact": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "dim_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_turyści_per_woj_pow"
+			        }
+			      ]
+			    },
+			    "turyści_per_woj_pow_has_dim_kraje_master": {
+			      "Binding": {
+			        "ConceptualEntity": "Turyści per Woj/pow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "turyści_per_woj_pow": {
+			          "Target": {
+			            "Entity": "turyści_per_woj_pow"
+			          }
+			        },
+			        "dim_kraje_master": {
+			          "Target": {
+			            "Entity": "dim_kraje_master"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "turyści_per_woj_pow"
+			            },
+			            "Object": {
+			              "Role": "dim_kraje_master"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "turyści_per_woj_pow_have_dim_kraje_masters"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kraje_master"
+			            },
+			            "Object": {
+			              "Role": "turyści_per_woj_pow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kraje_masters_have_turyści_per_woj_pow"
+			        }
+			      ]
+			    },
+			    "df_final_has_dim_date": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          },
+			          "Nouns": [
+			            {
+			              "date fact": {
+			                "State": "Generated"
+			              }
+			            },
+			            {
+			              "fact": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "dim_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "df_final"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_df_finals"
+			        }
+			      ]
+			    },
+			    "df_final_has_dim_kraje_master": {
+			      "Binding": {
+			        "ConceptualEntity": "df_final"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "df_final": {
+			          "Target": {
+			            "Entity": "df_final"
+			          }
+			        },
+			        "dim_kraje_master": {
+			          "Target": {
+			            "Entity": "dim_kraje_master"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "df_final"
+			            },
+			            "Object": {
+			              "Role": "dim_kraje_master"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "df_finals_have_dim_kraje_masters"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_kraje_master"
+			            },
+			            "Object": {
+			              "Role": "df_final"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_kraje_masters_have_df_finals"
+			        }
+			      ]
+			    },
+			    "obiekty_has_dim_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Obiekty"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "obiekty": {
+			          "Target": {
+			            "Entity": "obiekty"
+			          }
+			        },
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "obiekty"
+			            },
+			            "Object": {
+			              "Role": "dim_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "obiekties_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "obiekty"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_obiekties"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

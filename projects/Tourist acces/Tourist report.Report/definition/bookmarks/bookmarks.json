@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmarksMetadata/1.0.0/schema.json",
+  "items": [
+    {
+      "name": "cd3cf3ab6bbd6422641d",
+      "displayName": "Podział Turyści per region",
+      "children": [
+        "eede3ce7aa05068e345a",
+        "15eb2d03ae86dd085921"
+      ]
+    }
+  ]
+}
