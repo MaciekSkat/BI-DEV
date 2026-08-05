@@ -1,12 +1,12 @@
 Turystyka 360° – Kompleksowa Analiza Ruchu Turystycznego w Polsce
+
 📌 O projekcie
 
 Turystyka 360° to interaktywny dashboard analityczny wizualizujący dane dotyczące ruchu turystycznego w Polsce. Projekt powstał w celu dostarczenia przejrzystych odpowiedzi na pytania dotyczące popularności regionów, preferencji noclegowych oraz trendów sezonowych, bazując na oficjalnych danych statystycznych. Raport łączy zaawansowane modelowanie DAX z optymalizacją i czyszczeniem danych w języku Python.
 
 📷 Podgląd raportu
 
-<img width="1533" height="865" alt="image" src="https://github.com/user-attachments/assets/c59bec72-f62e-480b-8f28-d5abe838111d" />
-<img width="1533" height="863" alt="image" src="https://github.com/user-attachments/assets/d4627644-251e-4669-bc44-9951da23162c" />
+<img width="1533" height="865" alt="image" src="https://github.com/user-attachments/assets/c59bec72-f62e-480b-8f28-d5abe838111d" /> <img width="1533" height="863" alt="image" src="https://github.com/user-attachments/assets/d4627644-251e-4669-bc44-9951da23162c" />
 
 
 
@@ -45,5 +45,5 @@ Metodologia liczenia: Należy wziąć pod uwagę, że statystyki turystyczne GUS
 Zakres bazy noclegowej: Zauważalne różnice w sumach całkowitych na wybranych widokach wynikają bezpośrednio z metodologii GUS, który w szczegółowych zestawieniach (dotyczących m.in. rozbicia na rodzaje obiektów) uwzględnia głównie obiekty posiadające 10 lub więcej miejsc noclegowych.
 
 🔗 Zobacz też
-📊 Interaktywny raport (Power BI): (https://app.powerbi.com/view?r=eyJrIjoiMWVhMTg2ZTgtOGZjOC00NzA4LWExZjQtZjJjZjJhZDcxZWUzIiwidCI6ImQwMzYzN2RmLTdiM2EtNDU2NC04NzBiLTA2MjJhODFhNzY0ZCJ9&pageName=3272f76878996bc1b492)
-💼 LinkedIn: (https://www.linkedin.com/in/maciej-skatuła-388578266/)
+📊 Interaktywny raport (Power BI):https://app.powerbi.com/view?r=eyJrIjoiMWVhMTg2ZTgtOGZjOC00NzA4LWExZjQtZjJjZjJhZDcxZWUzIiwidCI6ImQwMzYzN2RmLTdiM2EtNDU2NC04NzBiLTA2MjJhODFhNzY0ZCJ9&pageName=3272f76878996bc1b492
+💼 LinkedIn: https://www.linkedin.com/in/maciej-skatuła-388578266/
