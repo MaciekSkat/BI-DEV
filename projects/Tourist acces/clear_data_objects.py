@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # --- USTAWIENIA ---
-folder_path = r"/workspaces/BI-DEV/projects/Tourist acces/Obiekty" # Upewnij się, że to Twoja ścieżka
+folder_path = r"/workspaces/BI-DEV/projects/Tourist acces/Obiekty" 
 sheet_ogolem = "II.1"      
 sheet_zagraniczni = "II.2" 
 # ------------------
@@ -16,7 +16,7 @@ def wczytaj_i_wyczysc(file_path, sheet_name, value_name):
     format_miesiecy = None
     
     for i, row in df_raw.iterrows():
-        # Super-czyszczenie: zdejmujemy ".0" i wiodące zera (np. "01" -> "1")
+        # czyszczenie: zdejmujemy ".0" i wiodące zera (np. "01" -> "1")
         czyste_wartosci = []
         for val in row.values:
             v = str(val).strip()
@@ -60,7 +60,7 @@ def wczytaj_i_wyczysc(file_path, sheet_name, value_name):
         
     df = df[['Rodzaj_obiektu'] + kolumny]
     
-    # Standaryzacja na cyfry rzymskie dla Power BI
+    # Standaryzacja na cyfry rzymskie
     if format_miesiecy == 'arabskie':
         mapa_na_rzymskie = {
             '1': 'I', '2': 'II', '3': 'III', '4': 'IV', '5': 'V', '6': 'VI',
@@ -73,7 +73,7 @@ def wczytaj_i_wyczysc(file_path, sheet_name, value_name):
     df_melt = df.melt(id_vars=['Rodzaj_obiektu'], value_vars=standardowe_miesiace, var_name='Miesiac', value_name=value_name)
     return df_melt
 
-# --- GŁÓWNA PĘTLA ---
+#  GŁÓWNA PĘTLA 
 for file in os.listdir(folder_path):
     if file.lower().endswith(".xlsx") or file.lower().endswith(".xls"):
         file_path = os.path.join(folder_path, file)
@@ -93,7 +93,7 @@ for file in os.listdir(folder_path):
         except Exception as e:
             print(f"Błąd przy pliku {file}: {e}")
 
-# --- FINALIZACJA ---
+#  FINALIZACJA 
 if dane_koncowe:
     df_final = pd.concat(dane_koncowe, ignore_index=True)
     
