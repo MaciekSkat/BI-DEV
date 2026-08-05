@@ -45,5 +45,7 @@ Metodologia liczenia: Należy wziąć pod uwagę, że statystyki turystyczne GUS
 Zakres bazy noclegowej: Zauważalne różnice w sumach całkowitych na wybranych widokach wynikają bezpośrednio z metodologii GUS, który w szczegółowych zestawieniach (dotyczących m.in. rozbicia na rodzaje obiektów) uwzględnia głównie obiekty posiadające 10 lub więcej miejsc noclegowych.
 
 🔗 Zobacz też
-📊 Interaktywny raport (Power BI):https://app.powerbi.com/view?r=eyJrIjoiMWVhMTg2ZTgtOGZjOC00NzA4LWExZjQtZjJjZjJhZDcxZWUzIiwidCI6ImQwMzYzN2RmLTdiM2EtNDU2NC04NzBiLTA2MjJhODFhNzY0ZCJ9&pageName=3272f76878996bc1b492
+📊 Interaktywny raport (Power BI):
+https://app.powerbi.com/view?r=eyJrIjoiMWVhMTg2ZTgtOGZjOC00NzA4LWExZjQtZjJjZjJhZDcxZWUzIiwidCI6ImQwMzYzN2RmLTdiM2EtNDU2NC04NzBiLTA2MjJhODFhNzY0ZCJ9&pageName=3272f76878996bc1b492
+
 💼 LinkedIn: https://www.linkedin.com/in/maciej-skatuła-388578266/
