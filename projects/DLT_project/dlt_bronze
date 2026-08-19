@@ -1,0 +1,46 @@
+import requests
+import pandas as pd
+import logging
+import os
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("github_ingest")
+
+TOKEN = os.environ.get("GITHUB_TOKEN", "")
+HEADERS = {"Authorization": f"Bearer {TOKEN}"} if TOKEN else {}
+
+OWNER = "dlt-hub"   # albo "sqlfluff" — Twoja decyzja z punktu 1
+REPO = "dlt"        # albo "sqlfluff"
+
+def pobierz_wszystkie_strony(url, params):
+    wszystkie = []
+    params = {**params, "per_page": 100, "page": 1}
+    while True:
+        response = requests.get(url, headers=HEADERS, params=params, timeout=30)
+        response.raise_for_status()
+        strona = response.json()
+        if not strona:
+            break
+        wszystkie.extend(strona)
+        params["page"] += 1
+        logger.info(f"Strona {params['page'] - 1}: +{len(strona)} rekordów")
+    return wszystkie
+
+def pobierz_commity():
+    url = f"https://api.github.com/repos/{OWNER}/{REPO}/commits"
+    dane = pobierz_wszystkie_strony(url, {"since": "2025-01-01T00:00:00Z"})
+    return pd.json_normalize(dane)
+
+def pobierz_issues():
+    url = f"https://api.github.com/repos/{OWNER}/{REPO}/issues"
+    dane = pobierz_wszystkie_strony(url, {"state": "all", "since": "2025-01-01T00:00:00Z"})
+    return pd.json_normalize(dane)
+
+df_commity = pobierz_commity()
+df_issues = pobierz_issues()
+logger.info(f"Commity: {len(df_commity)} | Issues: {len(df_issues)}")
+
+spark.createDataFrame(df_commity.astype(str)) \
+    .write.format("delta").mode("overwrite").saveAsTable("bronze_gh_commity")
+spark.createDataFrame(df_issues.astype(str)) \
+    .write.format("delta").mode("overwrite").saveAsTable("bronze_gh_issues")
