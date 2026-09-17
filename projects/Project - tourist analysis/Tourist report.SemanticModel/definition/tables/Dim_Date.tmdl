@@ -1,0 +1,76 @@
+table Dim_Date
+	lineageTag: dab4b07b-fb1c-458f-bf5e-31e2cb2f3247
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: Short Date
+		lineageTag: 0cd7be00-3611-4dce-8230-f4cc1b5842bd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rok
+		formatString: 0
+		lineageTag: 09715837-d749-494d-ae70-ef4d1aac5759
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Rok]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nr Miesiąca'
+		formatString: 0
+		lineageTag: 1ead9e52-1d9d-4194-953d-d36361e0e88e
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Nr Miesiąca]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Miesiąc
+		lineageTag: 57d7ea95-45d5-4271-b1fe-09101d4f1f24
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Miesiąc]
+		sortByColumn: 'Nr Miesiąca'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kwartał
+		lineageTag: 374cee97-fb54-4288-9759-82492392fc7d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Kwartał]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pora roku'
+		lineageTag: 73ffc4ee-efcb-43f8-b005-5cb46037a8f0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Pora roku]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Date = calculated
+		mode: import
+		source =
+				ADDCOLUMNS(CALENDAR ( DATE(2016, 1, 1), DATE(2025, 12, 31) ),
+				    "Rok", YEAR([Date]),
+				    "Nr Miesiąca", MONTH([Date]),
+				    "Miesiąc", FORMAT([Date], "MMMM", "pl-PL"),
+				    "Kwartał", "Q" & QUARTER([Date]),
+				    "Pora roku", SWITCH(
+				        TRUE(),
+				        MONTH([Date]) IN {12, 1, 2}, "Zima",
+				        MONTH([Date]) IN {3, 4, 5}, "Wiosna",
+				        MONTH([Date]) IN {6, 7, 8}, "Lato",
+				        MONTH([Date]) IN {9, 10, 11}, "Jesień"
+				    )
+				)
+
+	annotation PBI_Id = d16750f4729b4526a32600d90003a514
+

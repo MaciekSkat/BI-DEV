@@ -1,0 +1,25 @@
+table Dim_Kraje
+	lineageTag: 50ce9f5a-197e-40d4-a1c4-923709f96f80
+
+	column Kraje
+		dataType: string
+		lineageTag: 67253693-4596-4c9c-a362-a3a2dbbe0a7c
+		summarizeBy: none
+		sourceColumn: Kraje
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Kraje = m
+		mode: import
+		source =
+				let
+				    Źródło = #"Turyści per Woj/pow",
+				    #"Usunięto inne kolumny" = Table.SelectColumns(Źródło,{"Kraje"}),
+				    #"Usunięto duplikaty" = Table.Distinct(#"Usunięto inne kolumny")
+				in
+				    #"Usunięto duplikaty"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

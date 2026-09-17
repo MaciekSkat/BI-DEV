@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Tourist report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5dd34ad8-81b8-4460-8df0-6040df170b37"
+  }
+}

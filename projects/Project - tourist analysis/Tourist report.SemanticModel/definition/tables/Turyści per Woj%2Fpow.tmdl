@@ -1,0 +1,123 @@
+table 'Turyści per Woj/pow'
+	lineageTag: 41d51b91-35e6-4292-9b7c-dce31965b568
+
+	measure 'Ilość turystów' = SUM('Turyści per Woj/pow'[Wartosc])
+		lineageTag: 6ea192fe-3854-4342-a486-c9f2816ecfc8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Filtr Top N Woje' =
+			
+			VAR WybraneN = [Top N — wartość]-- Tu wstaw nazwę miary wygenerowanej przez parametr
+			VAR Ranga = RANKX(ALLSELECTED('Dim_Geo'[Nazwa]), [Ilość turystów], , DESC, Dense)
+			RETURN
+			IF(Ranga <= WybraneN, 1, 0)
+		lineageTag: af482233-6c68-4d20-a244-4495201daf80
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Kod
+		dataType: int64
+		formatString: 0
+		lineageTag: 342d9e63-1b17-4894-b283-88ae4ce34852
+		summarizeBy: none
+		sourceColumn: Kod
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nazwa
+		dataType: string
+		lineageTag: aa80fb7b-2b3f-404e-974c-a5200498f9fb
+		summarizeBy: none
+		sourceColumn: Nazwa
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Turyści zagraniczni/Noclegi'
+		dataType: string
+		lineageTag: 93b6305e-8838-4a48-8bba-e959fa4642d1
+		summarizeBy: none
+		sourceColumn: Turyści zagraniczni/Noclegi
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kraje
+		dataType: string
+		lineageTag: 88bc258f-b741-409f-8dc2-e53c3679ec2f
+		summarizeBy: none
+		sourceColumn: Kraje
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rok
+		dataType: int64
+		formatString: 0
+		lineageTag: ea06bcc2-3a3b-434b-8fa0-351aca2d39f0
+		summarizeBy: sum
+		sourceColumn: Rok
+
+		annotation SummarizationSetBy = Automatic
+
+	column Wartosc
+		dataType: int64
+		formatString: 0
+		lineageTag: ccda1f21-b05d-4e1f-adb7-a03cc2b37fe3
+		summarizeBy: sum
+		sourceColumn: Wartosc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jednostka miary'
+		dataType: string
+		lineageTag: 3933ccd8-3dcc-4c4f-b3bc-72e9a046bd4b
+		summarizeBy: none
+		sourceColumn: Jednostka miary
+
+		annotation SummarizationSetBy = Automatic
+
+	column Poziom_Geograficzny
+		dataType: string
+		lineageTag: 7c43f8c5-32c3-4e6f-80a9-28d84582aad8
+		summarizeBy: none
+		sourceColumn: Poziom_Geograficzny
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data_Facts
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cb0dec1e-8707-4789-bdb9-f9051bf66559
+		summarizeBy: none
+		sourceColumn: Data_Facts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'Turyści per Woj/pow' = m
+		mode: import
+		source =
+				let
+				  Źródło = Excel.Workbook(File.Contents("C:\Users\skatm\OneDrive - Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu\Dane\1_TurysciZagraniczniWgKrajow_2016-2025_WojewodztwaPowiaty_DLUGIE.xlsx.xlsx"), null, true),
+				  #"Nawigacja 1" = Źródło{[Item = "DANE", Kind = "Sheet"]}[Data],
+				  #"Nagłówki o podwyższonym poziomie" = Table.PromoteHeaders(#"Nawigacja 1", [PromoteAllScalars = true]),
+				  #"Zmieniono typ kolumny" = Table.TransformColumnTypes(#"Nagłówki o podwyższonym poziomie", {{"Kod", Int64.Type}, {"Nazwa", type text}, {"Turyści zagraniczni/Noclegi", type text}, {"Kraje", type text}, {"Rok", Int64.Type}, {"Wartosc", Int64.Type}, {"Jednostka miary", type text}, {"Atrybut", type text}}, "pl"),
+				    #"Dodano kolumnę warunkową" = Table.AddColumn(#"Zmieniono typ kolumny", "Poziom_Geograficzny", each if [Nazwa] = "POLSKA" then "Kraj" else if Text.EndsWith([Nazwa], "KIE") then "Województwo" else "Powiat"),
+				    #"Usunięto kolumny" = Table.RemoveColumns(#"Dodano kolumnę warunkową",{"Atrybut"}),
+				    #"Dodanie Data_facts" = Table.AddColumn(#"Usunięto kolumny", "Data_Facts", each #date([Rok], 12, 31)),
+				    #"Zmieniono typ" = Table.TransformColumnTypes(#"Dodanie Data_facts",{{"Data_Facts", type date}}),
+				    #"Zmiana Stanty Zjedoczone Ameyki na Stany Zjedoczone" = Table.ReplaceValue(#"Zmieniono typ","Stany Zjednoczone Ameryki","Stany Zjednoczone",Replacer.ReplaceText,{"Kraje"}),
+				    #"zm ogółem" = Table.ReplaceValue(#"Zmiana Stanty Zjedoczone Ameyki na Stany Zjedoczone","ogółem","OGÓŁEM",Replacer.ReplaceText,{"Kraje"}),
+				    #"zm Holadnia" = Table.ReplaceValue(#"zm ogółem","Niderlandy (Holandia)","Holandia",Replacer.ReplaceText,{"Kraje"}),
+				    #"zmiana powita st.m" = Table.ReplaceValue(#"zm Holadnia","Powiat m. st. ","powiat ",Replacer.ReplaceText,{"Nazwa"}),
+				    #"zmiana powiat m." = Table.ReplaceValue(#"zmiana powita st.m","Powiat m. ","powiat ",Replacer.ReplaceText,{"Nazwa"}),
+				    #"zmiana Powiat na powiat" = Table.ReplaceValue(#"zmiana powiat m.","Powiat ","powiat ",Replacer.ReplaceText,{"Nazwa"}),
+				    #"Zamieniono wartość" = Table.ReplaceValue(#"zmiana Powiat na powiat","od 2013 "," ",Replacer.ReplaceText,{"Nazwa"}),
+				    #"Usuwanie spacji" = Table.ReplaceValue(#"Zamieniono wartość","  "," ",Replacer.ReplaceText,{"Nazwa"})
+				in
+				    #"Usuwanie spacji"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

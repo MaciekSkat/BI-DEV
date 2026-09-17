@@ -1,0 +1,104 @@
+table df_final
+	lineageTag: cea07ec0-bdaa-402c-89ef-4e210cbc0d4d
+
+	column Rok
+		dataType: int64
+		formatString: 0
+		lineageTag: 0bc8c300-e279-4857-84a7-b8cd60e91b9b
+		summarizeBy: sum
+		sourceColumn: Rok
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nr_Miesiaca
+		dataType: int64
+		formatString: 0
+		lineageTag: 55ba6261-5c08-4b06-b3ce-f7c0e7ddfb2f
+		summarizeBy: sum
+		sourceColumn: Nr_Miesiaca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Miesiąc
+		dataType: string
+		lineageTag: db024118-73af-4540-bacf-9ebbb9c4b067
+		summarizeBy: none
+		sourceColumn: Miesiąc
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kraj
+		dataType: string
+		lineageTag: a8802d35-c53e-4523-a81d-cd17bba33f99
+		summarizeBy: none
+		sourceColumn: Kraj
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kraj (EN)'
+		dataType: string
+		lineageTag: a75e8398-b6b4-459c-ba7a-45aaf8f58100
+		summarizeBy: none
+		sourceColumn: Kraj (EN)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Typ
+		dataType: string
+		lineageTag: f8c67704-aead-4901-afdb-ffa4b6ee1293
+		summarizeBy: none
+		sourceColumn: Typ
+
+		annotation SummarizationSetBy = Automatic
+
+	column Turysci
+		dataType: int64
+		formatString: 0
+		lineageTag: b8346e79-1a41-4796-8d17-643048b372a6
+		summarizeBy: sum
+		sourceColumn: Turysci
+
+		annotation SummarizationSetBy = Automatic
+
+	column Noclegi
+		dataType: int64
+		formatString: 0
+		lineageTag: d04f0d3d-d33d-43d5-abe3-0ffbfb7f4ebd
+		summarizeBy: sum
+		sourceColumn: Noclegi
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date_facts
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 040019e2-2978-42d9-83cc-e1f281d9550c
+		summarizeBy: none
+		sourceColumn: Date_facts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition df_final = m
+		mode: import
+		source =
+				let
+				    Źródło = Python.Execute("import pandas as pd#(lf)import numpy as np#(lf)import glob #(lf)import os #(lf)import re #(lf)#(lf)folder_path=r""C:\Users\skatm\OneDrive - Wyższa Szkoła Biznesu - National Louis University z siedzibą w Nowym Sączu\Dane\Nowy folder""#(lf)all_filles= glob.glob(os.path.join(folder_path,""*.xlsx""))#(lf)dane_master=[]#(lf)miesiace_dict = {#(lf)    '1': 'styczeń', '2': 'luty', '3': 'marzec', '4': 'kwiecień',#(lf)    '5': 'maj', '6': 'czerwiec', '7': 'lipiec', '8': 'sierpień',#(lf)    '9': 'wrzesień', '10': 'październik', '11': 'listopad', '12': 'grudzień'#(lf)}#(lf)kraje_en_dict = {#(lf)    'OGÓŁEM': 'Total',#(lf)    'Turyści krajowi': 'Domestic',#(lf)    'Turyści zagraniczni': 'Foreign tourists',#(lf)    'w tym:': 'of which:'#(lf)}#(lf)#(lf)kraje_korekty={#(lf)    'USA': 'Stany Zjednoczone'#(lf)}#(lf)#(lf)for plik in all_filles:#(lf)    rok_match= re.search(r'\d{4}', os.path.basename(plik))#(lf)    rok = int(rok_match.group()) if rok_match else None#(lf)    #(lf)    # Zwróć uwagę na skiprows - ustawione tak, aby zaczytać wiersz 'OGÓŁEM'#(lf)    # Zależnie od struktury plików, być może trzeba będzie to zmienić na 5 lub 6#(lf)    #(lf)    # --- A. TURYŚCI ---#(lf)    df_t = pd.read_excel(plik, sheet_name=0, skiprows=5) #(lf)    df_t_czyste = df_t.iloc[:, [0] + list(range(2, 25, 2))]#(lf)    df_t_czyste.columns = ['Kraj', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']#(lf)    df_t_melt = df_t_czyste.melt(id_vars=['Kraj'], var_name='Nr_Miesiaca', value_name='Turysci')#(lf)    #(lf)    # --- B. NOCLEGI ---#(lf)    df_n = pd.read_excel(plik, sheet_name=1, skiprows=5)#(lf)    df_n_czyste = df_n.iloc[:, [0] + list(range(2, 25, 2))]#(lf)    df_n_czyste.columns = ['Kraj', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']#(lf)    df_n_melt = df_n_czyste.melt(id_vars=['Kraj'], var_name='Nr_Miesiaca', value_name='Noclegi')#(lf)    #(lf)    # --- C. ŁĄCZENIE ---#(lf)    df_polaczone = pd.merge(df_t_melt, df_n_melt, on=['Kraj', 'Nr_Miesiaca'], how='inner')#(lf)    df_polaczone['Rok'] = rok#(lf)    #(lf)    dane_master.append(df_polaczone)#(lf)#(lf)# 3. Złączenie w jedną tabelę#(lf)df_final = pd.concat(dane_master, ignore_index=True)#(lf)#(lf)# Odcinamy wiersze z przypisami - zostawiamy tylko te, gdzie nazwa ma mniej niż 40 znaków#(lf)df_final = df_final[df_final['Kraj'].astype(str).str.len() < 40]#(lf)#(lf)# NOWA LINIJKA: Usuwamy techniczny wiersz GUS z numerami kolumn (np. państwo ""1"")#(lf)df_final = df_final[~df_final['Kraj'].astype(str).str.strip().str.isdigit()]#(lf)#(lf)# Zamiana starych/innych nazw na te ze słownika#(lf)df_final['Kraj'] = df_final['Kraj'].replace(kraje_korekty)#(lf)# Konwersja danych na liczby - gdy GUS wpisał pauzę ""-"" lub kropkę ""."", zamieni to na pustą wartość (NaN)#(lf)df_final['Turysci'] = pd.to_numeric(df_final['Turysci'], errors='coerce')#(lf)df_final['Noclegi'] = pd.to_numeric(df_final['Noclegi'], errors='coerce')#(lf)#(lf)# Wywalamy puste wiersze, które powstały z tych pauz i kropek#(lf)df_final = df_final.dropna(subset=['Turysci', 'Noclegi'])#(lf)# 4. Magia kolumn pomocniczych (Odtwarzamy wygląd ze screena)#(lf)#(lf)# Dodajemy kolumnę 'Typ' - jeśli nazwa jest na liście, to 'agregat', inaczej 'kraj'#(lf)agregaty_lista = ['OGÓŁEM', 'Turyści krajowi', 'Turyści zagraniczni', 'w tym:']#(lf)df_final['Typ'] = np.where(df_final['Kraj'].isin(agregaty_lista), 'agregat', 'kraj')#(lf)#(lf)# Dodajemy polskie nazwy miesięcy#(lf)df_final['Miesiąc'] = df_final['Nr_Miesiaca'].map(miesiace_dict)#(lf)#(lf)# Dodajemy angielskie nazwy dla agregatów (zwykłe kraje zostawiamy bez zmian dla uproszczenia)#(lf)df_final['Kraj (EN)'] = df_final['Kraj'].map(kraje_en_dict).fillna(df_final['Kraj'])#(lf)#(lf)# Konwersja nr miesiąca do formatu liczbowego (dla sortowania)#(lf)df_final['Nr_Miesiaca'] = df_final['Nr_Miesiaca'].astype(int)#(lf)#(lf)# Układamy kolumny dokładnie w takiej kolejności, jak u koleżanki#(lf)df_final = df_final[['Rok', 'Nr_Miesiaca', 'Miesiąc', 'Kraj', 'Kraj (EN)', 'Typ', 'Turysci', 'Noclegi']]"),
+				    df_final1 = Źródło{[Name="df_final"]}[Value],
+				    #"Zamieniono wartość" = Table.ReplaceValue(df_final1,".",",",Replacer.ReplaceText,{"Turysci"}),
+				    #"Zamieniono wartość1" = Table.ReplaceValue(#"Zamieniono wartość",".",",",Replacer.ReplaceText,{"Noclegi"}),
+				    #"Zmieniono typ" = Table.TransformColumnTypes(#"Zamieniono wartość1",{{"Turysci", Int64.Type}, {"Noclegi", Int64.Type}, {"Rok", Int64.Type}, {"Nr_Miesiaca", Int64.Type}}),
+				    #"Dodano kolumnę niestandardową" = Table.AddColumn(#"Zmieniono typ", "Date_facts", each #date([Rok], [Nr_Miesiaca], 1)),
+				    #"Zmieniono typ1" = Table.TransformColumnTypes(#"Dodano kolumnę niestandardową",{{"Date_facts", type date}}),
+				    #"Zamieniono wartość2" = Table.ReplaceValue(#"Zmieniono typ1","Niderlandy (Holandia)","Holandia",Replacer.ReplaceText,{"Kraj"}),
+				    #"Zamieniono wartość3" = Table.ReplaceValue(#"Zamieniono wartość2","Republika Korei","Korea Południowa",Replacer.ReplaceText,{"Kraj"}),
+				    #"Zamieniono wartość4" = Table.ReplaceValue(#"Zamieniono wartość3","Hongkong","Hong Kong",Replacer.ReplaceText,{"Kraj"}),
+				    #"Przefiltrowano wiersze" = Table.SelectRows(#"Zamieniono wartość4", each true)
+				in
+				    #"Przefiltrowano wiersze"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

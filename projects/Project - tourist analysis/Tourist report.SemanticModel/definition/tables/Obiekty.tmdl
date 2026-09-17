@@ -1,0 +1,186 @@
+table Obiekty
+	lineageTag: 25d04082-06d7-4e36-b38a-adcd511f83c2
+
+	measure 'Turyści ogółem' = SUM(Obiekty[Turyści_Ogółem])
+		formatString: #,0.00
+		lineageTag: 3cd8c728-eae3-474f-84fa-ee06902196c1
+
+	measure 'Turyści krajowi' = SUM(Obiekty[Turyści_Krajowi])
+		formatString: #,0.00
+		lineageTag: 1cd6335a-0bd3-4d23-b0f1-d37f322e1c8b
+
+	measure 'Kolorowanie Gradientem' = ```
+			
+			RANKX(
+			    ALLSELECTED('Obiekty'[Rodzaj_obiektu]), 
+			    [Turyści ogółem], 
+			    , 
+			    ASC, 
+			    Dense
+			)
+			```
+		lineageTag: 6e38c783-4756-4eed-8f4a-e830a140d633
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Rodzaj_obiektu
+		dataType: string
+		lineageTag: 3362b90e-9e79-45db-a5e2-1672d65a3500
+		summarizeBy: none
+		sourceColumn: Rodzaj_obiektu
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"Obiekty","TableItemName":"Pozostałe obiekty noclegowe","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column Miesiac
+		dataType: string
+		lineageTag: 61ea55ec-3f11-4572-8785-4cb9beaf12ea
+		summarizeBy: none
+		sourceColumn: Miesiac
+
+		annotation SummarizationSetBy = Automatic
+
+	column Turyści_Ogółem
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a5bd5a1-9098-4072-8664-01962971d650
+		summarizeBy: sum
+		sourceColumn: Turyści_Ogółem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Turyści_Zagraniczni
+		dataType: int64
+		formatString: 0
+		lineageTag: d80eebfe-d78c-4c33-bce0-7158d8c331a2
+		summarizeBy: sum
+		sourceColumn: Turyści_Zagraniczni
+
+		annotation SummarizationSetBy = Automatic
+
+	column Turyści_Krajowi
+		dataType: int64
+		formatString: 0
+		lineageTag: 80ec6180-f4f6-4886-bed8-c5206effab27
+		summarizeBy: sum
+		sourceColumn: Turyści_Krajowi
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rok
+		dataType: int64
+		formatString: 0
+		lineageTag: 91d14568-9068-45e0-b029-92b2c61e6973
+		summarizeBy: sum
+		sourceColumn: Rok
+
+		annotation SummarizationSetBy = Automatic
+
+	column Miesiące
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e0070c1f-71f6-4787-adf7-e19fb6f1dea2
+		summarizeBy: none
+		sourceColumn: Miesiące
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Pozostałe obiekty noclegowe' =
+			SWITCH(
+				TRUE,
+				ISBLANK('Obiekty'[Rodzaj_obiektu]),
+				"(Puste)",
+				'Obiekty'[Rodzaj_obiektu] IN {"Domy pracy twórczej",
+					"Domy wycieczkowe",
+					"Hostele",
+					"Kempingi",
+					"Kwatery agroturystyczne",
+					"Motele",
+					"Ośrodki kolonijne",
+					"Ośrodki szkoleniowo-wypoczynkowe",
+					"Ośrodki wczasowe",
+					"Pensjonaty",
+					"Pokoje gościnne",
+					"Pola biwakowe",
+					"Pozostałe niesklasyfikowane",
+					"Pozostałe obiekty noclegowe",
+					"Schroniska",
+					"Schroniska młodzieżowe",
+					"Szkolne schroniska młodzieżowe",
+					"Zakłady uzdrowiskowe",
+					"Zespoły domków turystycznych"},
+				"Domy pracy twórczej & Domy wycieczkowe & Hostele & Kempingi & ...",
+				'Obiekty'[Rodzaj_obiektu]
+			)
+		lineageTag: aedaea8f-1613-4077-9eed-e916ba87682b
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "Obiekty"
+				          }
+				        },
+				        "Property": "Rodzaj_obiektu"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"o","Entity":"Obiekty"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"o"}},"Property":"Rodzaj_obiektu"}}],"GroupItems":[{"DisplayName":"(Puste)","BlankDefaultPlaceholder":true},{"DisplayName":"Domy pracy twórczej & Domy wycieczkowe & Hostele & Kempingi & ...","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"o"}},"Property":"Rodzaj_obiektu"}}],"Values":[[{"Literal":{"Value":"'Domy pracy twórczej'"}}],[{"Literal":{"Value":"'Domy wycieczkowe'"}}],[{"Literal":{"Value":"'Hostele'"}}],[{"Literal":{"Value":"'Kempingi'"}}],[{"Literal":{"Value":"'Kwatery agroturystyczne'"}}],[{"Literal":{"Value":"'Motele'"}}],[{"Literal":{"Value":"'Ośrodki kolonijne'"}}],[{"Literal":{"Value":"'Ośrodki szkoleniowo-wypoczynkowe'"}}],[{"Literal":{"Value":"'Ośrodki wczasowe'"}}],[{"Literal":{"Value":"'Pensjonaty'"}}],[{"Literal":{"Value":"'Pokoje gościnne'"}}],[{"Literal":{"Value":"'Pola biwakowe'"}}],[{"Literal":{"Value":"'Pozostałe niesklasyfikowane'"}}],[{"Literal":{"Value":"'Pozostałe obiekty noclegowe'"}}],[{"Literal":{"Value":"'Schroniska'"}}],[{"Literal":{"Value":"'Schroniska młodzieżowe'"}}],[{"Literal":{"Value":"'Szkolne schroniska młodzieżowe'"}}],[{"Literal":{"Value":"'Zakłady uzdrowiskowe'"}}],[{"Literal":{"Value":"'Zespoły domków turystycznych'"}}]]}}}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Obiekty = m
+		mode: import
+		source = ```
+				let
+				  Źródło = Csv.Document(File.Contents("C:\Users\skatm\Downloads\gotowe_noclegi (2).csv"), [Delimiter = ",", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				  #"Nagłówki o podwyższonym poziomie" = Table.PromoteHeaders(Źródło, [PromoteAllScalars = true]),
+				  #"Zmieniono typ kolumny" = Table.TransformColumnTypes(#"Nagłówki o podwyższonym poziomie", {{"Rodzaj_obiektu", type text}, {"Miesiac", type text}, {"Turyści_Ogółem", type text}, {"Turyści_Zagraniczni", type text}, {"Rok", Int64.Type}, {"Turyści_Krajowi", type text}}, "pl"),
+				    #"Zamieniono wartość" = Table.ReplaceValue(#"Zmieniono typ kolumny",".",",",Replacer.ReplaceText,{"Turyści_Ogółem"}),
+				    #"Zmieniono typ" = Table.TransformColumnTypes(#"Zamieniono wartość",{{"Turyści_Ogółem", Int64.Type}}),
+				    #"Zamieniono wartość1" = Table.ReplaceValue(#"Zmieniono typ",".",",",Replacer.ReplaceText,{"Turyści_Zagraniczni"}),
+				    #"Zmieniono typ1" = Table.TransformColumnTypes(#"Zamieniono wartość1",{{"Turyści_Zagraniczni", Int64.Type}}),
+				    #"Zamieniono wartość2" = Table.ReplaceValue(#"Zmieniono typ1",".",",",Replacer.ReplaceText,{"Turyści_Krajowi"}),
+				    #"Zmieniono typ2" = Table.TransformColumnTypes(#"Zamieniono wartość2",{{"Turyści_Krajowi", Int64.Type}}),
+				    #"Zmieniono kolejność kolumn" = Table.ReorderColumns(#"Zmieniono typ2",{"Rodzaj_obiektu", "Miesiac", "Turyści_Ogółem", "Turyści_Zagraniczni", "Turyści_Krajowi", "Rok"}),
+				    #"Dodano kolumnę niestandardową" = Table.AddColumn(#"Zmieniono kolejność kolumn", "Miesiące", each let
+				    miesiac_liczba = 
+				        if [Miesiac] = "I" then 1
+				        else if [Miesiac] = "II" then 2
+				        else if [Miesiac] = "III" then 3
+				        else if [Miesiac] = "IV" then 4
+				        else if [Miesiac] = "V" then 5
+				        else if [Miesiac] = "VI" then 6
+				        else if [Miesiac] = "VII" then 7
+				        else if [Miesiac] = "VIII" then 8
+				        else if [Miesiac] = "IX" then 9
+				        else if [Miesiac] = "X" then 10
+				        else if [Miesiac] = "XI" then 11
+				        else if [Miesiac] = "XII" then 12
+				        else 1
+				in
+				    #date([Rok], miesiac_liczba, 1)),
+				    #"Zmieniono typ3" = Table.TransformColumnTypes(#"Dodano kolumnę niestandardową",{{"Miesiące", type date}}),
+				    #"Podzielono kolumnę według ogranicznika" = Table.SplitColumn(#"Zmieniono typ3", "Rodzaj_obiektu", Splitter.SplitTextByDelimiter("#(lf)", QuoteStyle.Csv), {"Rodzaj_obiektu.1", "Rodzaj_obiektu.2"}),
+				    #"Zmieniono typ4" = Table.TransformColumnTypes(#"Podzielono kolumnę według ogranicznika",{{"Rodzaj_obiektu.1", type text}, {"Rodzaj_obiektu.2", type text}}),
+				    #"Usunięto kolumny" = Table.RemoveColumns(#"Zmieniono typ4",{"Rodzaj_obiektu.2"}),
+				    #"Zmieniono nazwy kolumn" = Table.RenameColumns(#"Usunięto kolumny",{{"Rodzaj_obiektu.1", "Rodzaj_obiektu"}}),
+				    #"Przycięty tekst" = Table.TransformColumns(#"Zmieniono nazwy kolumn",{{"Rodzaj_obiektu", Text.Trim, type text}})
+				in
+				    #"Przycięty tekst"
+				```
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

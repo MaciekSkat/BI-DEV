@@ -1,0 +1,314 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "32540d55e388926ad177",
+  "position": {
+    "x": 1243.0395136778116,
+    "y": 427.47720364741639,
+    "z": 17000,
+    "height": 555.86626139817633,
+    "width": 643.40425531914889,
+    "tabOrder": 17000
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "GroupRef": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Obiekty"
+                    }
+                  },
+                  "Property": "Pozostałe obiekty noclegowe",
+                  "GroupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Obiekty"
+                          }
+                        },
+                        "Property": "Rodzaj_obiektu"
+                      }
+                    }
+                  ]
+                }
+              },
+              "queryRef": "Obiekty.Pozostałe obiekty noclegowe",
+              "nativeQueryRef": "Pozostałe obiekty noclegowe",
+              "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Obiekty"
+                    }
+                  },
+                  "Property": "Turyści krajowi"
+                }
+              },
+              "queryRef": "Obiekty.Turyści krajowi",
+              "nativeQueryRef": "Turyści krajowi"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Obiekty"
+                    }
+                  },
+                  "Property": "Turyści ogółem"
+                }
+              },
+              "queryRef": "Obiekty.Turyści ogółem",
+              "nativeQueryRef": "Turyści ogółem"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Miary"
+                    }
+                  },
+                  "Property": "Obiekty_Turyści Zagraniczni"
+                }
+              },
+              "queryRef": "_Miary.O_Turyści Zagraniczni",
+              "nativeQueryRef": "Turyści Zagraniczni",
+              "displayName": "Turyści Zagraniczni"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Miary"
+                  }
+                },
+                "Property": "Obiekty_Turyści Zagraniczni"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "labelStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Category, data value, percent of total'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "slices": [
+        {
+          "properties": {
+            "startAngle": {
+              "expr": {
+                "Literal": {
+                  "Value": "305L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#196629'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Obiekty"
+                          }
+                        },
+                        "Property": "Pozostałe obiekty noclegowe"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Hotele'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2BC44F'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Obiekty"
+                          }
+                        },
+                        "Property": "Pozostałe obiekty noclegowe"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Inne obiekty hotelowe'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#52F0AB'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Obiekty"
+                          }
+                        },
+                        "Property": "Pozostałe obiekty noclegowe"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Domy pracy twórczej & Domy wycieczkowe & Hostele & Kempingi & ...'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Stosunek obiektów hotelowych do pozostałych'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

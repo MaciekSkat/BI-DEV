@@ -1,0 +1,187 @@
+table _Miary
+	lineageTag: e9d56087-61af-46ef-9286-fabbc79e45c8
+
+	measure 'Suma Turystów' = SUM(df_final[Turysci])
+		formatString: #,0
+		lineageTag: b074d660-796a-4032-b745-5c6b68cab2e1
+
+	measure 'Suma Noclegów' = Sum(df_final[Noclegi])
+		formatString: #,0
+		lineageTag: 989defc6-7690-4994-b080-65210cc3f18d
+
+	measure 'Filtr Top N' =
+			
+			VAR WybraneN = [Top N — wartość]-- Tu wstaw nazwę miary wygenerowanej przez parametr
+			VAR Ranga = RANKX(ALLSELECTED('Dim_Kraje_Master'[Kraj]), [Suma Turystów], , DESC, Dense)
+			RETURN
+			IF(Ranga <= WybraneN, 1, 0)
+		lineageTag: a34c5aa1-74e2-4662-a284-14496199029e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Obiekty_Turyści Zagraniczni' = SUM(Obiekty[Turyści_Zagraniczni])
+		formatString: #,0.00
+		lineageTag: d2a22346-c924-4a61-b187-994326436fb0
+
+	measure 'YoY %' =
+			
+			VAR RokBiezacy = [Ilość turystów]
+			VAR RokPoprzedni = CALCULATE([Ilość turystów], SAMEPERIODLASTYEAR('Dim_Date'[Date]))
+			RETURN
+			DIVIDE(RokBiezacy - RokPoprzedni, RokPoprzedni)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: c28170ce-2842-4ad9-8e36-ac259cfd36d2
+
+	measure YoY =
+			
+			VAR RokBiezacy = [Ilość turystów]
+			VAR RokPoprzedni = CALCULATE([Ilość turystów], SAMEPERIODLASTYEAR('Dim_Date'[Date]))
+			RETURN
+			RokPoprzedni
+		lineageTag: f3d7dfce-c78f-4d12-aaf1-93c5445d8f74
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY Obiekty ogół' = ```
+			
+			VAR TenRok= [Turyści ogółem]
+			VAR ZeszlyRok=CALCULATE([Turyści ogółem],SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			Return 
+			TenRok-ZeszlyRok
+			```
+		lineageTag: 8a1ba0f4-e9f8-4ad3-890d-dc7af8ffeb2a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY % obiekty ogół' =
+			
+			VAR Teraz= [Turyści ogółem]
+			VAR ZeszlyRok= CALCULATE([Turyści ogółem],SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			RETURN
+			DIVIDE(Teraz-ZeszlyRok,ZeszlyRok)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ed7c0fde-e670-441f-8879-69d39d9e1fe7
+
+	measure 'YoY % obiekty krajowi' =
+			
+			VAR Teraz= [Turyści krajowi]
+			VAR ZeszlyRok= CALCULATE([Turyści krajowi],SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			RETURN
+			DIVIDE(Teraz-ZeszlyRok,ZeszlyRok)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 601b836f-726e-4311-a394-bda70ff9ded7
+
+	measure 'YoY % obiekty zagraniczni' =
+			
+			VAR Teraz= [Obiekty_Turyści Zagraniczni]
+			VAR ZeszlyRok= CALCULATE([Obiekty_Turyści Zagraniczni],SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			RETURN
+			DIVIDE(Teraz-ZeszlyRok,ZeszlyRok)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0d992181-89c4-4d87-9a13-a50d1c53f66c
+
+	measure 'YoY Obiekty krajowi' = ```
+			
+			VAR TenRok= [Turyści krajowi]
+			VAR ZeszlyRok=CALCULATE([Turyści krajowi],SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			Return 
+			TenRok-ZeszlyRok
+			```
+		lineageTag: 0ad251b8-a518-40f0-9551-72339942f9b1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY Obiekty zagraniczni' = ```
+			
+			VAR TenRok= [Obiekty_Turyści Zagraniczni]
+			VAR ZeszlyRok=CALCULATE([Obiekty_Turyści Zagraniczni],SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			Return 
+			TenRok-ZeszlyRok
+			```
+		lineageTag: 63307530-1990-41ff-b708-3a5afe887680
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY ilość' =
+			
+			VAR CurrentYear= [Ilość turystów]
+			VAR LastYear= CALCULATE([Ilość turystów], SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			Return
+			CurrentYear-LastYear
+		lineageTag: f607216a-e652-494a-afe7-a7ca645ddab7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY % ilość' =
+			
+			VAR CurrentYear= [Ilość turystów]
+			VAR LastYear= CALCULATE([Ilość turystów], SAMEPERIODLASTYEAR(Dim_Date[Date]))
+			Return
+			DIVIDE(CurrentYear-LastYear,LastYear)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0b1e04d9-c627-4ddf-9380-1b427fd56af8
+
+	measure Tytuł_Wykresu = "Najpopularniejsze kraje " & [Top N — wartość] & ""
+		lineageTag: 326af83a-5c97-4b39-a285-de83b9c284c5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY_Zabezpieczone Region' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY], BLANK())
+		lineageTag: d267b1f3-62cb-4232-be99-ca9315cb9e40
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Rok do Rok %' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY %], BLANK())
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 2c4b0cc5-2fe5-4b4b-bcf6-78980133eb66
+
+	measure 'YoY_Zabezpieczone Zagraniczni' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY Obiekty zagraniczni], BLANK())
+		lineageTag: 90e7e6f3-762c-418e-9681-197032998eab
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY_Zabezpieczone krajowi' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY Obiekty krajowi], BLANK())
+		lineageTag: d38841af-fb93-4867-902b-d7eb1dea52ec
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY_Zabezpieczone Ogółem' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY Obiekty ogół], BLANK())
+		lineageTag: 75116e2c-7f48-4157-97b6-8cf230ca1ee4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY%_Zabezpieczone Ogółem' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY % obiekty ogół], BLANK())
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7d5912aa-13d2-4bdd-952b-bc8b4cdb4b33
+
+	measure 'YoY%_Zabezpieczone krajowi' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY % obiekty krajowi], BLANK())
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b9d50150-97d4-409a-b2d1-a065f5b6c3a0
+
+	measure 'YoY%_Zabezpieczone zagraniczni' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY % obiekty zagraniczni], BLANK())
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 4061df16-fee8-4041-8e28-475dfed4c956
+
+	measure 'YoY%_Zabezpieczone ilość' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY % ilość], BLANK())
+		lineageTag: d4300a3e-eaf3-4f16-8055-20c2700c88b5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'YoY_Zabezpieczone ilość' = IF(ISFILTERED('Dim_Date'[Rok]), [YoY ilość], BLANK())
+		lineageTag: b53f0ad5-a672-46e7-bd7d-aff0faecbee1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition _Miary = m
+		mode: import
+		source =
+				let
+				  Źródło = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Kolumna 1" = _t]),
+				    #"Usunięto kolumny" = Table.RemoveColumns(Źródło,{"Kolumna 1"})
+				in
+				  #"Usunięto kolumny"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+

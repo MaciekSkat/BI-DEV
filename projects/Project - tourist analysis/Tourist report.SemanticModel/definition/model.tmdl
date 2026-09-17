@@ -1,0 +1,39 @@
+model Model
+	culture: pl-PL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pl-PL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Przekształć plik z: Obiekty'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Przekształć plik z: Obiekty\Zapytania pomocnicze'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Turyści per Woj/pow","Dim_Geo","Dim_Kraje","df_final","_Miary","Parametr1","Przykładowy plik","Przekształć plik","Obiekty"]
+
+annotation __TEdtr = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'Turyści per Woj/pow'
+ref table Dim_Geo
+ref table Dim_Kraje
+ref table Dim_Date
+ref table df_final
+ref table _Miary
+ref table 'Przełącznik analizy'
+ref table 'Wybór wskaźnika'
+ref table 'Top N'
+ref table Dim_Kraje_Master
+ref table Obiekty
+
+ref cultureInfo pl-PL
+

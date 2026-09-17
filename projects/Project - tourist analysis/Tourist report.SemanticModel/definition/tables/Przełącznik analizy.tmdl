@@ -1,0 +1,32 @@
+table 'Przełącznik analizy'
+	lineageTag: 5757162b-4eba-46d7-bc3a-7fbdb426fdd0
+
+	calculationGroup
+
+		calculationItem 'Aktualny rok' = Selectedmeasure()
+
+		calculationItem 'Rok do Rok %' =
+				VAR CurrentDate = MAX('Dim_Date'[Date])
+				VAR LastYear = SAMEPERIODLASTYEAR('Dim_Date'[Date])
+				RETURN
+				DIVIDE(
+				    SELECTEDMEASURE() - CALCULATE(SELECTEDMEASURE(), LastYear),
+				    CALCULATE(SELECTEDMEASURE(), LastYear)
+				)
+
+			formatStringDefinition = "0.00%"
+
+		calculationItem 'Rok do Rok' = SELECTEDMEASURE() - CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Dim_Date'[Date]))
+
+	column Okres
+		dataType: string
+		lineageTag: ebcd9e5f-b028-48f7-8a2c-e70b8cdb524e
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+	column Ordinal
+		dataType: int64
+		isHidden
+		lineageTag: 454e6eb7-2270-48ee-be7b-2a954746ca51
+		sourceColumn: Ordinal
+

@@ -1,0 +1,24 @@
+relationship AutoDetected_9e3a7b26-53e3-4472-a045-262ce4810fd2
+	fromColumn: 'Turyści per Woj/pow'.Kod
+	toColumn: Dim_Geo.Kod
+
+relationship 0a641ffe-6cf5-a2d7-0830-3920da40a7a4
+	fromColumn: 'Turyści per Woj/pow'.Data_Facts
+	toColumn: Dim_Date.Date
+
+relationship cc11f3c5-d3ba-1f04-67ef-858113db1c5c
+	fromColumn: df_final.Date_facts
+	toColumn: Dim_Date.Date
+
+relationship 21b11130-5d34-4518-4fc9-14860391d806
+	fromColumn: df_final.Kraj
+	toColumn: Dim_Kraje_Master.Kraj
+
+relationship be746d74-8972-5546-26e9-47cdfbb28a6d
+	fromColumn: 'Turyści per Woj/pow'.Kraje
+	toColumn: Dim_Kraje_Master.Kraj
+
+relationship 4b31b9e5-7d45-84ef-1d57-829e6c258d0f
+	fromColumn: Obiekty.Miesiące
+	toColumn: Dim_Date.Date
+

@@ -1,0 +1,43 @@
+table Dim_Geo
+	lineageTag: 7e1dcb86-c836-4cd1-ad4d-aad28c1cc24c
+
+	column Kod
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f9de1a0-da08-422c-a86b-3e714f8a0f59
+		summarizeBy: none
+		sourceColumn: Kod
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nazwa
+		dataType: string
+		lineageTag: cdbbc51b-df89-4c40-9e87-18ac75d1f681
+		summarizeBy: none
+		sourceColumn: Nazwa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Poziom_Geograficzny
+		dataType: string
+		lineageTag: 80438b23-6806-4239-ad6d-4dcd40881def
+		summarizeBy: none
+		sourceColumn: Poziom_Geograficzny
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Geo = m
+		mode: import
+		source =
+				let
+				    Źródło = #"Turyści per Woj/pow",
+				    #"Usunięto inne kolumny" = Table.SelectColumns(Źródło,{"Kod", "Nazwa", "Poziom_Geograficzny"}),
+				    #"Usunięto duplikaty" = Table.Distinct(#"Usunięto inne kolumny"),
+				    #"Przefiltrowano wiersze" = Table.SelectRows(#"Usunięto duplikaty", each true)
+				in
+				    #"Przefiltrowano wiersze"
+
+	annotation PBI_NavigationStepName = Nawigacja
+
+	annotation PBI_ResultType = Table
+
