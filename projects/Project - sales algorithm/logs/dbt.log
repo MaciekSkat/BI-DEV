@@ -813,3 +813,348 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m21:18:39.382711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E831A08050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8333CBB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E835963290>]}
 [0m21:18:39.383716 [debug] [MainThread]: Flushing usage events
 [0m21:18:40.275623 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:20:38.707237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A810269C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A819081A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A81456630>]}
+
+
+============================== 21:20:38.710755 | 6c745dd9-927d-4bb9-979f-b46f7d494fb9 ==============================
+[0m21:20:38.710755 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:20:38.712259 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\skatm\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\skatm\\DE\\BI-DEV\\projects\\Project - sales algorithm\\logs'}
+[0m21:20:38.731139 [info ] [MainThread]: dbt version: 1.12.5
+[0m21:20:38.732140 [info ] [MainThread]: python version: 3.12.10
+[0m21:20:38.732140 [info ] [MainThread]: python path: C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\.venv\Scripts\python.exe
+[0m21:20:38.733140 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:20:38.927008 [info ] [MainThread]: Using profiles dir at C:\Users\skatm\.dbt
+[0m21:20:38.928516 [info ] [MainThread]: Using profiles.yml file at C:\Users\skatm\.dbt\profiles.yml
+[0m21:20:38.928516 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\dbt_project.yml
+[0m21:20:38.928516 [info ] [MainThread]: adapter type: sqlserver
+[0m21:20:38.930025 [info ] [MainThread]: adapter version: 1.11.1
+[0m21:20:39.050987 [info ] [MainThread]: Configuration:
+[0m21:20:39.051989 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:20:39.051989 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:20:39.052986 [info ] [MainThread]: Required dependencies:
+[0m21:20:39.053490 [debug] [MainThread]: Executing "git --help"
+[0m21:20:39.100135 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:20:39.100135 [debug] [MainThread]: STDERR: "b''"
+[0m21:20:39.101141 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:20:39.101141 [info ] [MainThread]: Connection:
+[0m21:20:39.101141 [info ] [MainThread]:   driver: ODBC Driver 18 for SQL Server
+[0m21:20:39.102142 [info ] [MainThread]:   server: DESKTOP-86BL51K
+[0m21:20:39.102142 [info ] [MainThread]:   port: 1433
+[0m21:20:39.103141 [info ] [MainThread]:   database: m5_demand_forecast
+[0m21:20:39.103141 [info ] [MainThread]:   schema: dbo
+[0m21:20:39.103141 [info ] [MainThread]:   UID: dbt_user
+[0m21:20:39.104143 [info ] [MainThread]:   authentication: sql
+[0m21:20:39.104648 [info ] [MainThread]:   windows_login: False
+[0m21:20:39.104648 [info ] [MainThread]:   retries: 3
+[0m21:20:39.104648 [info ] [MainThread]:   login_timeout: 0
+[0m21:20:39.105655 [info ] [MainThread]:   query_timeout: 0
+[0m21:20:39.105655 [info ] [MainThread]:   trace_flag: False
+[0m21:20:39.106654 [info ] [MainThread]:   encrypt: True
+[0m21:20:39.106654 [info ] [MainThread]:   trust_cert: True
+[0m21:20:39.107655 [info ] [MainThread]:   backend: pyodbc
+[0m21:20:39.107655 [info ] [MainThread]:   xact_abort: True
+[0m21:20:39.107655 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m21:20:39.583757 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:20:39.584728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '6c745dd9-927d-4bb9-979f-b46f7d494fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A83727E60>]}
+[0m21:20:39.584728 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:20:39.584728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '6c745dd9-927d-4bb9-979f-b46f7d494fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A83727E60>]}
+[0m21:20:39.585757 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m21:20:39.585757 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m21:20:39.585757 [debug] [MainThread]: On debug: select 1 as id
+[0m21:20:39.586757 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:20:39.589733 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:20:55.424188 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:20:56.425431 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:21:12.241841 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:21:13.243069 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:21:29.081464 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:21:30.082847 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:21:45.955192 [debug] [MainThread]: sqlserver adapter: SQL execution raised FailedToConnectError: Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:21:45.955192 [debug] [MainThread]: sqlserver adapter: Error running SQL: select 1 as id
+[0m21:21:45.955192 [debug] [MainThread]: sqlserver adapter: Rolling back transaction.
+[0m21:21:45.956190 [debug] [MainThread]: On debug: No close available on handle
+[0m21:21:45.956190 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:21:45.957190 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:21:45.957190 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:21:45.958694 [debug] [MainThread]: Command `dbt debug` failed at 21:21:45.957190 after 67.37 seconds
+[0m21:21:45.958694 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:21:45.958694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A834EFEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A8516A930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A810269C0>]}
+[0m21:21:45.959699 [debug] [MainThread]: Flushing usage events
+[0m21:21:46.821535 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:24:10.101359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB7D3F0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB94D3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB9A75430>]}
+
+
+============================== 21:24:10.104944 | 71e4d0b5-b188-48d6-93bc-45c265ae82e2 ==============================
+[0m21:24:10.104944 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:24:10.106513 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\skatm\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\skatm\\DE\\BI-DEV\\projects\\Project - sales algorithm\\logs'}
+[0m21:24:10.125664 [info ] [MainThread]: dbt version: 1.12.5
+[0m21:24:10.125664 [info ] [MainThread]: python version: 3.12.10
+[0m21:24:10.126664 [info ] [MainThread]: python path: C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\.venv\Scripts\python.exe
+[0m21:24:10.126664 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:24:10.300208 [info ] [MainThread]: Using profiles dir at C:\Users\skatm\.dbt
+[0m21:24:10.301208 [info ] [MainThread]: Using profiles.yml file at C:\Users\skatm\.dbt\profiles.yml
+[0m21:24:10.301208 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\dbt_project.yml
+[0m21:24:10.301208 [info ] [MainThread]: adapter type: sqlserver
+[0m21:24:10.302414 [info ] [MainThread]: adapter version: 1.11.1
+[0m21:24:10.403943 [info ] [MainThread]: Configuration:
+[0m21:24:10.403943 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:24:10.404942 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:24:10.404942 [info ] [MainThread]: Required dependencies:
+[0m21:24:10.404942 [debug] [MainThread]: Executing "git --help"
+[0m21:24:10.445922 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:24:10.446923 [debug] [MainThread]: STDERR: "b''"
+[0m21:24:10.446923 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:24:10.447920 [info ] [MainThread]: Connection:
+[0m21:24:10.447920 [info ] [MainThread]:   driver: ODBC Driver 18 for SQL Server
+[0m21:24:10.447920 [info ] [MainThread]:   server: DESKTOP-86BL51K
+[0m21:24:10.448920 [info ] [MainThread]:   port: 1433
+[0m21:24:10.448920 [info ] [MainThread]:   database: m5_demand_forecast
+[0m21:24:10.448920 [info ] [MainThread]:   schema: dbo
+[0m21:24:10.449920 [info ] [MainThread]:   UID: dbt_user
+[0m21:24:10.449920 [info ] [MainThread]:   authentication: sql
+[0m21:24:10.449920 [info ] [MainThread]:   windows_login: False
+[0m21:24:10.449920 [info ] [MainThread]:   retries: 3
+[0m21:24:10.451424 [info ] [MainThread]:   login_timeout: 0
+[0m21:24:10.451424 [info ] [MainThread]:   query_timeout: 0
+[0m21:24:10.451424 [info ] [MainThread]:   trace_flag: False
+[0m21:24:10.452432 [info ] [MainThread]:   encrypt: True
+[0m21:24:10.452432 [info ] [MainThread]:   trust_cert: True
+[0m21:24:10.452432 [info ] [MainThread]:   backend: pyodbc
+[0m21:24:10.453430 [info ] [MainThread]:   xact_abort: True
+[0m21:24:10.453430 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m21:24:10.884550 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:24:10.884550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '71e4d0b5-b188-48d6-93bc-45c265ae82e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CBBE6FE60>]}
+[0m21:24:10.885551 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:24:10.886550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '71e4d0b5-b188-48d6-93bc-45c265ae82e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CBBFC8CE0>]}
+[0m21:24:10.886550 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m21:24:10.886550 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m21:24:10.888055 [debug] [MainThread]: On debug: select 1 as id
+[0m21:24:10.888055 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:24:10.892331 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:24:26.738844 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:24:27.740452 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:24:43.566329 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:24:44.567972 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:25:00.401219 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:25:01.402612 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:25:17.261170 [debug] [MainThread]: sqlserver adapter: SQL execution raised FailedToConnectError: Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:25:17.262177 [debug] [MainThread]: sqlserver adapter: Error running SQL: select 1 as id
+[0m21:25:17.262177 [debug] [MainThread]: sqlserver adapter: Rolling back transaction.
+[0m21:25:17.262177 [debug] [MainThread]: On debug: No close available on handle
+[0m21:25:17.263185 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:25:17.263185 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:25:17.264185 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:25:17.265183 [debug] [MainThread]: Command `dbt debug` failed at 21:25:17.265183 after 67.28 seconds
+[0m21:25:17.265183 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:25:17.266213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB7D3F0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CBBE6FE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB99823F0>]}
+[0m21:25:17.266213 [debug] [MainThread]: Flushing usage events
+[0m21:25:18.152575 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:25:58.834334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F47612CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4756AF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4756B020>]}
+
+
+============================== 21:25:58.837844 | 8b140504-c519-41be-82b2-221e34916fb8 ==============================
+[0m21:25:58.837844 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:25:58.838845 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\skatm\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\skatm\\DE\\BI-DEV\\projects\\Project - sales algorithm\\logs'}
+[0m21:25:58.858462 [info ] [MainThread]: dbt version: 1.12.5
+[0m21:25:58.858462 [info ] [MainThread]: python version: 3.12.10
+[0m21:25:58.859462 [info ] [MainThread]: python path: C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\.venv\Scripts\python.exe
+[0m21:25:58.859462 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:25:59.042812 [info ] [MainThread]: Using profiles dir at C:\Users\skatm\.dbt
+[0m21:25:59.043812 [info ] [MainThread]: Using profiles.yml file at C:\Users\skatm\.dbt\profiles.yml
+[0m21:25:59.043812 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\dbt_project.yml
+[0m21:25:59.043812 [info ] [MainThread]: adapter type: sqlserver
+[0m21:25:59.044811 [info ] [MainThread]: adapter version: 1.11.1
+[0m21:25:59.153449 [info ] [MainThread]: Configuration:
+[0m21:25:59.153449 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:25:59.154449 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:25:59.154449 [info ] [MainThread]: Required dependencies:
+[0m21:25:59.155448 [debug] [MainThread]: Executing "git --help"
+[0m21:25:59.197914 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:25:59.197914 [debug] [MainThread]: STDERR: "b''"
+[0m21:25:59.197914 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:25:59.198918 [info ] [MainThread]: Connection:
+[0m21:25:59.198918 [info ] [MainThread]:   driver: ODBC Driver 18 for SQL Server
+[0m21:25:59.199918 [info ] [MainThread]:   server: DESKTOP-86BL51K
+[0m21:25:59.199918 [info ] [MainThread]:   port: 1433
+[0m21:25:59.199918 [info ] [MainThread]:   database: m5_demand_forecast
+[0m21:25:59.200956 [info ] [MainThread]:   schema: dbo
+[0m21:25:59.200956 [info ] [MainThread]:   UID: dbt_user
+[0m21:25:59.201965 [info ] [MainThread]:   authentication: sql
+[0m21:25:59.201965 [info ] [MainThread]:   windows_login: False
+[0m21:25:59.201965 [info ] [MainThread]:   retries: 3
+[0m21:25:59.202962 [info ] [MainThread]:   login_timeout: 0
+[0m21:25:59.202962 [info ] [MainThread]:   query_timeout: 0
+[0m21:25:59.203961 [info ] [MainThread]:   trace_flag: False
+[0m21:25:59.203961 [info ] [MainThread]:   encrypt: True
+[0m21:25:59.203961 [info ] [MainThread]:   trust_cert: True
+[0m21:25:59.204963 [info ] [MainThread]:   backend: pyodbc
+[0m21:25:59.204963 [info ] [MainThread]:   xact_abort: True
+[0m21:25:59.205962 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m21:25:59.641176 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:25:59.642186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '8b140504-c519-41be-82b2-221e34916fb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F494043B0>]}
+[0m21:25:59.642694 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:25:59.642694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '8b140504-c519-41be-82b2-221e34916fb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4952ACC0>]}
+[0m21:25:59.643697 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m21:25:59.643697 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m21:25:59.643697 [debug] [MainThread]: On debug: select 1 as id
+[0m21:25:59.644695 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:25:59.647696 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:26:15.469776 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+3 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:26:16.471147 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:26:32.275889 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+2 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:26:33.277422 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:26:49.110090 [debug] [MainThread]: sqlserver adapter: Got a retryable error when attempting to open a sqlserver connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:26:50.111321 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:27:05.956648 [debug] [MainThread]: sqlserver adapter: SQL execution raised FailedToConnectError: Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+[0m21:27:05.958153 [debug] [MainThread]: sqlserver adapter: Error running SQL: select 1 as id
+[0m21:27:05.958153 [debug] [MainThread]: sqlserver adapter: Rolling back transaction.
+[0m21:27:05.958153 [debug] [MainThread]: On debug: No close available on handle
+[0m21:27:05.958153 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:27:05.959158 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:27:05.959158 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Nie można nawiązać połączenia, ponieważ komputer docelowy aktywnie go odmawia.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to DESKTOP-86BL51K,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:27:05.960159 [debug] [MainThread]: Command `dbt debug` failed at 21:27:05.960159 after 67.26 seconds
+[0m21:27:05.961160 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:27:05.961160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F47E27950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F494043B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F44D90FB0>]}
+[0m21:27:05.961160 [debug] [MainThread]: Flushing usage events
+[0m21:27:06.838860 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:30:46.748053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BC6D56900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BC895C2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BC895C1D0>]}
+
+
+============================== 21:30:46.752556 | 9e508f3e-bfce-4a8c-ace3-036369f342ae ==============================
+[0m21:30:46.752556 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:30:46.753070 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\skatm\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\skatm\\DE\\BI-DEV\\projects\\Project - sales algorithm\\logs'}
+[0m21:30:46.773619 [info ] [MainThread]: dbt version: 1.12.5
+[0m21:30:46.773619 [info ] [MainThread]: python version: 3.12.10
+[0m21:30:46.774621 [info ] [MainThread]: python path: C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\.venv\Scripts\python.exe
+[0m21:30:46.774621 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:30:46.983162 [info ] [MainThread]: Using profiles dir at C:\Users\skatm\.dbt
+[0m21:30:46.984167 [info ] [MainThread]: Using profiles.yml file at C:\Users\skatm\.dbt\profiles.yml
+[0m21:30:46.984167 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\dbt_project.yml
+[0m21:30:46.985168 [info ] [MainThread]: adapter type: sqlserver
+[0m21:30:46.985168 [info ] [MainThread]: adapter version: 1.11.1
+[0m21:30:47.125889 [info ] [MainThread]: Configuration:
+[0m21:30:47.125889 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:30:47.126892 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:30:47.126892 [info ] [MainThread]: Required dependencies:
+[0m21:30:47.127949 [debug] [MainThread]: Executing "git --help"
+[0m21:30:47.173176 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:30:47.174249 [debug] [MainThread]: STDERR: "b''"
+[0m21:30:47.174249 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:30:47.175251 [info ] [MainThread]: Connection:
+[0m21:30:47.175251 [info ] [MainThread]:   driver: ODBC Driver 18 for SQL Server
+[0m21:30:47.175251 [info ] [MainThread]:   server: DESKTOP-86BL51K
+[0m21:30:47.175251 [info ] [MainThread]:   port: 1433
+[0m21:30:47.176757 [info ] [MainThread]:   database: m5_demand_forecast
+[0m21:30:47.177272 [info ] [MainThread]:   schema: dbo
+[0m21:30:47.177272 [info ] [MainThread]:   UID: dbt_user
+[0m21:30:47.178278 [info ] [MainThread]:   authentication: sql
+[0m21:30:47.178278 [info ] [MainThread]:   windows_login: False
+[0m21:30:47.178278 [info ] [MainThread]:   retries: 3
+[0m21:30:47.179278 [info ] [MainThread]:   login_timeout: 0
+[0m21:30:47.179278 [info ] [MainThread]:   query_timeout: 0
+[0m21:30:47.180279 [info ] [MainThread]:   trace_flag: False
+[0m21:30:47.180279 [info ] [MainThread]:   encrypt: True
+[0m21:30:47.181279 [info ] [MainThread]:   trust_cert: True
+[0m21:30:47.181279 [info ] [MainThread]:   backend: pyodbc
+[0m21:30:47.182278 [info ] [MainThread]:   xact_abort: True
+[0m21:30:47.182278 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m21:30:47.635485 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:30:47.635485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '9e508f3e-bfce-4a8c-ace3-036369f342ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BCB5A7E60>]}
+[0m21:30:47.635485 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:30:47.636989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '9e508f3e-bfce-4a8c-ace3-036369f342ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BCC1D95B0>]}
+[0m21:30:47.636989 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m21:30:47.636989 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m21:30:47.637994 [debug] [MainThread]: On debug: select 1 as id
+[0m21:30:47.637994 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:30:47.640994 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:30:47.748201 [debug] [MainThread]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:30:47.750201 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:30:47.751199 [debug] [MainThread]: On debug: Close
+[0m21:30:47.751199 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:30:47.752199 [info ] [MainThread]: [32mAll checks passed![0m
+[0m21:30:47.753200 [debug] [MainThread]: Command `dbt debug` succeeded at 21:30:47.753200 after 1.12 seconds
+[0m21:30:47.753704 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:30:47.753704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BC6D56900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BCB5A7E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BCC07A3F0>]}
+[0m21:30:47.753704 [debug] [MainThread]: Flushing usage events
+[0m21:30:48.608869 [debug] [MainThread]: An error was encountered while trying to flush usage events
