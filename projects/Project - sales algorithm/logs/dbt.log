@@ -1158,3 +1158,1151 @@ Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more
 [0m21:30:47.753704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BC6D56900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BCB5A7E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026BCC07A3F0>]}
 [0m21:30:47.753704 [debug] [MainThread]: Flushing usage events
 [0m21:30:48.608869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:43:25.680225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4F46AFF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4C3DD8B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4C3DDA30>]}
+
+
+============================== 21:43:25.685738 | 75622835-1129-4631-b815-3baf68f97921 ==============================
+[0m21:43:25.685738 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:43:25.685738 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\skatm\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build', 'log_path': 'C:\\Users\\skatm\\DE\\BI-DEV\\projects\\Project - sales algorithm\\logs'}
+[0m21:43:26.034527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4FF37350>]}
+[0m21:43:26.098107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4ACBB4D0>]}
+[0m21:43:26.098107 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m21:43:26.559293 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:43:26.559293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B51344AD0>]}
+[0m21:43:26.560298 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:43:26.560298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B51544BC0>]}
+[0m21:43:26.584395 [debug] [MainThread]: checksum: cd6543364d7b120badd80f636aba583e14fb1266f6e14d9719facae820df7d04, vars: {}, profile: sales_algorithm, target: dev, version: 1.12.5
+[0m21:43:26.585906 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:43:26.585906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B515448F0>]}
+[0m21:43:28.766274 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses dbt-core's standard schema concatenation (`target.schema` + `_` + `custom_schema_name`). When False (default), uses legacy adapter behaviour: `custom_schema_name` is used directly without prefixing `target.schema`. For a permanent solution, override the `sqlserver__generate_schema_name` macro in your project instead.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_default_schema_concat` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:43:28.766274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4FEE3260>]}
+[0m21:43:29.388690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B51BBE960>]}
+[0m21:43:29.500259 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\manifest.json
+[0m21:43:29.514334 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\semantic_manifest.json
+[0m21:43:29.708370 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\osi_document.json
+[0m21:43:29.825968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B51DF6C90>]}
+[0m21:43:29.825968 [info ] [MainThread]: Found 3 models, 1 seed, 7 data tests, 556 macros
+[0m21:43:29.828475 [info ] [MainThread]: 
+[0m21:43:29.829481 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:43:29.829481 [info ] [MainThread]: 
+[0m21:43:29.829481 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m21:43:29.835499 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_m5_demand_forecast'
+[0m21:43:29.855544 [debug] [ThreadPool]: dbt-sqlserver
+[0m21:43:29.859064 [debug] [ThreadPool]: Using sqlserver connection "list_m5_demand_forecast"
+[0m21:43:29.859064 [debug] [ThreadPool]: On list_m5_demand_forecast: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "connection_name": "list_m5_demand_forecast"} */
+USE [m5_demand_forecast];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m21:43:29.859064 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:43:29.862061 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:29.976423 [debug] [ThreadPool]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:29.984437 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:43:29.985942 [debug] [ThreadPool]: On list_m5_demand_forecast: Close
+[0m21:43:29.986951 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_m5_demand_forecast_dbo'
+[0m21:43:29.992457 [debug] [ThreadPool]: dbt-sqlserver
+[0m21:43:29.992457 [debug] [ThreadPool]: Using sqlserver connection "list_m5_demand_forecast_dbo"
+[0m21:43:29.993455 [debug] [ThreadPool]: On list_m5_demand_forecast_dbo: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "connection_name": "list_m5_demand_forecast_dbo"} */
+USE [m5_demand_forecast];
+    declare @schema_id int = schema_id('dbo');
+    select
+      DB_NAME() as [database],
+      t.name as [name],
+      'dbo' as [schema],
+      'table' as table_type
+    from sys.tables as t with (nolock)
+    where t.schema_id = @schema_id
+    union all
+    select
+      DB_NAME() as [database],
+      v.name as [name],
+      'dbo' as [schema],
+      'view' as table_type
+    from sys.views as v with (nolock)
+    where v.schema_id = @schema_id
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m21:43:29.993455 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:43:29.994458 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:29.994458 [debug] [ThreadPool]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:30.029290 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:43:30.030296 [debug] [ThreadPool]: On list_m5_demand_forecast_dbo: ROLLBACK
+[0m21:43:30.031295 [debug] [ThreadPool]: On list_m5_demand_forecast_dbo: Close
+[0m21:43:30.032293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B51DC85C0>]}
+[0m21:43:30.032293 [debug] [MainThread]: On master: COMMIT
+[0m21:43:30.061484 [debug] [Thread-1 (]: Began running node model.sales_algorithm.my_first_dbt_model
+[0m21:43:30.061484 [debug] [Thread-2 (]: Began running node seed.sales_algorithm.calendar
+[0m21:43:30.062485 [info ] [Thread-1 (]: 1 of 11 START sql table model dbo.my_first_dbt_model ........................... [RUN]
+[0m21:43:30.063560 [debug] [Thread-1 (]: Acquiring new sqlserver connection 'model.sales_algorithm.my_first_dbt_model'
+[0m21:43:30.062485 [info ] [Thread-2 (]: 2 of 11 START seed file dbo.calendar ........................................... [RUN]
+[0m21:43:30.063560 [debug] [Thread-1 (]: Began compiling node model.sales_algorithm.my_first_dbt_model
+[0m21:43:30.064559 [debug] [Thread-2 (]: Acquiring new sqlserver connection 'seed.sales_algorithm.calendar'
+[0m21:43:30.069991 [debug] [Thread-1 (]: Writing injected SQL for node "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:30.069991 [debug] [Thread-2 (]: Began compiling node seed.sales_algorithm.calendar
+[0m21:43:30.070990 [debug] [Thread-2 (]: Began executing node seed.sales_algorithm.calendar
+[0m21:43:30.208994 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:30.208994 [debug] [Thread-1 (]: Began executing node model.sales_algorithm.my_first_dbt_model
+[0m21:43:30.209993 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "seed.sales_algorithm.calendar"} */
+
+    create table "m5_demand_forecast"."dbo"."calendar" ("date" date,"wm_yr_wk" int,"weekday" varchar(16),"wday" int,"month" int,"year" int,"d" varchar(16),"event_name_1" varchar(19),"event_type_1" varchar(16),"event_name_2" varchar(16),"event_type_2" varchar(16),"snap_CA" int,"snap_TX" int,"snap_WI" int)
+  
+[0m21:43:30.242118 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:43:30.242118 [debug] [Thread-2 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:30.254699 [debug] [Thread-1 (]: dbt-sqlserver
+[0m21:43:30.255735 [debug] [Thread-2 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:30.262085 [debug] [Thread-1 (]: Applying DROP to: "m5_demand_forecast"."dbo"."my_first_dbt_model__dbt_tmp__dbt_tmp_vw"
+[0m21:43:30.268619 [debug] [Thread-1 (]: dbt-sqlserver
+[0m21:43:30.268619 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:30.269620 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.my_first_dbt_model"} */
+
+        USE [m5_demand_forecast];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs with (nolock)
+        inner join sys.objects obj with (nolock)
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch with (nolock)
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'm5_demand_forecast'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'my_first_dbt_model__dbt_tmp__dbt_tmp_vw'
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m21:43:30.269620 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:43:30.270618 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:30.274619 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:30.275128 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:30.292352 [debug] [Thread-2 (]: Inserting batches of 149 records
+[0m21:43:30.458747 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:30.585623 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:30.601679 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.my_first_dbt_model"} */
+
+      
+      
+    
+    USE [m5_demand_forecast];
+    EXEC('DROP view IF EXISTS "dbo"."my_first_dbt_model__dbt_tmp__dbt_tmp_vw";');
+
+[0m21:43:30.650637 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:30.650637 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:30.651637 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:30.665173 [debug] [Thread-1 (]: Writing runtime sql for node "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:30.667682 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:30.667682 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.my_first_dbt_model"} */
+
+  
+    USE [m5_demand_forecast];
+    USE [m5_demand_forecast];
+    
+    
+
+    
+
+    USE [m5_demand_forecast];
+    EXEC('
+        CREATE OR ALTER VIEW "dbo"."my_first_dbt_model__dbt_tmp__dbt_tmp_vw" AS /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null;
+    ')
+
+EXEC('IF OBJECT_ID(''dbo.my_first_dbt_model__dbt_tmp'', ''U'') IS NOT NULL
+                EXEC(''DROP TABLE "m5_demand_forecast"."dbo"."my_first_dbt_model__dbt_tmp"'');SELECT * INTO "m5_demand_forecast"."dbo"."my_first_dbt_model__dbt_tmp" FROM "m5_demand_forecast"."dbo"."my_first_dbt_model__dbt_tmp__dbt_tmp_vw" 
+    OPTION (LABEL = ''dbt-sqlserver'');
+
+        ')
+
+    
+    EXEC('DROP VIEW IF EXISTS "dbo"."my_first_dbt_model__dbt_tmp__dbt_tmp_vw"')
+
+
+
+    
+    use [m5_demand_forecast];
+    if EXISTS (
+        SELECT *
+        FROM sys.indexes with (nolock)
+        WHERE name = 'dbo_my_first_dbt_model__dbt_tmp_cci'
+        AND object_id=object_id('"dbo"."my_first_dbt_model__dbt_tmp"')
+    )
+    DROP index "dbo"."my_first_dbt_model__dbt_tmp".dbo_my_first_dbt_model__dbt_tmp_cci
+    CREATE CLUSTERED COLUMNSTORE INDEX dbo_my_first_dbt_model__dbt_tmp_cci
+    ON "dbo"."my_first_dbt_model__dbt_tmp"
+
+   
+
+
+  
+[0m21:43:30.688731 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:30.694744 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:30.694744 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.my_first_dbt_model"} */
+USE [m5_demand_forecast];
+      EXEC sp_rename 'dbo.my_first_dbt_model__dbt_tmp', 'my_first_dbt_model'
+[0m21:43:30.725356 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:30.975515 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:31.006104 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:31.006104 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:31.045331 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: COMMIT
+[0m21:43:31.047328 [debug] [Thread-1 (]: Applying DROP to: "m5_demand_forecast"."dbo"."my_first_dbt_model__dbt_backup"
+[0m21:43:31.047833 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.my_first_dbt_model"
+[0m21:43:31.047833 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.my_first_dbt_model"} */
+
+      
+    USE [m5_demand_forecast];
+    EXEC('DROP table IF EXISTS "dbo"."my_first_dbt_model__dbt_backup";');
+
+[0m21:43:31.048837 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:31.051838 [debug] [Thread-1 (]: On model.sales_algorithm.my_first_dbt_model: Close
+[0m21:43:31.058356 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B5206CBC0>]}
+[0m21:43:31.059359 [info ] [Thread-1 (]: 1 of 11 OK created sql table model dbo.my_first_dbt_model ...................... [[32mOK[0m in 0.99s]
+[0m21:43:31.060359 [debug] [Thread-1 (]: Finished running node model.sales_algorithm.my_first_dbt_model
+[0m21:43:31.060359 [debug] [Thread-4 (]: Began running node test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710
+[0m21:43:31.061358 [debug] [Thread-3 (]: Began running node test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321
+[0m21:43:31.060359 [info ] [Thread-4 (]: 3 of 11 START test not_null_my_first_dbt_model_id .............................. [RUN]
+[0m21:43:31.061358 [info ] [Thread-3 (]: 4 of 11 START test unique_my_first_dbt_model_id ................................ [RUN]
+[0m21:43:31.062361 [debug] [Thread-4 (]: Acquiring new sqlserver connection 'test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m21:43:31.062361 [debug] [Thread-3 (]: Acquiring new sqlserver connection 'test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321'
+[0m21:43:31.063359 [debug] [Thread-4 (]: Began compiling node test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710
+[0m21:43:31.063359 [debug] [Thread-3 (]: Began compiling node test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321
+[0m21:43:31.076451 [debug] [Thread-4 (]: Writing injected SQL for node "test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m21:43:31.086468 [debug] [Thread-3 (]: Writing injected SQL for node "test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321"
+[0m21:43:31.088979 [debug] [Thread-4 (]: Began executing node test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710
+[0m21:43:31.108829 [debug] [Thread-4 (]: Writing runtime sql for node "test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m21:43:31.109827 [debug] [Thread-3 (]: Began executing node test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321
+[0m21:43:31.111827 [debug] [Thread-3 (]: Writing runtime sql for node "test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321"
+[0m21:43:31.112828 [debug] [Thread-4 (]: Using sqlserver connection "test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m21:43:31.114332 [debug] [Thread-3 (]: Using sqlserver connection "test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321"
+[0m21:43:31.114332 [debug] [Thread-4 (]: On test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_efc4c1ff4c1671c36ec31a56af8d3d7b_12478]
+   as 
+    
+    
+    
+
+
+
+select id
+from "m5_demand_forecast"."dbo"."my_first_dbt_model"
+where id is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_efc4c1ff4c1671c36ec31a56af8d3d7b_12478]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_efc4c1ff4c1671c36ec31a56af8d3d7b_12478]
+  ;')
+[0m21:43:31.115337 [debug] [Thread-3 (]: On test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_d8281921c319b4e68a8647bcae2ca40e_16398]
+   as 
+    
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "m5_demand_forecast"."dbo"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_d8281921c319b4e68a8647bcae2ca40e_16398]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_d8281921c319b4e68a8647bcae2ca40e_16398]
+  ;')
+[0m21:43:31.115337 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:43:31.115337 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:43:31.116342 [debug] [Thread-4 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:31.116342 [debug] [Thread-3 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:31.117851 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:31.130163 [debug] [Thread-4 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:31.145285 [debug] [Thread-3 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:31.394576 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:31.395583 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:43:31.395583 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:43:31.395583 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:43:31.398610 [debug] [Thread-4 (]: On test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m21:43:31.400614 [debug] [Thread-3 (]: On test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m21:43:31.400614 [debug] [Thread-4 (]: On test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m21:43:31.401646 [debug] [Thread-3 (]: On test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321: Close
+[0m21:43:31.402614 [error] [Thread-4 (]: 3 of 11 FAIL 1 not_null_my_first_dbt_model_id .................................. [[31mFAIL 1[0m in 0.34s]
+[0m21:43:31.403617 [info ] [Thread-3 (]: 4 of 11 PASS unique_my_first_dbt_model_id ...................................... [[32mPASS[0m in 0.34s]
+[0m21:43:31.403617 [debug] [Thread-4 (]: Finished running node test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710
+[0m21:43:31.404644 [debug] [Thread-3 (]: Finished running node test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321
+[0m21:43:31.405648 [debug] [Thread-7 (]: Marking all children of 'test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'fail'.  Reason: Got 1 result, configured to fail if != 0.
+[0m21:43:31.405648 [debug] [Thread-1 (]: Began running node model.sales_algorithm.my_second_dbt_model
+[0m21:43:31.406768 [info ] [Thread-1 (]: 5 of 11 SKIP relation dbo.my_second_dbt_model .................................. [[33mSKIP[0m]
+[0m21:43:31.406768 [debug] [Thread-1 (]: Finished running node model.sales_algorithm.my_second_dbt_model
+[0m21:43:31.407769 [debug] [Thread-7 (]: Marking all children of 'model.sales_algorithm.my_second_dbt_model' to be skipped because of status 'skipped'. 
+[0m21:43:31.407769 [debug] [Thread-3 (]: Began running node test.sales_algorithm.not_null_my_second_dbt_model_id.151b76d778
+[0m21:43:31.407769 [debug] [Thread-4 (]: Began running node test.sales_algorithm.unique_my_second_dbt_model_id.57a0f8c493
+[0m21:43:31.407769 [info ] [Thread-3 (]: 6 of 11 SKIP test not_null_my_second_dbt_model_id .............................. [[33mSKIP[0m]
+[0m21:43:31.409190 [debug] [Thread-3 (]: Finished running node test.sales_algorithm.not_null_my_second_dbt_model_id.151b76d778
+[0m21:43:31.410189 [debug] [Thread-7 (]: Marking all children of 'test.sales_algorithm.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'skipped'. 
+[0m21:43:31.409190 [info ] [Thread-4 (]: 7 of 11 SKIP test unique_my_second_dbt_model_id ................................ [[33mSKIP[0m]
+[0m21:43:31.410189 [debug] [Thread-4 (]: Finished running node test.sales_algorithm.unique_my_second_dbt_model_id.57a0f8c493
+[0m21:43:31.411187 [debug] [Thread-7 (]: Marking all children of 'test.sales_algorithm.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'skipped'. 
+[0m21:43:31.470305 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:31.746319 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:31.747825 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:31.802832 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:32.077692 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:32.079131 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:32.139665 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:32.464319 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:32.465326 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?...
+[0m21:43:32.523341 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:32.806489 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:32.806489 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:32.865606 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:33.150145 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:33.150145 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:33.210212 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:33.490922 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:33.491922 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:43:33.546294 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:33.826283 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:33.826283 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:43:33.884518 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:34.176569 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:34.176569 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:34.232945 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:34.520485 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:34.520485 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:34.583149 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:34.885418 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:34.885418 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:43:34.949111 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.014099 [debug] [Thread-2 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:43:35.014099 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:43:35.023243 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.027749 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.sales_algorithm.calendar"
+[0m21:43:35.031775 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: COMMIT
+[0m21:43:35.032781 [debug] [Thread-2 (]: On seed.sales_algorithm.calendar: Close
+[0m21:43:35.032781 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B52054320>]}
+[0m21:43:35.032781 [info ] [Thread-2 (]: 2 of 11 OK loaded seed file dbo.calendar ....................................... [[32mINSERT 1969[0m in 4.97s]
+[0m21:43:35.034288 [debug] [Thread-2 (]: Finished running node seed.sales_algorithm.calendar
+[0m21:43:35.034288 [debug] [Thread-1 (]: Began running node model.sales_algorithm.stg_calendar
+[0m21:43:35.035323 [info ] [Thread-1 (]: 8 of 11 START sql view model dbo.stg_calendar .................................. [RUN]
+[0m21:43:35.035323 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.sales_algorithm.my_first_dbt_model, now model.sales_algorithm.stg_calendar)
+[0m21:43:35.036320 [debug] [Thread-1 (]: Began compiling node model.sales_algorithm.stg_calendar
+[0m21:43:35.037856 [debug] [Thread-1 (]: Writing injected SQL for node "model.sales_algorithm.stg_calendar"
+[0m21:43:35.039406 [debug] [Thread-1 (]: Began executing node model.sales_algorithm.stg_calendar
+[0m21:43:35.062988 [debug] [Thread-1 (]: Writing runtime sql for node "model.sales_algorithm.stg_calendar"
+[0m21:43:35.063988 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:43:35.065040 [debug] [Thread-1 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+USE [m5_demand_forecast];
+    
+    
+
+    
+
+    USE [m5_demand_forecast];
+    EXEC('
+        CREATE OR ALTER VIEW "dbo"."stg_calendar" AS select
+    [date]      as calendar_date,
+    d           as day_id,
+    wm_yr_wk    as week_id,
+    weekday     as day_name,
+    wday        as day_of_week_num,
+    month       as month_num,
+    [year]      as year_num,
+    event_name_1,
+    event_type_1,
+    event_name_2,
+    event_type_2,
+    snap_CA     as is_snap_ca,
+    snap_TX     as is_snap_tx,
+    snap_WI     as is_snap_wi
+from "m5_demand_forecast"."dbo"."calendar";
+    ')
+
+
+[0m21:43:35.065040 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:43:35.066040 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:35.066040 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:35.068551 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.069551 [debug] [Thread-1 (]: On model.sales_algorithm.stg_calendar: COMMIT
+[0m21:43:35.071550 [debug] [Thread-1 (]: Applying DROP to: "m5_demand_forecast"."dbo"."stg_calendar__dbt_backup"
+[0m21:43:35.072550 [debug] [Thread-1 (]: dbt-sqlserver
+[0m21:43:35.072550 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:43:35.074658 [debug] [Thread-1 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+
+        USE [m5_demand_forecast];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs with (nolock)
+        inner join sys.objects obj with (nolock)
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch with (nolock)
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'm5_demand_forecast'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'stg_calendar__dbt_backup'
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m21:43:35.088144 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.091653 [debug] [Thread-1 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:43:35.091653 [debug] [Thread-1 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+
+      
+      
+    
+    USE [m5_demand_forecast];
+    EXEC('DROP view IF EXISTS "dbo"."stg_calendar__dbt_backup";');
+
+[0m21:43:35.092654 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.093653 [debug] [Thread-1 (]: On model.sales_algorithm.stg_calendar: Close
+[0m21:43:35.093653 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '75622835-1129-4631-b815-3baf68f97921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4C78C9E0>]}
+[0m21:43:35.094653 [info ] [Thread-1 (]: 8 of 11 OK created sql view model dbo.stg_calendar ............................. [[32mOK[0m in 0.06s]
+[0m21:43:35.095654 [debug] [Thread-1 (]: Finished running node model.sales_algorithm.stg_calendar
+[0m21:43:35.095654 [debug] [Thread-4 (]: Began running node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:43:35.096653 [debug] [Thread-2 (]: Began running node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:43:35.096653 [debug] [Thread-3 (]: Began running node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:43:35.096653 [info ] [Thread-4 (]: 9 of 11 START test not_null_stg_calendar_calendar_date ......................... [RUN]
+[0m21:43:35.098159 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.sales_algorithm.not_null_my_first_dbt_model_id.5fb22c2710, now test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208)
+[0m21:43:35.097655 [info ] [Thread-2 (]: 10 of 11 START test not_null_stg_calendar_day_id ............................... [RUN]
+[0m21:43:35.099166 [debug] [Thread-4 (]: Began compiling node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:43:35.099166 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.sales_algorithm.calendar, now test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f)
+[0m21:43:35.098159 [info ] [Thread-3 (]: 11 of 11 START test unique_stg_calendar_calendar_date .......................... [RUN]
+[0m21:43:35.105669 [debug] [Thread-4 (]: Writing injected SQL for node "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"
+[0m21:43:35.105669 [debug] [Thread-2 (]: Began compiling node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:43:35.106672 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.sales_algorithm.unique_my_first_dbt_model_id.16e066b321, now test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5)
+[0m21:43:35.113174 [debug] [Thread-2 (]: Writing injected SQL for node "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"
+[0m21:43:35.113174 [debug] [Thread-3 (]: Began compiling node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:43:35.119802 [debug] [Thread-3 (]: Writing injected SQL for node "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"
+[0m21:43:35.120798 [debug] [Thread-4 (]: Began executing node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:43:35.121769 [debug] [Thread-4 (]: Writing runtime sql for node "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"
+[0m21:43:35.124282 [debug] [Thread-3 (]: Began executing node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:43:35.125281 [debug] [Thread-3 (]: Writing runtime sql for node "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"
+[0m21:43:35.126279 [debug] [Thread-2 (]: Began executing node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:43:35.127784 [debug] [Thread-2 (]: Writing runtime sql for node "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"
+[0m21:43:35.128791 [debug] [Thread-4 (]: Using sqlserver connection "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"
+[0m21:43:35.128791 [debug] [Thread-4 (]: On test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_dbba0810dae1ca41910466ecfbe890c5_10692]
+   as 
+    
+    
+    
+
+
+
+select calendar_date
+from "m5_demand_forecast"."dbo"."stg_calendar"
+where calendar_date is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_dbba0810dae1ca41910466ecfbe890c5_10692]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_dbba0810dae1ca41910466ecfbe890c5_10692]
+  ;')
+[0m21:43:35.128791 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m21:43:35.129795 [debug] [Thread-3 (]: Using sqlserver connection "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"
+[0m21:43:35.129795 [debug] [Thread-4 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:35.129795 [debug] [Thread-3 (]: On test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_7aef47c8e71140425612f660ef8557b5_7014]
+   as 
+    
+    
+    
+
+select
+    calendar_date as unique_field,
+    count(*) as n_records
+
+from "m5_demand_forecast"."dbo"."stg_calendar"
+where calendar_date is not null
+group by calendar_date
+having count(*) > 1
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_7aef47c8e71140425612f660ef8557b5_7014]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_7aef47c8e71140425612f660ef8557b5_7014]
+  ;')
+[0m21:43:35.131299 [debug] [Thread-4 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:35.131816 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m21:43:35.131816 [debug] [Thread-2 (]: Using sqlserver connection "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"
+[0m21:43:35.131816 [debug] [Thread-3 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:35.132823 [debug] [Thread-2 (]: On test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_2e0a50f7e92c89efc3f720c7a6ce31b6_4443]
+   as 
+    
+    
+    
+
+
+
+select day_id
+from "m5_demand_forecast"."dbo"."stg_calendar"
+where day_id is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_2e0a50f7e92c89efc3f720c7a6ce31b6_4443]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_2e0a50f7e92c89efc3f720c7a6ce31b6_4443]
+  ;')
+[0m21:43:35.132823 [debug] [Thread-3 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:35.132823 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m21:43:35.134332 [debug] [Thread-2 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:43:35.136339 [debug] [Thread-2 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:43:35.138850 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.140360 [debug] [Thread-4 (]: On test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208: ROLLBACK
+[0m21:43:35.141371 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.141371 [debug] [Thread-4 (]: On test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208: Close
+[0m21:43:35.143369 [debug] [Thread-3 (]: On test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5: ROLLBACK
+[0m21:43:35.143369 [info ] [Thread-4 (]: 9 of 11 PASS not_null_stg_calendar_calendar_date ............................... [[32mPASS[0m in 0.04s]
+[0m21:43:35.143369 [debug] [Thread-3 (]: On test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5: Close
+[0m21:43:35.144370 [debug] [Thread-4 (]: Finished running node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:43:35.145371 [info ] [Thread-3 (]: 11 of 11 PASS unique_stg_calendar_calendar_date ................................ [[32mPASS[0m in 0.04s]
+[0m21:43:35.145371 [debug] [Thread-3 (]: Finished running node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:43:35.146367 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:43:35.147872 [debug] [Thread-2 (]: On test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f: ROLLBACK
+[0m21:43:35.147872 [debug] [Thread-2 (]: On test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f: Close
+[0m21:43:35.147872 [info ] [Thread-2 (]: 10 of 11 PASS not_null_stg_calendar_day_id ..................................... [[32mPASS[0m in 0.05s]
+[0m21:43:35.148877 [debug] [Thread-2 (]: Finished running node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:43:35.149955 [debug] [MainThread]: On master: COMMIT
+[0m21:43:35.150956 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:43:35.150956 [debug] [MainThread]: Connection 'list_m5_demand_forecast' was properly closed.
+[0m21:43:35.150956 [debug] [MainThread]: Connection 'list_m5_demand_forecast_dbo' was properly closed.
+[0m21:43:35.150956 [debug] [MainThread]: Connection 'model.sales_algorithm.stg_calendar' was properly closed.
+[0m21:43:35.151957 [debug] [MainThread]: Connection 'test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f' was properly closed.
+[0m21:43:35.151957 [debug] [MainThread]: Connection 'test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208' was properly closed.
+[0m21:43:35.151957 [debug] [MainThread]: Connection 'test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5' was properly closed.
+[0m21:43:35.152956 [info ] [MainThread]: 
+[0m21:43:35.152956 [info ] [MainThread]: Finished running 1 seed, 1 table model, 7 data tests, 2 view models in 0 hours 0 minutes and 5.32 seconds (5.32s).
+[0m21:43:35.154461 [debug] [MainThread]: Command end result
+[0m21:43:35.188029 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\manifest.json
+[0m21:43:35.192541 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\semantic_manifest.json
+[0m21:43:35.196545 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\osi_document.json
+[0m21:43:35.203098 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\run_results.json
+[0m21:43:35.203098 [info ] [MainThread]: 
+[0m21:43:35.203098 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:43:35.204602 [info ] [MainThread]: 
+[0m21:43:35.204602 [error] [MainThread]: [[31mERROR[0m]: in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+[0m21:43:35.205608 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m21:43:35.205608 [info ] [MainThread]: 
+[0m21:43:35.205608 [info ] [MainThread]:   compiled code at target\compiled\sales_algorithm\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m21:43:35.206608 [info ] [MainThread]: 
+[0m21:43:35.206608 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=3 NO-OP=0 REUSED=0 TOTAL=11
+[0m21:43:35.208122 [debug] [MainThread]: Command `dbt build` failed at 21:43:35.208122 after 9.65 seconds
+[0m21:43:35.208122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4C596C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4C98F380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4C434710>]}
+[0m21:43:35.209132 [debug] [MainThread]: Flushing usage events
+[0m21:43:36.207609 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:45:27.257329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD75FE9460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7533A3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD72604F50>]}
+
+
+============================== 21:45:27.261340 | 593a954d-bb32-4d76-8e88-981e23dbf2e2 ==============================
+[0m21:45:27.261340 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:45:27.262339 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\skatm\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt build', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\skatm\\DE\\BI-DEV\\projects\\Project - sales algorithm\\logs'}
+[0m21:45:27.578173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD70EE78F0>]}
+[0m21:45:27.648510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD7672A000>]}
+[0m21:45:27.648510 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m21:45:28.067356 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:45:28.067356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD761C18E0>]}
+[0m21:45:28.068860 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m21:45:28.069373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD76821280>]}
+[0m21:45:28.077382 [debug] [MainThread]: checksum: cd6543364d7b120badd80f636aba583e14fb1266f6e14d9719facae820df7d04, vars: {}, profile: sales_algorithm, target: dev, version: 1.12.5
+[0m21:45:28.278261 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m21:45:28.278261 [debug] [MainThread]: Partial parsing: deleted file: sales_algorithm://models\example\my_first_dbt_model.sql
+[0m21:45:28.279261 [debug] [MainThread]: Partial parsing: deleted file: sales_algorithm://models\example\my_second_dbt_model.sql
+[0m21:45:28.361191 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.sales_algorithm.example
+[0m21:45:28.364192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD76866120>]}
+[0m21:45:28.496453 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\manifest.json
+[0m21:45:28.500670 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\semantic_manifest.json
+[0m21:45:28.525919 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\osi_document.json
+[0m21:45:28.553106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD769F4AD0>]}
+[0m21:45:28.553106 [info ] [MainThread]: Found 1 model, 1 seed, 3 data tests, 556 macros
+[0m21:45:28.555111 [info ] [MainThread]: 
+[0m21:45:28.556112 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:45:28.556112 [info ] [MainThread]: 
+[0m21:45:28.557112 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m21:45:28.562011 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_m5_demand_forecast'
+[0m21:45:28.586068 [debug] [ThreadPool]: dbt-sqlserver
+[0m21:45:28.588582 [debug] [ThreadPool]: Using sqlserver connection "list_m5_demand_forecast"
+[0m21:45:28.588582 [debug] [ThreadPool]: On list_m5_demand_forecast: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "connection_name": "list_m5_demand_forecast"} */
+USE [m5_demand_forecast];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m21:45:28.589581 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:45:28.593091 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:28.701664 [debug] [ThreadPool]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:28.707680 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:45:28.710192 [debug] [ThreadPool]: On list_m5_demand_forecast: Close
+[0m21:45:28.711191 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_m5_demand_forecast_dbo'
+[0m21:45:28.716702 [debug] [ThreadPool]: dbt-sqlserver
+[0m21:45:28.716702 [debug] [ThreadPool]: Using sqlserver connection "list_m5_demand_forecast_dbo"
+[0m21:45:28.717703 [debug] [ThreadPool]: On list_m5_demand_forecast_dbo: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "connection_name": "list_m5_demand_forecast_dbo"} */
+USE [m5_demand_forecast];
+    declare @schema_id int = schema_id('dbo');
+    select
+      DB_NAME() as [database],
+      t.name as [name],
+      'dbo' as [schema],
+      'table' as table_type
+    from sys.tables as t with (nolock)
+    where t.schema_id = @schema_id
+    union all
+    select
+      DB_NAME() as [database],
+      v.name as [name],
+      'dbo' as [schema],
+      'view' as table_type
+    from sys.views as v with (nolock)
+    where v.schema_id = @schema_id
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m21:45:28.717703 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:45:28.717703 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:28.717703 [debug] [ThreadPool]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:28.744355 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:45:28.745354 [debug] [ThreadPool]: On list_m5_demand_forecast_dbo: ROLLBACK
+[0m21:45:28.746353 [debug] [ThreadPool]: On list_m5_demand_forecast_dbo: Close
+[0m21:45:28.747355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD76635E80>]}
+[0m21:45:28.747355 [debug] [MainThread]: On master: COMMIT
+[0m21:45:28.752425 [debug] [Thread-1 (]: Began running node seed.sales_algorithm.calendar
+[0m21:45:28.752425 [info ] [Thread-1 (]: 1 of 5 START seed file dbo.calendar ............................................ [RUN]
+[0m21:45:28.752425 [debug] [Thread-1 (]: Acquiring new sqlserver connection 'seed.sales_algorithm.calendar'
+[0m21:45:28.753929 [debug] [Thread-1 (]: Began compiling node seed.sales_algorithm.calendar
+[0m21:45:28.753929 [debug] [Thread-1 (]: Began executing node seed.sales_algorithm.calendar
+[0m21:45:28.869178 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:28.870182 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "seed.sales_algorithm.calendar"} */
+truncate table "m5_demand_forecast"."dbo"."calendar"
+[0m21:45:28.870182 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:45:28.871182 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:28.874183 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:28.877222 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:28.892659 [debug] [Thread-1 (]: Inserting batches of 149 records
+[0m21:45:29.183982 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:29.184981 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:29.242571 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:29.515077 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:29.515077 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:29.578040 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:29.853970 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:29.854975 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:45:29.912862 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:30.184145 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:30.184145 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:30.240398 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:30.513116 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:30.513116 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:30.575245 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:30.856908 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:30.856908 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?...
+[0m21:45:30.915665 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:31.200175 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:31.201176 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:31.257827 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:31.531249 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:31.531249 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:31.595051 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:31.874942 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:31.874942 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:45:31.929210 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:32.200268 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:32.200268 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:45:32.258512 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:32.531314 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:32.531314 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:32.590961 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:32.865048 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:32.865048 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:32.926779 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.200529 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:33.201529 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?...
+[0m21:45:33.260993 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.320361 [debug] [Thread-1 (]: Using sqlserver connection "seed.sales_algorithm.calendar"
+[0m21:45:33.321362 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: 
+          insert into "m5_demand_forecast"."dbo"."calendar" ("date", "wm_yr_wk", "weekday", "wday", "month", "year", "d", "event_name_1", "event_type_1", "event_name_2", "event_type_2", "snap_CA", "snap_TX", "snap_WI") values (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, null, null, null, null, ?, ?, ?), (?, ?...
+[0m21:45:33.330433 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.335449 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.sales_algorithm.calendar"
+[0m21:45:33.353229 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: COMMIT
+[0m21:45:33.355234 [debug] [Thread-1 (]: On seed.sales_algorithm.calendar: Close
+[0m21:45:33.357235 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD750AE6C0>]}
+[0m21:45:33.357235 [info ] [Thread-1 (]: 1 of 5 OK loaded seed file dbo.calendar ........................................ [[32mINSERT 1969[0m in 4.60s]
+[0m21:45:33.358233 [debug] [Thread-1 (]: Finished running node seed.sales_algorithm.calendar
+[0m21:45:33.359232 [debug] [Thread-3 (]: Began running node model.sales_algorithm.stg_calendar
+[0m21:45:33.359736 [info ] [Thread-3 (]: 2 of 5 START sql view model dbo.stg_calendar ................................... [RUN]
+[0m21:45:33.359736 [debug] [Thread-3 (]: Acquiring new sqlserver connection 'model.sales_algorithm.stg_calendar'
+[0m21:45:33.360745 [debug] [Thread-3 (]: Began compiling node model.sales_algorithm.stg_calendar
+[0m21:45:33.366310 [debug] [Thread-3 (]: Writing injected SQL for node "model.sales_algorithm.stg_calendar"
+[0m21:45:33.366310 [debug] [Thread-3 (]: Began executing node model.sales_algorithm.stg_calendar
+[0m21:45:33.400022 [debug] [Thread-3 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:45:33.400022 [debug] [Thread-3 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+
+    USE [m5_demand_forecast];
+  select object_definition(object_id(quotename('dbo') + '.' + quotename('stg_calendar'), 'V')) as definition
+  where object_id(quotename('dbo') + '.' + quotename('stg_calendar'), 'V') is not null
+
+  
+[0m21:45:33.400022 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:45:33.401527 [debug] [Thread-3 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:33.401527 [debug] [Thread-3 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:33.404037 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.407548 [debug] [Thread-3 (]: Writing runtime sql for node "model.sales_algorithm.stg_calendar"
+[0m21:45:33.408554 [debug] [Thread-3 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:45:33.408554 [debug] [Thread-3 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+declare @dbt_sqlserver_noop int;
+[0m21:45:33.409554 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.413062 [debug] [Thread-3 (]: On model.sales_algorithm.stg_calendar: COMMIT
+[0m21:45:33.417064 [debug] [Thread-3 (]: Applying DROP to: "m5_demand_forecast"."dbo"."stg_calendar__dbt_backup"
+[0m21:45:33.427190 [debug] [Thread-3 (]: dbt-sqlserver
+[0m21:45:33.427190 [debug] [Thread-3 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:45:33.428251 [debug] [Thread-3 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+
+        USE [m5_demand_forecast];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs with (nolock)
+        inner join sys.objects obj with (nolock)
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch with (nolock)
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'm5_demand_forecast'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'stg_calendar__dbt_backup'
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m21:45:33.442320 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.444830 [debug] [Thread-3 (]: Using sqlserver connection "model.sales_algorithm.stg_calendar"
+[0m21:45:33.445828 [debug] [Thread-3 (]: On model.sales_algorithm.stg_calendar: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "model.sales_algorithm.stg_calendar"} */
+
+      
+      
+    
+    USE [m5_demand_forecast];
+    EXEC('DROP view IF EXISTS "dbo"."stg_calendar__dbt_backup";');
+
+[0m21:45:33.446829 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.447830 [debug] [Thread-3 (]: On model.sales_algorithm.stg_calendar: Close
+[0m21:45:33.447830 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '593a954d-bb32-4d76-8e88-981e23dbf2e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD76EBE0C0>]}
+[0m21:45:33.447830 [info ] [Thread-3 (]: 2 of 5 OK created sql view model dbo.stg_calendar .............................. [[32mOK[0m in 0.09s]
+[0m21:45:33.449334 [debug] [Thread-3 (]: Finished running node model.sales_algorithm.stg_calendar
+[0m21:45:33.450339 [debug] [Thread-2 (]: Began running node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:45:33.450339 [debug] [Thread-1 (]: Began running node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:45:33.451341 [info ] [Thread-2 (]: 3 of 5 START test not_null_stg_calendar_calendar_date .......................... [RUN]
+[0m21:45:33.451341 [debug] [Thread-4 (]: Began running node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:45:33.452339 [info ] [Thread-1 (]: 4 of 5 START test not_null_stg_calendar_day_id ................................. [RUN]
+[0m21:45:33.452339 [debug] [Thread-2 (]: Acquiring new sqlserver connection 'test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208'
+[0m21:45:33.453375 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.sales_algorithm.calendar, now test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f)
+[0m21:45:33.453375 [info ] [Thread-4 (]: 5 of 5 START test unique_stg_calendar_calendar_date ............................ [RUN]
+[0m21:45:33.454371 [debug] [Thread-2 (]: Began compiling node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:45:33.454371 [debug] [Thread-1 (]: Began compiling node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:45:33.454371 [debug] [Thread-4 (]: Acquiring new sqlserver connection 'test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5'
+[0m21:45:33.467885 [debug] [Thread-2 (]: Writing injected SQL for node "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"
+[0m21:45:33.473901 [debug] [Thread-1 (]: Writing injected SQL for node "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"
+[0m21:45:33.473901 [debug] [Thread-4 (]: Began compiling node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:45:33.482487 [debug] [Thread-4 (]: Writing injected SQL for node "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"
+[0m21:45:33.483993 [debug] [Thread-2 (]: Began executing node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:45:33.483993 [debug] [Thread-1 (]: Began executing node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:45:33.502568 [debug] [Thread-2 (]: Writing runtime sql for node "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"
+[0m21:45:33.504072 [debug] [Thread-1 (]: Writing runtime sql for node "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"
+[0m21:45:33.505075 [debug] [Thread-4 (]: Began executing node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:45:33.506077 [debug] [Thread-4 (]: Writing runtime sql for node "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"
+[0m21:45:33.507580 [debug] [Thread-2 (]: Using sqlserver connection "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"
+[0m21:45:33.507580 [debug] [Thread-2 (]: On test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_dbba0810dae1ca41910466ecfbe890c5_14368]
+   as 
+    
+    
+    
+
+
+
+select calendar_date
+from "m5_demand_forecast"."dbo"."stg_calendar"
+where calendar_date is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_dbba0810dae1ca41910466ecfbe890c5_14368]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_dbba0810dae1ca41910466ecfbe890c5_14368]
+  ;')
+[0m21:45:33.508589 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:45:33.508589 [debug] [Thread-4 (]: Using sqlserver connection "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"
+[0m21:45:33.509586 [debug] [Thread-2 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:33.509586 [debug] [Thread-4 (]: On test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_7aef47c8e71140425612f660ef8557b5_10855]
+   as 
+    
+    
+    
+
+select
+    calendar_date as unique_field,
+    count(*) as n_records
+
+from "m5_demand_forecast"."dbo"."stg_calendar"
+where calendar_date is not null
+group by calendar_date
+having count(*) > 1
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_7aef47c8e71140425612f660ef8557b5_10855]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_7aef47c8e71140425612f660ef8557b5_10855]
+  ;')
+[0m21:45:33.509586 [debug] [Thread-1 (]: Using sqlserver connection "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"
+[0m21:45:33.509586 [debug] [Thread-2 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:33.511044 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:45:33.511044 [debug] [Thread-1 (]: On test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "sales_algorithm", "target_name": "dev", "node_id": "test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f"} */
+
+    
+    -- Create target schema if it does not
+  USE [m5_demand_forecast];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbo].[testview_2e0a50f7e92c89efc3f720c7a6ce31b6_2206]
+   as 
+    
+    
+    
+
+
+
+select day_id
+from "m5_demand_forecast"."dbo"."stg_calendar"
+where day_id is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbo].[testview_2e0a50f7e92c89efc3f720c7a6ce31b6_2206]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbo].[testview_2e0a50f7e92c89efc3f720c7a6ce31b6_2206]
+  ;')
+[0m21:45:33.512044 [debug] [Thread-4 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:33.512554 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:45:33.512554 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=DESKTOP-86BL51K,1433;Database=m5_demand_forecast;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.1;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m21:45:33.515064 [debug] [Thread-4 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:33.516065 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: m5_demand_forecast
+[0m21:45:33.520581 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.524096 [debug] [Thread-2 (]: On test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208: ROLLBACK
+[0m21:45:33.524096 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.525131 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m21:45:33.525131 [debug] [Thread-2 (]: On test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208: Close
+[0m21:45:33.528102 [debug] [Thread-1 (]: On test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f: ROLLBACK
+[0m21:45:33.527102 [info ] [Thread-2 (]: 3 of 5 PASS not_null_stg_calendar_calendar_date ................................ [[32mPASS[0m in 0.07s]
+[0m21:45:33.528102 [debug] [Thread-1 (]: On test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f: Close
+[0m21:45:33.529102 [debug] [Thread-4 (]: On test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5: ROLLBACK
+[0m21:45:33.529605 [debug] [Thread-2 (]: Finished running node test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208
+[0m21:45:33.529605 [debug] [Thread-4 (]: On test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5: Close
+[0m21:45:33.529605 [info ] [Thread-1 (]: 4 of 5 PASS not_null_stg_calendar_day_id ....................................... [[32mPASS[0m in 0.08s]
+[0m21:45:33.531609 [debug] [Thread-1 (]: Finished running node test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f
+[0m21:45:33.530609 [info ] [Thread-4 (]: 5 of 5 PASS unique_stg_calendar_calendar_date .................................. [[32mPASS[0m in 0.08s]
+[0m21:45:33.531609 [debug] [Thread-4 (]: Finished running node test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5
+[0m21:45:33.532609 [debug] [MainThread]: On master: COMMIT
+[0m21:45:33.532609 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:45:33.534113 [debug] [MainThread]: Connection 'list_m5_demand_forecast' was properly closed.
+[0m21:45:33.534113 [debug] [MainThread]: Connection 'list_m5_demand_forecast_dbo' was properly closed.
+[0m21:45:33.534113 [debug] [MainThread]: Connection 'test.sales_algorithm.not_null_stg_calendar_day_id.fc4ecfa78f' was properly closed.
+[0m21:45:33.535117 [debug] [MainThread]: Connection 'model.sales_algorithm.stg_calendar' was properly closed.
+[0m21:45:33.535117 [debug] [MainThread]: Connection 'test.sales_algorithm.not_null_stg_calendar_calendar_date.707ce7d208' was properly closed.
+[0m21:45:33.535117 [debug] [MainThread]: Connection 'test.sales_algorithm.unique_stg_calendar_calendar_date.430e8817c5' was properly closed.
+[0m21:45:33.535117 [info ] [MainThread]: 
+[0m21:45:33.536117 [info ] [MainThread]: Finished running 1 seed, 3 data tests, 1 view model in 0 hours 0 minutes and 4.98 seconds (4.98s).
+[0m21:45:33.537622 [debug] [MainThread]: Command end result
+[0m21:45:33.573253 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\manifest.json
+[0m21:45:33.577252 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\semantic_manifest.json
+[0m21:45:33.580761 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\osi_document.json
+[0m21:45:33.588272 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\skatm\DE\BI-DEV\projects\Project - sales algorithm\target\run_results.json
+[0m21:45:33.588272 [info ] [MainThread]: 
+[0m21:45:33.588777 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:45:33.589282 [info ] [MainThread]: 
+[0m21:45:33.589282 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m21:45:33.590287 [debug] [MainThread]: Command `dbt build` succeeded at 21:45:33.590287 after 6.45 seconds
+[0m21:45:33.591287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD76025880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD72718050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD70CD9A90>]}
+[0m21:45:33.591287 [debug] [MainThread]: Flushing usage events
+[0m21:45:34.472411 [debug] [MainThread]: An error was encountered while trying to flush usage events
