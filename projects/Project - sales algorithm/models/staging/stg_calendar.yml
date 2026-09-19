@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_calendar
+    description: Kalendarz dzienny z M5 - daty, tygodnie, święta, flagi SNAP.
+    columns:
+      - name: calendar_date
+        description: Data kalendarzowa, grain tabeli.
+        tests:
+          - not_null
+          - unique
+      - name: day_id
+        description: Identyfikator dnia w formacie M5 (np. d_1, d_2...).
+        tests:
+          - not_null
