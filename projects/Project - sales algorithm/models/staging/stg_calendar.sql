@@ -1,3 +1,4 @@
+-- test CI check
 select
     [date]      as calendar_date,
     d           as day_id,
