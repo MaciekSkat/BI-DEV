@@ -24,5 +24,8 @@ jobs:
       - name: Install dbt
         run: pip install dbt-core dbt-sqlserver
 
+      - name: Podmień seed na syntetyczny fixture (tylko do CI)
+        run: cp ci/fixtures/calendar_fixture.txt seeds/calendar.csv
+
       - name: dbt parse (łapie zepsute ref, złą składnię Jinja/YAML)
         run: dbt parse --profiles-dir ./ci --target ci
