@@ -1,0 +1,28 @@
+name: dbt CI - sales algorithm
+
+on:
+  pull_request:
+    paths:
+      - 'projects/Project - sales algorithm/**'
+
+jobs:
+  dbt-parse:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'projects/Project - sales algorithm'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system ODBC library
+        run: sudo apt-get update && sudo apt-get install -y unixodbc-dev
+
+      - name: Install dbt
+        run: pip install dbt-core dbt-sqlserver
+
+      - name: dbt parse (łapie zepsute ref, złą składnię Jinja/YAML)
+        run: dbt parse --profiles-dir ./ci --target ci

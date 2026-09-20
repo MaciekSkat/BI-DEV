@@ -1,0 +1,14 @@
+sales_algorithm:
+  target: ci
+  outputs:
+    ci:
+      type: sqlserver
+      driver: 'ODBC Driver 18 for SQL Server'
+      server: localhost
+      port: 1433
+      database: ci_placeholder
+      schema: dbo
+      user: ci_placeholder
+      password: ci_placeholder
+      trust_cert: True
+      threads: 4
