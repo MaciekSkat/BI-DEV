@@ -126,7 +126,55 @@ def weighted_trimmed_mean_pit(item_df: pd.DataFrame, target_date: pd.Timestamp) 
         "dropped_high": dropped_high,
         "raw_values_used": trimmed["units_sold"].tolist(),
     }
+#%%
+def iqr_aware_trimmed_mean_pit(item_df: pd.DataFrame, target_date: pd.Timestamp, iqr_multiplier: float = 1.5) -> dict:
+    """
+    Wariant: zamiast ślepo odrzucać rangę najniższą/najwyższą, odrzuca
+    wartość TYLKO jeśli jest realnym statystycznym outlierem
+    (poza Q1 - iqr_multiplier*IQR albo Q3 + iqr_multiplier*IQR).
+    Płynny, rosnący trend nie zostanie ucięty na krawędziach.
+    """
+    target_row = calendar.loc[calendar["date"] == target_date.strftime("%Y-%m-%d"), "wday"]
+    if target_row.empty:
+        return {"error": "brak takiej daty w kalendarzu M5"}
+    target_wday = target_row.iloc[0]
 
+    history = (
+        item_df[(item_df["date"] < target_date) & (item_df["wday"] == target_wday)]
+        .sort_values("date", ascending=False)
+        .head(LOOKBACK_WEEKS)
+        .reset_index(drop=True)
+    )
+
+    n = len(history)
+    if n == 0:
+        return {"n_samples": 0, "forecast": None, "note": "brak historii — cold start"}
+
+    history["weeks_ago"] = history.index
+    history["weight"] = DECAY_RATE ** history["weeks_ago"]
+
+    q1 = history["units_sold"].quantile(0.25)
+    q3 = history["units_sold"].quantile(0.75)
+    iqr = q3 - q1
+    lower_bound = q1 - iqr_multiplier * iqr
+    upper_bound = q3 + iqr_multiplier * iqr
+
+    is_outlier = (history["units_sold"] < lower_bound) | (history["units_sold"] > upper_bound)
+    dropped = history.loc[is_outlier, "units_sold"].tolist()
+    kept = history.loc[~is_outlier]
+
+    if kept.empty:
+        kept = history  # zabezpieczenie — nie zostawiaj pustej próbki
+
+    weighted_avg = np.average(kept["units_sold"], weights=kept["weight"])
+
+    return {
+        "n_samples": n,
+        "forecast": round(float(weighted_avg), 2),
+        "dropped_as_outliers": dropped,
+        "bounds": (round(lower_bound, 1), round(upper_bound, 1)),
+        "raw_values_used": kept["units_sold"].tolist(),
+    }
 # %% [markdown]
 # ### Test na przykładowych datach — te liczby porównamy z wynikiem z dbt
 # (daty celowo głęboko w danych, żeby było minimum LOOKBACK_WEEKS tygodni historii)
@@ -138,5 +186,8 @@ for item in top_items:
     item_df = long_df[long_df["item_id"] == item]
     print(f"\n=== {item} ===")
     for d in test_dates:
-        result = weighted_trimmed_mean_pit(item_df, d)
-        print(f"  {d.date()}: {result}")
+        blind = weighted_trimmed_mean_pit(item_df, d)
+        smart = iqr_aware_trimmed_mean_pit(item_df, d)
+        print(f"  {d.date()}")
+        print(f"    ślepy trim (rank): forecast={blind.get('forecast')}, odrzucone={blind.get('dropped_low', []) + blind.get('dropped_high', [])}")
+        print(f"    IQR-aware:         forecast={smart.get('forecast')}, odrzucone={smart.get('dropped_as_outliers')}, granice={smart.get('bounds')}")
