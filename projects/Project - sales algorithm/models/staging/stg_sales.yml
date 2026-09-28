@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_sales
+    description: Sprzedaż dzienna (długi format) połączona z kalendarzem — grain to item_id + store_id + sale_date.
+    columns:
+      - name: item_id
+        tests:
+          - not_null
+      - name: store_id
+        tests:
+          - not_null
+      - name: sale_date
+        tests:
+          - not_null
+      - name: units_sold
+        tests:
+          - not_null
